@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const DESIGN_FILE = path.join(__dirname, '../../英语口语App-场景设计.md');
+const DESIGN_FILE = path.join(__dirname, '../data/scenario-catalog.json');
 
 const LEGACY_SCENARIO_ID_MAP = {
   '1.1': 'restaurant',
@@ -160,8 +160,8 @@ function loadLevelScenarioCatalog() {
     return [];
   }
 
-  const markdown = fs.readFileSync(DESIGN_FILE, 'utf-8');
-  return parseSceneDesignMarkdown(markdown);
+  const catalog = JSON.parse(fs.readFileSync(DESIGN_FILE, 'utf-8'));
+  return Array.isArray(catalog) ? catalog : [];
 }
 
 module.exports = {

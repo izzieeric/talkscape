@@ -23,3 +23,5 @@ database/*.local.sql
 *.log
 coverage/
 全部英语词汇_空格分隔.txt
+英语口语App-场景设计.md
+英语口语练习App-设计文档.md

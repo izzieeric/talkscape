@@ -1,0 +1,5254 @@
+[
+  {
+    "id": "level-category-1",
+    "title": "餐饮美食",
+    "titleEn": "",
+    "icon": "🍽️",
+    "description": "餐饮美食类场景，包含 餐厅点餐、快餐/简餐、咖啡厅 等分阶段口语练习。",
+    "descriptionEn": "",
+    "sortOrder": 1,
+    "scenes": [
+      {
+        "id": "restaurant",
+        "sceneCode": "1.1",
+        "title": "餐厅点餐",
+        "titleEn": "",
+        "description": "餐厅点餐场景下的闯关练习，涵盖 进店打招呼、入座与菜单、询问菜品细节 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "beginner",
+        "icon": "🍽️",
+        "tags": [
+          "level",
+          "level-category-1",
+          "1.1"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-1",
+        "sortOrder": 1,
+        "maxTurns": 11,
+        "subTasks": [
+          {
+            "id": "restaurant-task-1",
+            "scenarioId": "restaurant",
+            "taskKey": "1.1.1",
+            "title": "进店打招呼",
+            "description": "进门、询问是否有位、等位",
+            "promptHint": "当前目标是完成“进店打招呼”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "restaurant-task-2",
+            "scenarioId": "restaurant",
+            "taskKey": "1.1.2",
+            "title": "入座与菜单",
+            "description": "被引导入座、接菜单、询问推荐",
+            "promptHint": "当前目标是完成“入座与菜单”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "restaurant-task-3",
+            "scenarioId": "restaurant",
+            "taskKey": "1.1.3",
+            "title": "询问菜品细节",
+            "description": "问食材、口味、份量、今日特色",
+            "promptHint": "当前目标是完成“询问菜品细节”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "restaurant-task-4",
+            "scenarioId": "restaurant",
+            "taskKey": "1.1.4",
+            "title": "点前菜/汤",
+            "description": "选前菜、说要求",
+            "promptHint": "当前目标是完成“点前菜/汤”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "restaurant-task-5",
+            "scenarioId": "restaurant",
+            "taskKey": "1.1.5",
+            "title": "点主菜",
+            "description": "选主菜、要几分熟/酱汁选择",
+            "promptHint": "当前目标是完成“点主菜”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          },
+          {
+            "id": "restaurant-task-6",
+            "scenarioId": "restaurant",
+            "taskKey": "1.1.6",
+            "title": "点饮品",
+            "description": "选饮料、酒水",
+            "promptHint": "当前目标是完成“点饮品”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 6
+          },
+          {
+            "id": "restaurant-task-7",
+            "scenarioId": "restaurant",
+            "taskKey": "1.1.7",
+            "title": "用餐中需求",
+            "description": "加餐具、催菜、退换、打包",
+            "promptHint": "当前目标是完成“用餐中需求”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 7
+          },
+          {
+            "id": "restaurant-task-8",
+            "scenarioId": "restaurant",
+            "taskKey": "1.1.8",
+            "title": "结账",
+            "description": "要账单、AA/请客、付现金/卡",
+            "promptHint": "当前目标是完成“结账”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 8
+          },
+          {
+            "id": "restaurant-task-9",
+            "scenarioId": "restaurant",
+            "taskKey": "1.1.9",
+            "title": "评价与反馈",
+            "description": "味道评价、给服务评分",
+            "promptHint": "当前目标是完成“评价与反馈”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 9
+          }
+        ]
+      },
+      {
+        "id": "level-1-2-快餐-简餐",
+        "sceneCode": "1.2",
+        "title": "快餐/简餐",
+        "titleEn": "",
+        "description": "快餐/简餐场景下的闯关练习，涵盖 柜台点单、选套餐 vs 单点、定制要求（去XX、多加XX） 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "beginner",
+        "icon": "🍽️",
+        "tags": [
+          "level",
+          "level-category-1",
+          "1.2"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-1",
+        "sortOrder": 2,
+        "maxTurns": 8,
+        "subTasks": [
+          {
+            "id": "level-1-2-快餐-简餐-task-1",
+            "scenarioId": "level-1-2-快餐-简餐",
+            "taskKey": "1.2.1",
+            "title": "柜台点单",
+            "description": "柜台点单",
+            "promptHint": "当前目标是完成“柜台点单”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-1-2-快餐-简餐-task-2",
+            "scenarioId": "level-1-2-快餐-简餐",
+            "taskKey": "1.2.2",
+            "title": "选套餐 vs 单点",
+            "description": "选套餐 vs 单点",
+            "promptHint": "当前目标是完成“选套餐 vs 单点”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-1-2-快餐-简餐-task-3",
+            "scenarioId": "level-1-2-快餐-简餐",
+            "taskKey": "1.2.3",
+            "title": "定制要求（去XX、多加XX）",
+            "description": "定制要求（去XX、多加XX）",
+            "promptHint": "当前目标是完成“定制要求（去XX、多加XX）”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-1-2-快餐-简餐-task-4",
+            "scenarioId": "level-1-2-快餐-简餐",
+            "taskKey": "1.2.4",
+            "title": "询问价格与优惠",
+            "description": "询问价格与优惠",
+            "promptHint": "当前目标是完成“询问价格与优惠”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "level-1-2-快餐-简餐-task-5",
+            "scenarioId": "level-1-2-快餐-简餐",
+            "taskKey": "1.2.5",
+            "title": "堂食/打包确认",
+            "description": "堂食/打包确认",
+            "promptHint": "当前目标是完成“堂食/打包确认”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          },
+          {
+            "id": "level-1-2-快餐-简餐-task-6",
+            "scenarioId": "level-1-2-快餐-简餐",
+            "taskKey": "1.2.6",
+            "title": "取餐与确认",
+            "description": "取餐与确认",
+            "promptHint": "当前目标是完成“取餐与确认”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 6
+          }
+        ]
+      },
+      {
+        "id": "level-1-3-咖啡厅",
+        "sceneCode": "1.3",
+        "title": "咖啡厅",
+        "titleEn": "",
+        "description": "咖啡厅场景下的闯关练习，涵盖 点咖啡（种类、冷热、杯型）、选甜品/轻食、定制口味（少糖、换奶、加shot） 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "beginner",
+        "icon": "🍽️",
+        "tags": [
+          "level",
+          "level-category-1",
+          "1.3"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-1",
+        "sortOrder": 3,
+        "maxTurns": 8,
+        "subTasks": [
+          {
+            "id": "level-1-3-咖啡厅-task-1",
+            "scenarioId": "level-1-3-咖啡厅",
+            "taskKey": "1.3.1",
+            "title": "点咖啡（种类、冷热、杯型）",
+            "description": "点咖啡（种类、冷热、杯型）",
+            "promptHint": "当前目标是完成“点咖啡（种类、冷热、杯型）”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-1-3-咖啡厅-task-2",
+            "scenarioId": "level-1-3-咖啡厅",
+            "taskKey": "1.3.2",
+            "title": "选甜品/轻食",
+            "description": "选甜品/轻食",
+            "promptHint": "当前目标是完成“选甜品/轻食”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-1-3-咖啡厅-task-3",
+            "scenarioId": "level-1-3-咖啡厅",
+            "taskKey": "1.3.3",
+            "title": "定制口味（少糖、换奶、加shot）",
+            "description": "定制口味（少糖、换奶、加shot）",
+            "promptHint": "当前目标是完成“定制口味（少糖、换奶、加shot）”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-1-3-咖啡厅-task-4",
+            "scenarioId": "level-1-3-咖啡厅",
+            "taskKey": "1.3.4",
+            "title": "问WiFi / 插座",
+            "description": "问WiFi / 插座",
+            "promptHint": "当前目标是完成“问WiFi / 插座”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "level-1-3-咖啡厅-task-5",
+            "scenarioId": "level-1-3-咖啡厅",
+            "taskKey": "1.3.5",
+            "title": "续杯/加单",
+            "description": "续杯/加单",
+            "promptHint": "当前目标是完成“续杯/加单”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          },
+          {
+            "id": "level-1-3-咖啡厅-task-6",
+            "scenarioId": "level-1-3-咖啡厅",
+            "taskKey": "1.3.6",
+            "title": "带走 vs 堂饮",
+            "description": "带走 vs 堂饮",
+            "promptHint": "当前目标是完成“带走 vs 堂饮”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 6
+          }
+        ]
+      },
+      {
+        "id": "level-1-4-酒吧",
+        "sceneCode": "1.4",
+        "title": "酒吧",
+        "titleEn": "",
+        "description": "酒吧场景下的闯关练习，涵盖 吧台点酒、问酒单推荐、说口味偏好 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "beginner",
+        "icon": "🍽️",
+        "tags": [
+          "level",
+          "level-category-1",
+          "1.4"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-1",
+        "sortOrder": 4,
+        "maxTurns": 7,
+        "subTasks": [
+          {
+            "id": "level-1-4-酒吧-task-1",
+            "scenarioId": "level-1-4-酒吧",
+            "taskKey": "1.4.1",
+            "title": "吧台点酒",
+            "description": "吧台点酒",
+            "promptHint": "当前目标是完成“吧台点酒”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-1-4-酒吧-task-2",
+            "scenarioId": "level-1-4-酒吧",
+            "taskKey": "1.4.2",
+            "title": "问酒单推荐",
+            "description": "问酒单推荐",
+            "promptHint": "当前目标是完成“问酒单推荐”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-1-4-酒吧-task-3",
+            "scenarioId": "level-1-4-酒吧",
+            "taskKey": "1.4.3",
+            "title": "说口味偏好",
+            "description": "说口味偏好",
+            "promptHint": "当前目标是完成“说口味偏好”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-1-4-酒吧-task-4",
+            "scenarioId": "level-1-4-酒吧",
+            "taskKey": "1.4.4",
+            "title": "朋友聚餐碰杯",
+            "description": "朋友聚餐碰杯",
+            "promptHint": "当前目标是完成“朋友聚餐碰杯”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "level-1-4-酒吧-task-5",
+            "scenarioId": "level-1-4-酒吧",
+            "taskKey": "1.4.5",
+            "title": "买单与给小费",
+            "description": "买单与给小费",
+            "promptHint": "当前目标是完成“买单与给小费”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          }
+        ]
+      },
+      {
+        "id": "level-1-5-预约订座",
+        "sceneCode": "1.5",
+        "title": "预约订座",
+        "titleEn": "",
+        "description": "预约订座场景下的闯关练习，涵盖 电话预约（时间、人数）、特殊要求（靠窗、包厢、过敏）、确认/更改预订 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "beginner",
+        "icon": "🍽️",
+        "tags": [
+          "level",
+          "level-category-1",
+          "1.5"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-1",
+        "sortOrder": 5,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-1-5-预约订座-task-1",
+            "scenarioId": "level-1-5-预约订座",
+            "taskKey": "1.5.1",
+            "title": "电话预约（时间、人数）",
+            "description": "电话预约（时间、人数）",
+            "promptHint": "当前目标是完成“电话预约（时间、人数）”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-1-5-预约订座-task-2",
+            "scenarioId": "level-1-5-预约订座",
+            "taskKey": "1.5.2",
+            "title": "特殊要求（靠窗、包厢、过敏）",
+            "description": "特殊要求（靠窗、包厢、过敏）",
+            "promptHint": "当前目标是完成“特殊要求（靠窗、包厢、过敏）”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-1-5-预约订座-task-3",
+            "scenarioId": "level-1-5-预约订座",
+            "taskKey": "1.5.3",
+            "title": "确认/更改预订",
+            "description": "确认/更改预订",
+            "promptHint": "当前目标是完成“确认/更改预订”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-1-5-预约订座-task-4",
+            "scenarioId": "level-1-5-预约订座",
+            "taskKey": "1.5.4",
+            "title": "取消预订",
+            "description": "取消预订",
+            "promptHint": "当前目标是完成“取消预订”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-1-6-食品采购-超市",
+        "sceneCode": "1.6",
+        "title": "食品采购/超市",
+        "titleEn": "",
+        "description": "食品采购/超市场景下的闯关练习，涵盖 问路找商品、称重计价、问保质期/产地 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "beginner",
+        "icon": "🍽️",
+        "tags": [
+          "level",
+          "level-category-1",
+          "1.6"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-1",
+        "sortOrder": 6,
+        "maxTurns": 7,
+        "subTasks": [
+          {
+            "id": "level-1-6-食品采购-超市-task-1",
+            "scenarioId": "level-1-6-食品采购-超市",
+            "taskKey": "1.6.1",
+            "title": "问路找商品",
+            "description": "问路找商品",
+            "promptHint": "当前目标是完成“问路找商品”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-1-6-食品采购-超市-task-2",
+            "scenarioId": "level-1-6-食品采购-超市",
+            "taskKey": "1.6.2",
+            "title": "称重计价",
+            "description": "称重计价",
+            "promptHint": "当前目标是完成“称重计价”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-1-6-食品采购-超市-task-3",
+            "scenarioId": "level-1-6-食品采购-超市",
+            "taskKey": "1.6.3",
+            "title": "问保质期/产地",
+            "description": "问保质期/产地",
+            "promptHint": "当前目标是完成“问保质期/产地”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-1-6-食品采购-超市-task-4",
+            "scenarioId": "level-1-6-食品采购-超市",
+            "taskKey": "1.6.4",
+            "title": "自助结账",
+            "description": "自助结账",
+            "promptHint": "当前目标是完成“自助结账”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "level-1-6-食品采购-超市-task-5",
+            "scenarioId": "level-1-6-食品采购-超市",
+            "taskKey": "1.6.5",
+            "title": "退货换货",
+            "description": "退货换货",
+            "promptHint": "当前目标是完成“退货换货”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "level-category-2",
+    "title": "旅行出行",
+    "titleEn": "",
+    "icon": "✈️",
+    "description": "旅行出行类场景，包含 机场值机与登机、入境与海关、打车/网约车 等分阶段口语练习。",
+    "descriptionEn": "",
+    "sortOrder": 2,
+    "scenes": [
+      {
+        "id": "airport",
+        "sceneCode": "2.1",
+        "title": "机场值机与登机",
+        "titleEn": "",
+        "description": "机场值机与登机场景下的闯关练习，涵盖 柜台值机（选座、托运）、安检对话、登机口问询 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "beginner",
+        "icon": "✈️",
+        "tags": [
+          "level",
+          "level-category-2",
+          "2.1"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-2",
+        "sortOrder": 1,
+        "maxTurns": 8,
+        "subTasks": [
+          {
+            "id": "airport-task-1",
+            "scenarioId": "airport",
+            "taskKey": "2.1.1",
+            "title": "柜台值机（选座、托运）",
+            "description": "柜台值机（选座、托运）",
+            "promptHint": "当前目标是完成“柜台值机（选座、托运）”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "airport-task-2",
+            "scenarioId": "airport",
+            "taskKey": "2.1.2",
+            "title": "安检对话",
+            "description": "安检对话",
+            "promptHint": "当前目标是完成“安检对话”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "airport-task-3",
+            "scenarioId": "airport",
+            "taskKey": "2.1.3",
+            "title": "登机口问询",
+            "description": "登机口问询",
+            "promptHint": "当前目标是完成“登机口问询”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "airport-task-4",
+            "scenarioId": "airport",
+            "taskKey": "2.1.4",
+            "title": "登机延误/取消",
+            "description": "登机延误/取消",
+            "promptHint": "当前目标是完成“登机延误/取消”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "airport-task-5",
+            "scenarioId": "airport",
+            "taskKey": "2.1.5",
+            "title": "机上服务（换座、要水）",
+            "description": "机上服务（换座、要水）",
+            "promptHint": "当前目标是完成“机上服务（换座、要水）”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          },
+          {
+            "id": "airport-task-6",
+            "scenarioId": "airport",
+            "taskKey": "2.1.6",
+            "title": "转机/过境",
+            "description": "转机/过境",
+            "promptHint": "当前目标是完成“转机/过境”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 6
+          }
+        ]
+      },
+      {
+        "id": "level-2-2-入境与海关",
+        "sceneCode": "2.2",
+        "title": "入境与海关",
+        "titleEn": "",
+        "description": "入境与海关场景下的闯关练习，涵盖 入境盘问（目的、住址）、海关申报、取行李/行李丢失 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "beginner",
+        "icon": "✈️",
+        "tags": [
+          "level",
+          "level-category-2",
+          "2.2"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-2",
+        "sortOrder": 2,
+        "maxTurns": 5,
+        "subTasks": [
+          {
+            "id": "level-2-2-入境与海关-task-1",
+            "scenarioId": "level-2-2-入境与海关",
+            "taskKey": "2.2.1",
+            "title": "入境盘问（目的、住址）",
+            "description": "入境盘问（目的、住址）",
+            "promptHint": "当前目标是完成“入境盘问（目的、住址）”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-2-2-入境与海关-task-2",
+            "scenarioId": "level-2-2-入境与海关",
+            "taskKey": "2.2.2",
+            "title": "海关申报",
+            "description": "海关申报",
+            "promptHint": "当前目标是完成“海关申报”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-2-2-入境与海关-task-3",
+            "scenarioId": "level-2-2-入境与海关",
+            "taskKey": "2.2.3",
+            "title": "取行李/行李丢失",
+            "description": "取行李/行李丢失",
+            "promptHint": "当前目标是完成“取行李/行李丢失”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          }
+        ]
+      },
+      {
+        "id": "level-2-3-打车-网约车",
+        "sceneCode": "2.3",
+        "title": "打车/网约车",
+        "titleEn": "",
+        "description": "打车/网约车场景下的闯关练习，涵盖 路边拦车报目的地、与司机闲聊、指路/改路线 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "beginner",
+        "icon": "✈️",
+        "tags": [
+          "level",
+          "level-category-2",
+          "2.3"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-2",
+        "sortOrder": 3,
+        "maxTurns": 7,
+        "subTasks": [
+          {
+            "id": "level-2-3-打车-网约车-task-1",
+            "scenarioId": "level-2-3-打车-网约车",
+            "taskKey": "2.3.1",
+            "title": "路边拦车报目的地",
+            "description": "路边拦车报目的地",
+            "promptHint": "当前目标是完成“路边拦车报目的地”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-2-3-打车-网约车-task-2",
+            "scenarioId": "level-2-3-打车-网约车",
+            "taskKey": "2.3.2",
+            "title": "与司机闲聊",
+            "description": "与司机闲聊",
+            "promptHint": "当前目标是完成“与司机闲聊”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-2-3-打车-网约车-task-3",
+            "scenarioId": "level-2-3-打车-网约车",
+            "taskKey": "2.3.3",
+            "title": "指路/改路线",
+            "description": "指路/改路线",
+            "promptHint": "当前目标是完成“指路/改路线”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-2-3-打车-网约车-task-4",
+            "scenarioId": "level-2-3-打车-网约车",
+            "taskKey": "2.3.4",
+            "title": "付费与找零",
+            "description": "付费与找零",
+            "promptHint": "当前目标是完成“付费与找零”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "level-2-3-打车-网约车-task-5",
+            "scenarioId": "level-2-3-打车-网约车",
+            "taskKey": "2.3.5",
+            "title": "丢东西在车上",
+            "description": "丢东西在车上",
+            "promptHint": "当前目标是完成“丢东西在车上”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          }
+        ]
+      },
+      {
+        "id": "level-2-4-公共交通",
+        "sceneCode": "2.4",
+        "title": "公共交通",
+        "titleEn": "",
+        "description": "公共交通场景下的闯关练习，涵盖 买票/充值、问路线/换乘、坐错方向求助 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "beginner",
+        "icon": "✈️",
+        "tags": [
+          "level",
+          "level-category-2",
+          "2.4"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-2",
+        "sortOrder": 4,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-2-4-公共交通-task-1",
+            "scenarioId": "level-2-4-公共交通",
+            "taskKey": "2.4.1",
+            "title": "买票/充值",
+            "description": "买票/充值",
+            "promptHint": "当前目标是完成“买票/充值”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-2-4-公共交通-task-2",
+            "scenarioId": "level-2-4-公共交通",
+            "taskKey": "2.4.2",
+            "title": "问路线/换乘",
+            "description": "问路线/换乘",
+            "promptHint": "当前目标是完成“问路线/换乘”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-2-4-公共交通-task-3",
+            "scenarioId": "level-2-4-公共交通",
+            "taskKey": "2.4.3",
+            "title": "坐错方向求助",
+            "description": "坐错方向求助",
+            "promptHint": "当前目标是完成“坐错方向求助”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-2-4-公共交通-task-4",
+            "scenarioId": "level-2-4-公共交通",
+            "taskKey": "2.4.4",
+            "title": "问末班车时间",
+            "description": "问末班车时间",
+            "promptHint": "当前目标是完成“问末班车时间”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-2-5-租车",
+        "sceneCode": "2.5",
+        "title": "租车",
+        "titleEn": "",
+        "description": "租车场景下的闯关练习，涵盖 柜台租车流程、选车型与保险、问路/导航 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "beginner",
+        "icon": "✈️",
+        "tags": [
+          "level",
+          "level-category-2",
+          "2.5"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-2",
+        "sortOrder": 5,
+        "maxTurns": 7,
+        "subTasks": [
+          {
+            "id": "level-2-5-租车-task-1",
+            "scenarioId": "level-2-5-租车",
+            "taskKey": "2.5.1",
+            "title": "柜台租车流程",
+            "description": "柜台租车流程",
+            "promptHint": "当前目标是完成“柜台租车流程”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-2-5-租车-task-2",
+            "scenarioId": "level-2-5-租车",
+            "taskKey": "2.5.2",
+            "title": "选车型与保险",
+            "description": "选车型与保险",
+            "promptHint": "当前目标是完成“选车型与保险”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-2-5-租车-task-3",
+            "scenarioId": "level-2-5-租车",
+            "taskKey": "2.5.3",
+            "title": "问路/导航",
+            "description": "问路/导航",
+            "promptHint": "当前目标是完成“问路/导航”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-2-5-租车-task-4",
+            "scenarioId": "level-2-5-租车",
+            "taskKey": "2.5.4",
+            "title": "加油",
+            "description": "加油",
+            "promptHint": "当前目标是完成“加油”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "level-2-5-租车-task-5",
+            "scenarioId": "level-2-5-租车",
+            "taskKey": "2.5.5",
+            "title": "还车与验车",
+            "description": "还车与验车",
+            "promptHint": "当前目标是完成“还车与验车”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          }
+        ]
+      },
+      {
+        "id": "level-2-6-问路",
+        "sceneCode": "2.6",
+        "title": "问路",
+        "titleEn": "",
+        "description": "问路场景下的闯关练习，涵盖 问某个地点怎么走、问距离/步行时间、确认方向 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "beginner",
+        "icon": "✈️",
+        "tags": [
+          "level",
+          "level-category-2",
+          "2.6"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-2",
+        "sortOrder": 6,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-2-6-问路-task-1",
+            "scenarioId": "level-2-6-问路",
+            "taskKey": "2.6.1",
+            "title": "问某个地点怎么走",
+            "description": "问某个地点怎么走",
+            "promptHint": "当前目标是完成“问某个地点怎么走”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-2-6-问路-task-2",
+            "scenarioId": "level-2-6-问路",
+            "taskKey": "2.6.2",
+            "title": "问距离/步行时间",
+            "description": "问距离/步行时间",
+            "promptHint": "当前目标是完成“问距离/步行时间”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-2-6-问路-task-3",
+            "scenarioId": "level-2-6-问路",
+            "taskKey": "2.6.3",
+            "title": "确认方向",
+            "description": "确认方向",
+            "promptHint": "当前目标是完成“确认方向”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-2-6-问路-task-4",
+            "scenarioId": "level-2-6-问路",
+            "taskKey": "2.6.4",
+            "title": "感谢指路",
+            "description": "感谢指路",
+            "promptHint": "当前目标是完成“感谢指路”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "level-category-3",
+    "title": "酒店住宿",
+    "titleEn": "",
+    "icon": "🏨",
+    "description": "酒店住宿类场景，包含 入住、客房服务、退房 等分阶段口语练习。",
+    "descriptionEn": "",
+    "sortOrder": 3,
+    "scenes": [
+      {
+        "id": "level-3-1-入住",
+        "sceneCode": "3.1",
+        "title": "入住",
+        "titleEn": "",
+        "description": "入住场景下的闯关练习，涵盖 前台办理入住、核对预订信息、要求房型/楼层 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "beginner",
+        "icon": "🏨",
+        "tags": [
+          "level",
+          "level-category-3",
+          "3.1"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-3",
+        "sortOrder": 1,
+        "maxTurns": 7,
+        "subTasks": [
+          {
+            "id": "level-3-1-入住-task-1",
+            "scenarioId": "level-3-1-入住",
+            "taskKey": "3.1.1",
+            "title": "前台办理入住",
+            "description": "前台办理入住",
+            "promptHint": "当前目标是完成“前台办理入住”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-3-1-入住-task-2",
+            "scenarioId": "level-3-1-入住",
+            "taskKey": "3.1.2",
+            "title": "核对预订信息",
+            "description": "核对预订信息",
+            "promptHint": "当前目标是完成“核对预订信息”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-3-1-入住-task-3",
+            "scenarioId": "level-3-1-入住",
+            "taskKey": "3.1.3",
+            "title": "要求房型/楼层",
+            "description": "要求房型/楼层",
+            "promptHint": "当前目标是完成“要求房型/楼层”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-3-1-入住-task-4",
+            "scenarioId": "level-3-1-入住",
+            "taskKey": "3.1.4",
+            "title": "交押金",
+            "description": "交押金",
+            "promptHint": "当前目标是完成“交押金”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "level-3-1-入住-task-5",
+            "scenarioId": "level-3-1-入住",
+            "taskKey": "3.1.5",
+            "title": "拿房卡/行李服务",
+            "description": "拿房卡/行李服务",
+            "promptHint": "当前目标是完成“拿房卡/行李服务”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          }
+        ]
+      },
+      {
+        "id": "level-3-2-客房服务",
+        "sceneCode": "3.2",
+        "title": "客房服务",
+        "titleEn": "",
+        "description": "客房服务场景下的闯关练习，涵盖 要额外的物品（毛巾、牙刷）、叫客房送餐、报修（空调、WiFi） 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "beginner",
+        "icon": "🏨",
+        "tags": [
+          "level",
+          "level-category-3",
+          "3.2"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-3",
+        "sortOrder": 2,
+        "maxTurns": 7,
+        "subTasks": [
+          {
+            "id": "level-3-2-客房服务-task-1",
+            "scenarioId": "level-3-2-客房服务",
+            "taskKey": "3.2.1",
+            "title": "要额外的物品（毛巾、牙刷）",
+            "description": "要额外的物品（毛巾、牙刷）",
+            "promptHint": "当前目标是完成“要额外的物品（毛巾、牙刷）”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-3-2-客房服务-task-2",
+            "scenarioId": "level-3-2-客房服务",
+            "taskKey": "3.2.2",
+            "title": "叫客房送餐",
+            "description": "叫客房送餐",
+            "promptHint": "当前目标是完成“叫客房送餐”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-3-2-客房服务-task-3",
+            "scenarioId": "level-3-2-客房服务",
+            "taskKey": "3.2.3",
+            "title": "报修（空调、WiFi）",
+            "description": "报修（空调、WiFi）",
+            "promptHint": "当前目标是完成“报修（空调、WiFi）”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-3-2-客房服务-task-4",
+            "scenarioId": "level-3-2-客房服务",
+            "taskKey": "3.2.4",
+            "title": "叫醒服务",
+            "description": "叫醒服务",
+            "promptHint": "当前目标是完成“叫醒服务”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "level-3-2-客房服务-task-5",
+            "scenarioId": "level-3-2-客房服务",
+            "taskKey": "3.2.5",
+            "title": "清洁服务",
+            "description": "清洁服务",
+            "promptHint": "当前目标是完成“清洁服务”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          }
+        ]
+      },
+      {
+        "id": "level-3-3-退房",
+        "sceneCode": "3.3",
+        "title": "退房",
+        "titleEn": "",
+        "description": "退房场景下的闯关练习，涵盖 退房手续、查消费明细、开发票 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "beginner",
+        "icon": "🏨",
+        "tags": [
+          "level",
+          "level-category-3",
+          "3.3"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-3",
+        "sortOrder": 3,
+        "maxTurns": 7,
+        "subTasks": [
+          {
+            "id": "level-3-3-退房-task-1",
+            "scenarioId": "level-3-3-退房",
+            "taskKey": "3.3.1",
+            "title": "退房手续",
+            "description": "退房手续",
+            "promptHint": "当前目标是完成“退房手续”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-3-3-退房-task-2",
+            "scenarioId": "level-3-3-退房",
+            "taskKey": "3.3.2",
+            "title": "查消费明细",
+            "description": "查消费明细",
+            "promptHint": "当前目标是完成“查消费明细”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-3-3-退房-task-3",
+            "scenarioId": "level-3-3-退房",
+            "taskKey": "3.3.3",
+            "title": "开发票",
+            "description": "开发票",
+            "promptHint": "当前目标是完成“开发票”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-3-3-退房-task-4",
+            "scenarioId": "level-3-3-退房",
+            "taskKey": "3.3.4",
+            "title": "寄存行李",
+            "description": "寄存行李",
+            "promptHint": "当前目标是完成“寄存行李”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "level-3-3-退房-task-5",
+            "scenarioId": "level-3-3-退房",
+            "taskKey": "3.3.5",
+            "title": "投诉/反馈",
+            "description": "投诉/反馈",
+            "promptHint": "当前目标是完成“投诉/反馈”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          }
+        ]
+      },
+      {
+        "id": "level-3-4-预定酒店",
+        "sceneCode": "3.4",
+        "title": "预定酒店",
+        "titleEn": "",
+        "description": "预定酒店场景下的闯关练习，涵盖 电话/在线预订、询问房型和价格、谈优惠 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "beginner",
+        "icon": "🏨",
+        "tags": [
+          "level",
+          "level-category-3",
+          "3.4"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-3",
+        "sortOrder": 4,
+        "maxTurns": 7,
+        "subTasks": [
+          {
+            "id": "level-3-4-预定酒店-task-1",
+            "scenarioId": "level-3-4-预定酒店",
+            "taskKey": "3.4.1",
+            "title": "电话/在线预订",
+            "description": "电话/在线预订",
+            "promptHint": "当前目标是完成“电话/在线预订”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-3-4-预定酒店-task-2",
+            "scenarioId": "level-3-4-预定酒店",
+            "taskKey": "3.4.2",
+            "title": "询问房型和价格",
+            "description": "询问房型和价格",
+            "promptHint": "当前目标是完成“询问房型和价格”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-3-4-预定酒店-task-3",
+            "scenarioId": "level-3-4-预定酒店",
+            "taskKey": "3.4.3",
+            "title": "谈优惠",
+            "description": "谈优惠",
+            "promptHint": "当前目标是完成“谈优惠”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-3-4-预定酒店-task-4",
+            "scenarioId": "level-3-4-预定酒店",
+            "taskKey": "3.4.4",
+            "title": "确认入住时间",
+            "description": "确认入住时间",
+            "promptHint": "当前目标是完成“确认入住时间”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "level-3-4-预定酒店-task-5",
+            "scenarioId": "level-3-4-预定酒店",
+            "taskKey": "3.4.5",
+            "title": "修改/取消预订",
+            "description": "修改/取消预订",
+            "promptHint": "当前目标是完成“修改/取消预订”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          }
+        ]
+      },
+      {
+        "id": "level-3-5-民宿-airbnb",
+        "sceneCode": "3.5",
+        "title": "民宿/Airbnb",
+        "titleEn": "",
+        "description": "民宿/Airbnb场景下的闯关练习，涵盖 联系房东、自助入住（密码锁）、问使用说明 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "beginner",
+        "icon": "🏨",
+        "tags": [
+          "level",
+          "level-category-3",
+          "3.5"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-3",
+        "sortOrder": 5,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-3-5-民宿-airbnb-task-1",
+            "scenarioId": "level-3-5-民宿-airbnb",
+            "taskKey": "3.5.1",
+            "title": "联系房东",
+            "description": "联系房东",
+            "promptHint": "当前目标是完成“联系房东”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-3-5-民宿-airbnb-task-2",
+            "scenarioId": "level-3-5-民宿-airbnb",
+            "taskKey": "3.5.2",
+            "title": "自助入住（密码锁）",
+            "description": "自助入住（密码锁）",
+            "promptHint": "当前目标是完成“自助入住（密码锁）”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-3-5-民宿-airbnb-task-3",
+            "scenarioId": "level-3-5-民宿-airbnb",
+            "taskKey": "3.5.3",
+            "title": "问使用说明",
+            "description": "问使用说明",
+            "promptHint": "当前目标是完成“问使用说明”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-3-5-民宿-airbnb-task-4",
+            "scenarioId": "level-3-5-民宿-airbnb",
+            "taskKey": "3.5.4",
+            "title": "退房沟通",
+            "description": "退房沟通",
+            "promptHint": "当前目标是完成“退房沟通”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "level-category-4",
+    "title": "购物消费",
+    "titleEn": "",
+    "icon": "🛍️",
+    "description": "购物消费类场景，包含 服装店、电子产品店、市场/夜市 等分阶段口语练习。",
+    "descriptionEn": "",
+    "sortOrder": 4,
+    "scenes": [
+      {
+        "id": "level-4-1-服装店",
+        "sceneCode": "4.1",
+        "title": "服装店",
+        "titleEn": "",
+        "description": "服装店场景下的闯关练习，涵盖 店员问候与需求询问、找尺码/颜色、试衣间对话 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "beginner",
+        "icon": "🛍️",
+        "tags": [
+          "level",
+          "level-category-4",
+          "4.1"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-4",
+        "sortOrder": 1,
+        "maxTurns": 8,
+        "subTasks": [
+          {
+            "id": "level-4-1-服装店-task-1",
+            "scenarioId": "level-4-1-服装店",
+            "taskKey": "4.1.1",
+            "title": "店员问候与需求询问",
+            "description": "店员问候与需求询问",
+            "promptHint": "当前目标是完成“店员问候与需求询问”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-4-1-服装店-task-2",
+            "scenarioId": "level-4-1-服装店",
+            "taskKey": "4.1.2",
+            "title": "找尺码/颜色",
+            "description": "找尺码/颜色",
+            "promptHint": "当前目标是完成“找尺码/颜色”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-4-1-服装店-task-3",
+            "scenarioId": "level-4-1-服装店",
+            "taskKey": "4.1.3",
+            "title": "试衣间对话",
+            "description": "试衣间对话",
+            "promptHint": "当前目标是完成“试衣间对话”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-4-1-服装店-task-4",
+            "scenarioId": "level-4-1-服装店",
+            "taskKey": "4.1.4",
+            "title": "问价格/折扣",
+            "description": "问价格/折扣",
+            "promptHint": "当前目标是完成“问价格/折扣”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "level-4-1-服装店-task-5",
+            "scenarioId": "level-4-1-服装店",
+            "taskKey": "4.1.5",
+            "title": "结账/包装",
+            "description": "结账/包装",
+            "promptHint": "当前目标是完成“结账/包装”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          },
+          {
+            "id": "level-4-1-服装店-task-6",
+            "scenarioId": "level-4-1-服装店",
+            "taskKey": "4.1.6",
+            "title": "退换货",
+            "description": "退换货",
+            "promptHint": "当前目标是完成“退换货”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 6
+          }
+        ]
+      },
+      {
+        "id": "level-4-2-电子产品店",
+        "sceneCode": "4.2",
+        "title": "电子产品店",
+        "titleEn": "",
+        "description": "电子产品店场景下的闯关练习，涵盖 咨询产品功能、对比型号、问保修/售后 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "beginner",
+        "icon": "🛍️",
+        "tags": [
+          "level",
+          "level-category-4",
+          "4.2"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-4",
+        "sortOrder": 2,
+        "maxTurns": 7,
+        "subTasks": [
+          {
+            "id": "level-4-2-电子产品店-task-1",
+            "scenarioId": "level-4-2-电子产品店",
+            "taskKey": "4.2.1",
+            "title": "咨询产品功能",
+            "description": "咨询产品功能",
+            "promptHint": "当前目标是完成“咨询产品功能”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-4-2-电子产品店-task-2",
+            "scenarioId": "level-4-2-电子产品店",
+            "taskKey": "4.2.2",
+            "title": "对比型号",
+            "description": "对比型号",
+            "promptHint": "当前目标是完成“对比型号”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-4-2-电子产品店-task-3",
+            "scenarioId": "level-4-2-电子产品店",
+            "taskKey": "4.2.3",
+            "title": "问保修/售后",
+            "description": "问保修/售后",
+            "promptHint": "当前目标是完成“问保修/售后”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-4-2-电子产品店-task-4",
+            "scenarioId": "level-4-2-电子产品店",
+            "taskKey": "4.2.4",
+            "title": "议价/要赠品",
+            "description": "议价/要赠品",
+            "promptHint": "当前目标是完成“议价/要赠品”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "level-4-2-电子产品店-task-5",
+            "scenarioId": "level-4-2-电子产品店",
+            "taskKey": "4.2.5",
+            "title": "付款与激活",
+            "description": "付款与激活",
+            "promptHint": "当前目标是完成“付款与激活”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          }
+        ]
+      },
+      {
+        "id": "level-4-3-市场-夜市",
+        "sceneCode": "4.3",
+        "title": "市场/夜市",
+        "titleEn": "",
+        "description": "市场/夜市场景下的闯关练习，涵盖 询价、砍价、挑选（看质量、摸材质） 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "beginner",
+        "icon": "🛍️",
+        "tags": [
+          "level",
+          "level-category-4",
+          "4.3"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-4",
+        "sortOrder": 3,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-4-3-市场-夜市-task-1",
+            "scenarioId": "level-4-3-市场-夜市",
+            "taskKey": "4.3.1",
+            "title": "询价",
+            "description": "询价",
+            "promptHint": "当前目标是完成“询价”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-4-3-市场-夜市-task-2",
+            "scenarioId": "level-4-3-市场-夜市",
+            "taskKey": "4.3.2",
+            "title": "砍价",
+            "description": "砍价",
+            "promptHint": "当前目标是完成“砍价”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-4-3-市场-夜市-task-3",
+            "scenarioId": "level-4-3-市场-夜市",
+            "taskKey": "4.3.3",
+            "title": "挑选（看质量、摸材质）",
+            "description": "挑选（看质量、摸材质）",
+            "promptHint": "当前目标是完成“挑选（看质量、摸材质）”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-4-3-市场-夜市-task-4",
+            "scenarioId": "level-4-3-市场-夜市",
+            "taskKey": "4.3.4",
+            "title": "成交",
+            "description": "成交",
+            "promptHint": "当前目标是完成“成交”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-4-4-网购与退货",
+        "sceneCode": "4.4",
+        "title": "网购与退货",
+        "titleEn": "",
+        "description": "网购与退货场景下的闯关练习，涵盖 问客服（尺码、发货）、催发货、退换货沟通 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "beginner",
+        "icon": "🛍️",
+        "tags": [
+          "level",
+          "level-category-4",
+          "4.4"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-4",
+        "sortOrder": 4,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-4-4-网购与退货-task-1",
+            "scenarioId": "level-4-4-网购与退货",
+            "taskKey": "4.4.1",
+            "title": "问客服（尺码、发货）",
+            "description": "问客服（尺码、发货）",
+            "promptHint": "当前目标是完成“问客服（尺码、发货）”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-4-4-网购与退货-task-2",
+            "scenarioId": "level-4-4-网购与退货",
+            "taskKey": "4.4.2",
+            "title": "催发货",
+            "description": "催发货",
+            "promptHint": "当前目标是完成“催发货”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-4-4-网购与退货-task-3",
+            "scenarioId": "level-4-4-网购与退货",
+            "taskKey": "4.4.3",
+            "title": "退换货沟通",
+            "description": "退换货沟通",
+            "promptHint": "当前目标是完成“退换货沟通”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-4-4-网购与退货-task-4",
+            "scenarioId": "level-4-4-网购与退货",
+            "taskKey": "4.4.4",
+            "title": "差评/投诉",
+            "description": "差评/投诉",
+            "promptHint": "当前目标是完成“差评/投诉”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-4-5-化妆品-护肤品",
+        "sceneCode": "4.5",
+        "title": "化妆品/护肤品",
+        "titleEn": "",
+        "description": "化妆品/护肤品场景下的闯关练习，涵盖 咨询肤质推荐、试用申请、问成分/过敏 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "beginner",
+        "icon": "🛍️",
+        "tags": [
+          "level",
+          "level-category-4",
+          "4.5"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-4",
+        "sortOrder": 5,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-4-5-化妆品-护肤品-task-1",
+            "scenarioId": "level-4-5-化妆品-护肤品",
+            "taskKey": "4.5.1",
+            "title": "咨询肤质推荐",
+            "description": "咨询肤质推荐",
+            "promptHint": "当前目标是完成“咨询肤质推荐”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-4-5-化妆品-护肤品-task-2",
+            "scenarioId": "level-4-5-化妆品-护肤品",
+            "taskKey": "4.5.2",
+            "title": "试用申请",
+            "description": "试用申请",
+            "promptHint": "当前目标是完成“试用申请”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-4-5-化妆品-护肤品-task-3",
+            "scenarioId": "level-4-5-化妆品-护肤品",
+            "taskKey": "4.5.3",
+            "title": "问成分/过敏",
+            "description": "问成分/过敏",
+            "promptHint": "当前目标是完成“问成分/过敏”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-4-5-化妆品-护肤品-task-4",
+            "scenarioId": "level-4-5-化妆品-护肤品",
+            "taskKey": "4.5.4",
+            "title": "套装购买",
+            "description": "套装购买",
+            "promptHint": "当前目标是完成“套装购买”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "level-category-5",
+    "title": "职场商务",
+    "titleEn": "",
+    "icon": "💼",
+    "description": "职场商务类场景，包含 求职面试、日常办公、商务会议 等分阶段口语练习。",
+    "descriptionEn": "",
+    "sortOrder": 5,
+    "scenes": [
+      {
+        "id": "job-interview",
+        "sceneCode": "5.1",
+        "title": "求职面试",
+        "titleEn": "",
+        "description": "求职面试场景下的闯关练习，涵盖 自我介绍、谈工作经历、回答优缺点 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "💼",
+        "tags": [
+          "level",
+          "level-category-5",
+          "5.1"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-5",
+        "sortOrder": 1,
+        "maxTurns": 8,
+        "subTasks": [
+          {
+            "id": "job-interview-task-1",
+            "scenarioId": "job-interview",
+            "taskKey": "5.1.1",
+            "title": "自我介绍",
+            "description": "自我介绍",
+            "promptHint": "当前目标是完成“自我介绍”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "job-interview-task-2",
+            "scenarioId": "job-interview",
+            "taskKey": "5.1.2",
+            "title": "谈工作经历",
+            "description": "谈工作经历",
+            "promptHint": "当前目标是完成“谈工作经历”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "job-interview-task-3",
+            "scenarioId": "job-interview",
+            "taskKey": "5.1.3",
+            "title": "回答优缺点",
+            "description": "回答优缺点",
+            "promptHint": "当前目标是完成“回答优缺点”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "job-interview-task-4",
+            "scenarioId": "job-interview",
+            "taskKey": "5.1.4",
+            "title": "谈薪资期望",
+            "description": "谈薪资期望",
+            "promptHint": "当前目标是完成“谈薪资期望”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "job-interview-task-5",
+            "scenarioId": "job-interview",
+            "taskKey": "5.1.5",
+            "title": "提问环节（问公司/岗位）",
+            "description": "提问环节（问公司/岗位）",
+            "promptHint": "当前目标是完成“提问环节（问公司/岗位）”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          },
+          {
+            "id": "job-interview-task-6",
+            "scenarioId": "job-interview",
+            "taskKey": "5.1.6",
+            "title": "面试结束致谢",
+            "description": "面试结束致谢",
+            "promptHint": "当前目标是完成“面试结束致谢”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 6
+          }
+        ]
+      },
+      {
+        "id": "level-5-2-日常办公",
+        "sceneCode": "5.2",
+        "title": "日常办公",
+        "titleEn": "",
+        "description": "日常办公场景下的闯关练习，涵盖 早间问候/闲聊、开会发言、请假 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "💼",
+        "tags": [
+          "level",
+          "level-category-5",
+          "5.2"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-5",
+        "sortOrder": 2,
+        "maxTurns": 8,
+        "subTasks": [
+          {
+            "id": "level-5-2-日常办公-task-1",
+            "scenarioId": "level-5-2-日常办公",
+            "taskKey": "5.2.1",
+            "title": "早间问候/闲聊",
+            "description": "早间问候/闲聊",
+            "promptHint": "当前目标是完成“早间问候/闲聊”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-5-2-日常办公-task-2",
+            "scenarioId": "level-5-2-日常办公",
+            "taskKey": "5.2.2",
+            "title": "开会发言",
+            "description": "开会发言",
+            "promptHint": "当前目标是完成“开会发言”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-5-2-日常办公-task-3",
+            "scenarioId": "level-5-2-日常办公",
+            "taskKey": "5.2.3",
+            "title": "请假",
+            "description": "请假",
+            "promptHint": "当前目标是完成“请假”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-5-2-日常办公-task-4",
+            "scenarioId": "level-5-2-日常办公",
+            "taskKey": "5.2.4",
+            "title": "请求同事帮忙",
+            "description": "请求同事帮忙",
+            "promptHint": "当前目标是完成“请求同事帮忙”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "level-5-2-日常办公-task-5",
+            "scenarioId": "level-5-2-日常办公",
+            "taskKey": "5.2.5",
+            "title": "汇报工作进度",
+            "description": "汇报工作进度",
+            "promptHint": "当前目标是完成“汇报工作进度”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          },
+          {
+            "id": "level-5-2-日常办公-task-6",
+            "scenarioId": "level-5-2-日常办公",
+            "taskKey": "5.2.6",
+            "title": "接收和布置任务",
+            "description": "接收和布置任务",
+            "promptHint": "当前目标是完成“接收和布置任务”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 6
+          }
+        ]
+      },
+      {
+        "id": "level-5-3-商务会议",
+        "sceneCode": "5.3",
+        "title": "商务会议",
+        "titleEn": "",
+        "description": "商务会议场景下的闯关练习，涵盖 会议开场与介绍、发表观点、同意/反对 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "💼",
+        "tags": [
+          "level",
+          "level-category-5",
+          "5.3"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-5",
+        "sortOrder": 3,
+        "maxTurns": 8,
+        "subTasks": [
+          {
+            "id": "level-5-3-商务会议-task-1",
+            "scenarioId": "level-5-3-商务会议",
+            "taskKey": "5.3.1",
+            "title": "会议开场与介绍",
+            "description": "会议开场与介绍",
+            "promptHint": "当前目标是完成“会议开场与介绍”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-5-3-商务会议-task-2",
+            "scenarioId": "level-5-3-商务会议",
+            "taskKey": "5.3.2",
+            "title": "发表观点",
+            "description": "发表观点",
+            "promptHint": "当前目标是完成“发表观点”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-5-3-商务会议-task-3",
+            "scenarioId": "level-5-3-商务会议",
+            "taskKey": "5.3.3",
+            "title": "同意/反对",
+            "description": "同意/反对",
+            "promptHint": "当前目标是完成“同意/反对”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-5-3-商务会议-task-4",
+            "scenarioId": "level-5-3-商务会议",
+            "taskKey": "5.3.4",
+            "title": "打断与接话",
+            "description": "打断与接话",
+            "promptHint": "当前目标是完成“打断与接话”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "level-5-3-商务会议-task-5",
+            "scenarioId": "level-5-3-商务会议",
+            "taskKey": "5.3.5",
+            "title": "总结与下一步",
+            "description": "总结与下一步",
+            "promptHint": "当前目标是完成“总结与下一步”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          },
+          {
+            "id": "level-5-3-商务会议-task-6",
+            "scenarioId": "level-5-3-商务会议",
+            "taskKey": "5.3.6",
+            "title": "会后跟进",
+            "description": "会后跟进",
+            "promptHint": "当前目标是完成“会后跟进”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 6
+          }
+        ]
+      },
+      {
+        "id": "level-5-4-商务邮件与电话",
+        "sceneCode": "5.4",
+        "title": "商务邮件与电话",
+        "titleEn": "",
+        "description": "商务邮件与电话场景下的闯关练习，涵盖 打电话约时间、转接与留言、视频会议开场 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "💼",
+        "tags": [
+          "level",
+          "level-category-5",
+          "5.4"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-5",
+        "sortOrder": 4,
+        "maxTurns": 7,
+        "subTasks": [
+          {
+            "id": "level-5-4-商务邮件与电话-task-1",
+            "scenarioId": "level-5-4-商务邮件与电话",
+            "taskKey": "5.4.1",
+            "title": "打电话约时间",
+            "description": "打电话约时间",
+            "promptHint": "当前目标是完成“打电话约时间”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-5-4-商务邮件与电话-task-2",
+            "scenarioId": "level-5-4-商务邮件与电话",
+            "taskKey": "5.4.2",
+            "title": "转接与留言",
+            "description": "转接与留言",
+            "promptHint": "当前目标是完成“转接与留言”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-5-4-商务邮件与电话-task-3",
+            "scenarioId": "level-5-4-商务邮件与电话",
+            "taskKey": "5.4.3",
+            "title": "视频会议开场",
+            "description": "视频会议开场",
+            "promptHint": "当前目标是完成“视频会议开场”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-5-4-商务邮件与电话-task-4",
+            "scenarioId": "level-5-4-商务邮件与电话",
+            "taskKey": "5.4.4",
+            "title": "信号不好/重说",
+            "description": "信号不好/重说",
+            "promptHint": "当前目标是完成“信号不好/重说”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "level-5-4-商务邮件与电话-task-5",
+            "scenarioId": "level-5-4-商务邮件与电话",
+            "taskKey": "5.4.5",
+            "title": "电话结束语",
+            "description": "电话结束语",
+            "promptHint": "当前目标是完成“电话结束语”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          }
+        ]
+      },
+      {
+        "id": "level-5-5-商务餐叙",
+        "sceneCode": "5.5",
+        "title": "商务餐叙",
+        "titleEn": "",
+        "description": "商务餐叙场景下的闯关练习，涵盖 约客户吃饭、座位安排、敬酒/祝酒词 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "💼",
+        "tags": [
+          "level",
+          "level-category-5",
+          "5.5"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-5",
+        "sortOrder": 5,
+        "maxTurns": 7,
+        "subTasks": [
+          {
+            "id": "level-5-5-商务餐叙-task-1",
+            "scenarioId": "level-5-5-商务餐叙",
+            "taskKey": "5.5.1",
+            "title": "约客户吃饭",
+            "description": "约客户吃饭",
+            "promptHint": "当前目标是完成“约客户吃饭”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-5-5-商务餐叙-task-2",
+            "scenarioId": "level-5-5-商务餐叙",
+            "taskKey": "5.5.2",
+            "title": "座位安排",
+            "description": "座位安排",
+            "promptHint": "当前目标是完成“座位安排”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-5-5-商务餐叙-task-3",
+            "scenarioId": "level-5-5-商务餐叙",
+            "taskKey": "5.5.3",
+            "title": "敬酒/祝酒词",
+            "description": "敬酒/祝酒词",
+            "promptHint": "当前目标是完成“敬酒/祝酒词”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-5-5-商务餐叙-task-4",
+            "scenarioId": "level-5-5-商务餐叙",
+            "taskKey": "5.5.4",
+            "title": "聊业务",
+            "description": "聊业务",
+            "promptHint": "当前目标是完成“聊业务”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "level-5-5-商务餐叙-task-5",
+            "scenarioId": "level-5-5-商务餐叙",
+            "taskKey": "5.5.5",
+            "title": "买单（谁请客）",
+            "description": "买单（谁请客）",
+            "promptHint": "当前目标是完成“买单（谁请客）”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          }
+        ]
+      },
+      {
+        "id": "level-5-6-出差",
+        "sceneCode": "5.6",
+        "title": "出差",
+        "titleEn": "",
+        "description": "出差场景下的闯关练习，涵盖 报销流程沟通、与当地同事见面、适应时差/倒时差 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "💼",
+        "tags": [
+          "level",
+          "level-category-5",
+          "5.6"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-5",
+        "sortOrder": 6,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-5-6-出差-task-1",
+            "scenarioId": "level-5-6-出差",
+            "taskKey": "5.6.1",
+            "title": "报销流程沟通",
+            "description": "报销流程沟通",
+            "promptHint": "当前目标是完成“报销流程沟通”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-5-6-出差-task-2",
+            "scenarioId": "level-5-6-出差",
+            "taskKey": "5.6.2",
+            "title": "与当地同事见面",
+            "description": "与当地同事见面",
+            "promptHint": "当前目标是完成“与当地同事见面”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-5-6-出差-task-3",
+            "scenarioId": "level-5-6-出差",
+            "taskKey": "5.6.3",
+            "title": "适应时差/倒时差",
+            "description": "适应时差/倒时差",
+            "promptHint": "当前目标是完成“适应时差/倒时差”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-5-6-出差-task-4",
+            "scenarioId": "level-5-6-出差",
+            "taskKey": "5.6.4",
+            "title": "出差报告",
+            "description": "出差报告",
+            "promptHint": "当前目标是完成“出差报告”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "level-category-6",
+    "title": "社交人际",
+    "titleEn": "",
+    "icon": "🤝",
+    "description": "社交人际类场景，包含 初次见面、朋友聚会、约会 等分阶段口语练习。",
+    "descriptionEn": "",
+    "sortOrder": 6,
+    "scenes": [
+      {
+        "id": "level-6-1-初次见面",
+        "sceneCode": "6.1",
+        "title": "初次见面",
+        "titleEn": "",
+        "description": "初次见面场景下的闯关练习，涵盖 自我介绍、询问对方职业/兴趣、找共同话题 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "🤝",
+        "tags": [
+          "level",
+          "level-category-6",
+          "6.1"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-6",
+        "sortOrder": 1,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-6-1-初次见面-task-1",
+            "scenarioId": "level-6-1-初次见面",
+            "taskKey": "6.1.1",
+            "title": "自我介绍",
+            "description": "自我介绍",
+            "promptHint": "当前目标是完成“自我介绍”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-6-1-初次见面-task-2",
+            "scenarioId": "level-6-1-初次见面",
+            "taskKey": "6.1.2",
+            "title": "询问对方职业/兴趣",
+            "description": "询问对方职业/兴趣",
+            "promptHint": "当前目标是完成“询问对方职业/兴趣”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-6-1-初次见面-task-3",
+            "scenarioId": "level-6-1-初次见面",
+            "taskKey": "6.1.3",
+            "title": "找共同话题",
+            "description": "找共同话题",
+            "promptHint": "当前目标是完成“找共同话题”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-6-1-初次见面-task-4",
+            "scenarioId": "level-6-1-初次见面",
+            "taskKey": "6.1.4",
+            "title": "结束对话/交换联系方式",
+            "description": "结束对话/交换联系方式",
+            "promptHint": "当前目标是完成“结束对话/交换联系方式”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-6-2-朋友聚会",
+        "sceneCode": "6.2",
+        "title": "朋友聚会",
+        "titleEn": "",
+        "description": "朋友聚会场景下的闯关练习，涵盖 邀请朋友、商量时间和地点、聚会中聊天 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "🤝",
+        "tags": [
+          "level",
+          "level-category-6",
+          "6.2"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-6",
+        "sortOrder": 2,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-6-2-朋友聚会-task-1",
+            "scenarioId": "level-6-2-朋友聚会",
+            "taskKey": "6.2.1",
+            "title": "邀请朋友",
+            "description": "邀请朋友",
+            "promptHint": "当前目标是完成“邀请朋友”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-6-2-朋友聚会-task-2",
+            "scenarioId": "level-6-2-朋友聚会",
+            "taskKey": "6.2.2",
+            "title": "商量时间和地点",
+            "description": "商量时间和地点",
+            "promptHint": "当前目标是完成“商量时间和地点”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-6-2-朋友聚会-task-3",
+            "scenarioId": "level-6-2-朋友聚会",
+            "taskKey": "6.2.3",
+            "title": "聚会中聊天",
+            "description": "聚会中聊天",
+            "promptHint": "当前目标是完成“聚会中聊天”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-6-2-朋友聚会-task-4",
+            "scenarioId": "level-6-2-朋友聚会",
+            "taskKey": "6.2.4",
+            "title": "说再见/下次再约",
+            "description": "说再见/下次再约",
+            "promptHint": "当前目标是完成“说再见/下次再约”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-6-3-约会",
+        "sceneCode": "6.3",
+        "title": "约会",
+        "titleEn": "",
+        "description": "约会场景下的闯关练习，涵盖 发出邀请、商量活动、约会中聊天 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "🤝",
+        "tags": [
+          "level",
+          "level-category-6",
+          "6.3"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-6",
+        "sortOrder": 3,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-6-3-约会-task-1",
+            "scenarioId": "level-6-3-约会",
+            "taskKey": "6.3.1",
+            "title": "发出邀请",
+            "description": "发出邀请",
+            "promptHint": "当前目标是完成“发出邀请”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-6-3-约会-task-2",
+            "scenarioId": "level-6-3-约会",
+            "taskKey": "6.3.2",
+            "title": "商量活动",
+            "description": "商量活动",
+            "promptHint": "当前目标是完成“商量活动”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-6-3-约会-task-3",
+            "scenarioId": "level-6-3-约会",
+            "taskKey": "6.3.3",
+            "title": "约会中聊天",
+            "description": "约会中聊天",
+            "promptHint": "当前目标是完成“约会中聊天”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-6-3-约会-task-4",
+            "scenarioId": "level-6-3-约会",
+            "taskKey": "6.3.4",
+            "title": "表达好感/被拒绝",
+            "description": "表达好感/被拒绝",
+            "promptHint": "当前目标是完成“表达好感/被拒绝”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-6-4-节日与送礼",
+        "sceneCode": "6.4",
+        "title": "节日与送礼",
+        "titleEn": "",
+        "description": "节日与送礼场景下的闯关练习，涵盖 送礼物、收到礼物致谢、节日祝福 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "🤝",
+        "tags": [
+          "level",
+          "level-category-6",
+          "6.4"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-6",
+        "sortOrder": 4,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-6-4-节日与送礼-task-1",
+            "scenarioId": "level-6-4-节日与送礼",
+            "taskKey": "6.4.1",
+            "title": "送礼物",
+            "description": "送礼物",
+            "promptHint": "当前目标是完成“送礼物”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-6-4-节日与送礼-task-2",
+            "scenarioId": "level-6-4-节日与送礼",
+            "taskKey": "6.4.2",
+            "title": "收到礼物致谢",
+            "description": "收到礼物致谢",
+            "promptHint": "当前目标是完成“收到礼物致谢”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-6-4-节日与送礼-task-3",
+            "scenarioId": "level-6-4-节日与送礼",
+            "taskKey": "6.4.3",
+            "title": "节日祝福",
+            "description": "节日祝福",
+            "promptHint": "当前目标是完成“节日祝福”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-6-4-节日与送礼-task-4",
+            "scenarioId": "level-6-4-节日与送礼",
+            "taskKey": "6.4.4",
+            "title": "拒绝礼物（礼貌）",
+            "description": "拒绝礼物（礼貌）",
+            "promptHint": "当前目标是完成“拒绝礼物（礼貌）”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-6-5-道歉与和解",
+        "sceneCode": "6.5",
+        "title": "道歉与和解",
+        "titleEn": "",
+        "description": "道歉与和解场景下的闯关练习，涵盖 真诚道歉、解释原因、接受道歉 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "🤝",
+        "tags": [
+          "level",
+          "level-category-6",
+          "6.5"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-6",
+        "sortOrder": 5,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-6-5-道歉与和解-task-1",
+            "scenarioId": "level-6-5-道歉与和解",
+            "taskKey": "6.5.1",
+            "title": "真诚道歉",
+            "description": "真诚道歉",
+            "promptHint": "当前目标是完成“真诚道歉”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-6-5-道歉与和解-task-2",
+            "scenarioId": "level-6-5-道歉与和解",
+            "taskKey": "6.5.2",
+            "title": "解释原因",
+            "description": "解释原因",
+            "promptHint": "当前目标是完成“解释原因”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-6-5-道歉与和解-task-3",
+            "scenarioId": "level-6-5-道歉与和解",
+            "taskKey": "6.5.3",
+            "title": "接受道歉",
+            "description": "接受道歉",
+            "promptHint": "当前目标是完成“接受道歉”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-6-5-道歉与和解-task-4",
+            "scenarioId": "level-6-5-道歉与和解",
+            "taskKey": "6.5.4",
+            "title": "修复关系",
+            "description": "修复关系",
+            "promptHint": "当前目标是完成“修复关系”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-6-6-闲聊-小对话",
+        "sceneCode": "6.6",
+        "title": "闲聊/小对话",
+        "titleEn": "",
+        "description": "闲聊/小对话场景下的闯关练习，涵盖 聊天气、聊周末安排、聊兴趣爱好 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "🤝",
+        "tags": [
+          "level",
+          "level-category-6",
+          "6.6"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-6",
+        "sortOrder": 6,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-6-6-闲聊-小对话-task-1",
+            "scenarioId": "level-6-6-闲聊-小对话",
+            "taskKey": "6.6.1",
+            "title": "聊天气",
+            "description": "聊天气",
+            "promptHint": "当前目标是完成“聊天气”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-6-6-闲聊-小对话-task-2",
+            "scenarioId": "level-6-6-闲聊-小对话",
+            "taskKey": "6.6.2",
+            "title": "聊周末安排",
+            "description": "聊周末安排",
+            "promptHint": "当前目标是完成“聊周末安排”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-6-6-闲聊-小对话-task-3",
+            "scenarioId": "level-6-6-闲聊-小对话",
+            "taskKey": "6.6.3",
+            "title": "聊兴趣爱好",
+            "description": "聊兴趣爱好",
+            "promptHint": "当前目标是完成“聊兴趣爱好”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-6-6-闲聊-小对话-task-4",
+            "scenarioId": "level-6-6-闲聊-小对话",
+            "taskKey": "6.6.4",
+            "title": "聊最近看的剧/电影",
+            "description": "聊最近看的剧/电影",
+            "promptHint": "当前目标是完成“聊最近看的剧/电影”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "level-category-7",
+    "title": "日常生活",
+    "titleEn": "",
+    "icon": "🏠",
+    "description": "日常生活类场景，包含 租房、邻居相处、健身房 等分阶段口语练习。",
+    "descriptionEn": "",
+    "sortOrder": 7,
+    "scenes": [
+      {
+        "id": "level-7-1-租房",
+        "sceneCode": "7.1",
+        "title": "租房",
+        "titleEn": "",
+        "description": "租房场景下的闯关练习，涵盖 联系中介/房东看房、看房问细节（租金、水电）、谈租约条款 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "🏠",
+        "tags": [
+          "level",
+          "level-category-7",
+          "7.1"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-7",
+        "sortOrder": 1,
+        "maxTurns": 7,
+        "subTasks": [
+          {
+            "id": "level-7-1-租房-task-1",
+            "scenarioId": "level-7-1-租房",
+            "taskKey": "7.1.1",
+            "title": "联系中介/房东看房",
+            "description": "联系中介/房东看房",
+            "promptHint": "当前目标是完成“联系中介/房东看房”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-7-1-租房-task-2",
+            "scenarioId": "level-7-1-租房",
+            "taskKey": "7.1.2",
+            "title": "看房问细节（租金、水电）",
+            "description": "看房问细节（租金、水电）",
+            "promptHint": "当前目标是完成“看房问细节（租金、水电）”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-7-1-租房-task-3",
+            "scenarioId": "level-7-1-租房",
+            "taskKey": "7.1.3",
+            "title": "谈租约条款",
+            "description": "谈租约条款",
+            "promptHint": "当前目标是完成“谈租约条款”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-7-1-租房-task-4",
+            "scenarioId": "level-7-1-租房",
+            "taskKey": "7.1.4",
+            "title": "签合同",
+            "description": "签合同",
+            "promptHint": "当前目标是完成“签合同”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "level-7-1-租房-task-5",
+            "scenarioId": "level-7-1-租房",
+            "taskKey": "7.1.5",
+            "title": "入住交接",
+            "description": "入住交接",
+            "promptHint": "当前目标是完成“入住交接”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          }
+        ]
+      },
+      {
+        "id": "level-7-2-邻居相处",
+        "sceneCode": "7.2",
+        "title": "邻居相处",
+        "titleEn": "",
+        "description": "邻居相处场景下的闯关练习，涵盖 初次打招呼、投诉噪音、借用东西 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "🏠",
+        "tags": [
+          "level",
+          "level-category-7",
+          "7.2"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-7",
+        "sortOrder": 2,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-7-2-邻居相处-task-1",
+            "scenarioId": "level-7-2-邻居相处",
+            "taskKey": "7.2.1",
+            "title": "初次打招呼",
+            "description": "初次打招呼",
+            "promptHint": "当前目标是完成“初次打招呼”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-7-2-邻居相处-task-2",
+            "scenarioId": "level-7-2-邻居相处",
+            "taskKey": "7.2.2",
+            "title": "投诉噪音",
+            "description": "投诉噪音",
+            "promptHint": "当前目标是完成“投诉噪音”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-7-2-邻居相处-task-3",
+            "scenarioId": "level-7-2-邻居相处",
+            "taskKey": "7.2.3",
+            "title": "借用东西",
+            "description": "借用东西",
+            "promptHint": "当前目标是完成“借用东西”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-7-2-邻居相处-task-4",
+            "scenarioId": "level-7-2-邻居相处",
+            "taskKey": "7.2.4",
+            "title": "邻里互助",
+            "description": "邻里互助",
+            "promptHint": "当前目标是完成“邻里互助”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-7-3-健身房",
+        "sceneCode": "7.3",
+        "title": "健身房",
+        "titleEn": "",
+        "description": "健身房场景下的闯关练习，涵盖 办卡咨询、问器材怎么用、找私教 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "🏠",
+        "tags": [
+          "level",
+          "level-category-7",
+          "7.3"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-7",
+        "sortOrder": 3,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-7-3-健身房-task-1",
+            "scenarioId": "level-7-3-健身房",
+            "taskKey": "7.3.1",
+            "title": "办卡咨询",
+            "description": "办卡咨询",
+            "promptHint": "当前目标是完成“办卡咨询”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-7-3-健身房-task-2",
+            "scenarioId": "level-7-3-健身房",
+            "taskKey": "7.3.2",
+            "title": "问器材怎么用",
+            "description": "问器材怎么用",
+            "promptHint": "当前目标是完成“问器材怎么用”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-7-3-健身房-task-3",
+            "scenarioId": "level-7-3-健身房",
+            "taskKey": "7.3.3",
+            "title": "找私教",
+            "description": "找私教",
+            "promptHint": "当前目标是完成“找私教”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-7-3-健身房-task-4",
+            "scenarioId": "level-7-3-健身房",
+            "taskKey": "7.3.4",
+            "title": "约人一起锻炼",
+            "description": "约人一起锻炼",
+            "promptHint": "当前目标是完成“约人一起锻炼”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-7-4-理发店-美容院",
+        "sceneCode": "7.4",
+        "title": "理发店/美容院",
+        "titleEn": "",
+        "description": "理发店/美容院场景下的闯关练习，涵盖 说想要的发型、沟通长度/造型、讨论颜色/烫染 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "🏠",
+        "tags": [
+          "level",
+          "level-category-7",
+          "7.4"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-7",
+        "sortOrder": 4,
+        "maxTurns": 7,
+        "subTasks": [
+          {
+            "id": "level-7-4-理发店-美容院-task-1",
+            "scenarioId": "level-7-4-理发店-美容院",
+            "taskKey": "7.4.1",
+            "title": "说想要的发型",
+            "description": "说想要的发型",
+            "promptHint": "当前目标是完成“说想要的发型”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-7-4-理发店-美容院-task-2",
+            "scenarioId": "level-7-4-理发店-美容院",
+            "taskKey": "7.4.2",
+            "title": "沟通长度/造型",
+            "description": "沟通长度/造型",
+            "promptHint": "当前目标是完成“沟通长度/造型”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-7-4-理发店-美容院-task-3",
+            "scenarioId": "level-7-4-理发店-美容院",
+            "taskKey": "7.4.3",
+            "title": "讨论颜色/烫染",
+            "description": "讨论颜色/烫染",
+            "promptHint": "当前目标是完成“讨论颜色/烫染”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-7-4-理发店-美容院-task-4",
+            "scenarioId": "level-7-4-理发店-美容院",
+            "taskKey": "7.4.4",
+            "title": "评价效果",
+            "description": "评价效果",
+            "promptHint": "当前目标是完成“评价效果”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "level-7-4-理发店-美容院-task-5",
+            "scenarioId": "level-7-4-理发店-美容院",
+            "taskKey": "7.4.5",
+            "title": "买单与小费",
+            "description": "买单与小费",
+            "promptHint": "当前目标是完成“买单与小费”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          }
+        ]
+      },
+      {
+        "id": "level-7-5-洗衣-干洗",
+        "sceneCode": "7.5",
+        "title": "洗衣/干洗",
+        "titleEn": "",
+        "description": "洗衣/干洗场景下的闯关练习，涵盖 送洗衣服、说明洗护要求、取衣服/检查质量 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "🏠",
+        "tags": [
+          "level",
+          "level-category-7",
+          "7.5"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-7",
+        "sortOrder": 5,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-7-5-洗衣-干洗-task-1",
+            "scenarioId": "level-7-5-洗衣-干洗",
+            "taskKey": "7.5.1",
+            "title": "送洗衣服",
+            "description": "送洗衣服",
+            "promptHint": "当前目标是完成“送洗衣服”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-7-5-洗衣-干洗-task-2",
+            "scenarioId": "level-7-5-洗衣-干洗",
+            "taskKey": "7.5.2",
+            "title": "说明洗护要求",
+            "description": "说明洗护要求",
+            "promptHint": "当前目标是完成“说明洗护要求”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-7-5-洗衣-干洗-task-3",
+            "scenarioId": "level-7-5-洗衣-干洗",
+            "taskKey": "7.5.3",
+            "title": "取衣服/检查质量",
+            "description": "取衣服/检查质量",
+            "promptHint": "当前目标是完成“取衣服/检查质量”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-7-5-洗衣-干洗-task-4",
+            "scenarioId": "level-7-5-洗衣-干洗",
+            "taskKey": "7.5.4",
+            "title": "投诉洗坏了",
+            "description": "投诉洗坏了",
+            "promptHint": "当前目标是完成“投诉洗坏了”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-7-6-快递-邮寄",
+        "sceneCode": "7.6",
+        "title": "快递/邮寄",
+        "titleEn": "",
+        "description": "快递/邮寄场景下的闯关练习，涵盖 寄快递（填单、称重）、选寄送方式、查快递进度 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "🏠",
+        "tags": [
+          "level",
+          "level-category-7",
+          "7.6"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-7",
+        "sortOrder": 6,
+        "maxTurns": 7,
+        "subTasks": [
+          {
+            "id": "level-7-6-快递-邮寄-task-1",
+            "scenarioId": "level-7-6-快递-邮寄",
+            "taskKey": "7.6.1",
+            "title": "寄快递（填单、称重）",
+            "description": "寄快递（填单、称重）",
+            "promptHint": "当前目标是完成“寄快递（填单、称重）”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-7-6-快递-邮寄-task-2",
+            "scenarioId": "level-7-6-快递-邮寄",
+            "taskKey": "7.6.2",
+            "title": "选寄送方式",
+            "description": "选寄送方式",
+            "promptHint": "当前目标是完成“选寄送方式”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-7-6-快递-邮寄-task-3",
+            "scenarioId": "level-7-6-快递-邮寄",
+            "taskKey": "7.6.3",
+            "title": "查快递进度",
+            "description": "查快递进度",
+            "promptHint": "当前目标是完成“查快递进度”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-7-6-快递-邮寄-task-4",
+            "scenarioId": "level-7-6-快递-邮寄",
+            "taskKey": "7.6.4",
+            "title": "签收/拒收",
+            "description": "签收/拒收",
+            "promptHint": "当前目标是完成“签收/拒收”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "level-7-6-快递-邮寄-task-5",
+            "scenarioId": "level-7-6-快递-邮寄",
+            "taskKey": "7.6.5",
+            "title": "退回包裹",
+            "description": "退回包裹",
+            "promptHint": "当前目标是完成“退回包裹”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "level-category-8",
+    "title": "医疗健康",
+    "titleEn": "",
+    "icon": "🏥",
+    "description": "医疗健康类场景，包含 看诊、急诊、药店购药 等分阶段口语练习。",
+    "descriptionEn": "",
+    "sortOrder": 8,
+    "scenes": [
+      {
+        "id": "level-8-1-看诊",
+        "sceneCode": "8.1",
+        "title": "看诊",
+        "titleEn": "",
+        "description": "看诊场景下的闯关练习，涵盖 挂号/预约、说症状、回答医生问诊 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "🏥",
+        "tags": [
+          "level",
+          "level-category-8",
+          "8.1"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-8",
+        "sortOrder": 1,
+        "maxTurns": 7,
+        "subTasks": [
+          {
+            "id": "level-8-1-看诊-task-1",
+            "scenarioId": "level-8-1-看诊",
+            "taskKey": "8.1.1",
+            "title": "挂号/预约",
+            "description": "挂号/预约",
+            "promptHint": "当前目标是完成“挂号/预约”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-8-1-看诊-task-2",
+            "scenarioId": "level-8-1-看诊",
+            "taskKey": "8.1.2",
+            "title": "说症状",
+            "description": "说症状",
+            "promptHint": "当前目标是完成“说症状”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-8-1-看诊-task-3",
+            "scenarioId": "level-8-1-看诊",
+            "taskKey": "8.1.3",
+            "title": "回答医生问诊",
+            "description": "回答医生问诊",
+            "promptHint": "当前目标是完成“回答医生问诊”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-8-1-看诊-task-4",
+            "scenarioId": "level-8-1-看诊",
+            "taskKey": "8.1.4",
+            "title": "拿药/医嘱",
+            "description": "拿药/医嘱",
+            "promptHint": "当前目标是完成“拿药/医嘱”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "level-8-1-看诊-task-5",
+            "scenarioId": "level-8-1-看诊",
+            "taskKey": "8.1.5",
+            "title": "复诊",
+            "description": "复诊",
+            "promptHint": "当前目标是完成“复诊”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          }
+        ]
+      },
+      {
+        "id": "level-8-2-急诊",
+        "sceneCode": "8.2",
+        "title": "急诊",
+        "titleEn": "",
+        "description": "急诊场景下的闯关练习，涵盖 呼叫救护车、描述紧急情况、告知过敏史/病史 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "🏥",
+        "tags": [
+          "level",
+          "level-category-8",
+          "8.2"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-8",
+        "sortOrder": 2,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-8-2-急诊-task-1",
+            "scenarioId": "level-8-2-急诊",
+            "taskKey": "8.2.1",
+            "title": "呼叫救护车",
+            "description": "呼叫救护车",
+            "promptHint": "当前目标是完成“呼叫救护车”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-8-2-急诊-task-2",
+            "scenarioId": "level-8-2-急诊",
+            "taskKey": "8.2.2",
+            "title": "描述紧急情况",
+            "description": "描述紧急情况",
+            "promptHint": "当前目标是完成“描述紧急情况”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-8-2-急诊-task-3",
+            "scenarioId": "level-8-2-急诊",
+            "taskKey": "8.2.3",
+            "title": "告知过敏史/病史",
+            "description": "告知过敏史/病史",
+            "promptHint": "当前目标是完成“告知过敏史/病史”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-8-2-急诊-task-4",
+            "scenarioId": "level-8-2-急诊",
+            "taskKey": "8.2.4",
+            "title": "签知情同意书",
+            "description": "签知情同意书",
+            "promptHint": "当前目标是完成“签知情同意书”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-8-3-药店购药",
+        "sceneCode": "8.3",
+        "title": "药店购药",
+        "titleEn": "",
+        "description": "药店购药场景下的闯关练习，涵盖 说要什么药、描述症状推荐药、问用法用量 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "🏥",
+        "tags": [
+          "level",
+          "level-category-8",
+          "8.3"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-8",
+        "sortOrder": 3,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-8-3-药店购药-task-1",
+            "scenarioId": "level-8-3-药店购药",
+            "taskKey": "8.3.1",
+            "title": "说要什么药",
+            "description": "说要什么药",
+            "promptHint": "当前目标是完成“说要什么药”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-8-3-药店购药-task-2",
+            "scenarioId": "level-8-3-药店购药",
+            "taskKey": "8.3.2",
+            "title": "描述症状推荐药",
+            "description": "描述症状推荐药",
+            "promptHint": "当前目标是完成“描述症状推荐药”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-8-3-药店购药-task-3",
+            "scenarioId": "level-8-3-药店购药",
+            "taskKey": "8.3.3",
+            "title": "问用法用量",
+            "description": "问用法用量",
+            "promptHint": "当前目标是完成“问用法用量”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-8-3-药店购药-task-4",
+            "scenarioId": "level-8-3-药店购药",
+            "taskKey": "8.3.4",
+            "title": "问副作用",
+            "description": "问副作用",
+            "promptHint": "当前目标是完成“问副作用”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-8-4-牙科",
+        "sceneCode": "8.4",
+        "title": "牙科",
+        "titleEn": "",
+        "description": "牙科场景下的闯关练习，涵盖 预约牙医、描述牙疼、治疗中沟通 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "🏥",
+        "tags": [
+          "level",
+          "level-category-8",
+          "8.4"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-8",
+        "sortOrder": 4,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-8-4-牙科-task-1",
+            "scenarioId": "level-8-4-牙科",
+            "taskKey": "8.4.1",
+            "title": "预约牙医",
+            "description": "预约牙医",
+            "promptHint": "当前目标是完成“预约牙医”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-8-4-牙科-task-2",
+            "scenarioId": "level-8-4-牙科",
+            "taskKey": "8.4.2",
+            "title": "描述牙疼",
+            "description": "描述牙疼",
+            "promptHint": "当前目标是完成“描述牙疼”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-8-4-牙科-task-3",
+            "scenarioId": "level-8-4-牙科",
+            "taskKey": "8.4.3",
+            "title": "治疗中沟通",
+            "description": "治疗中沟通",
+            "promptHint": "当前目标是完成“治疗中沟通”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-8-4-牙科-task-4",
+            "scenarioId": "level-8-4-牙科",
+            "taskKey": "8.4.4",
+            "title": "术后注意事项",
+            "description": "术后注意事项",
+            "promptHint": "当前目标是完成“术后注意事项”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-8-5-体检",
+        "sceneCode": "8.5",
+        "title": "体检",
+        "titleEn": "",
+        "description": "体检场景下的闯关练习，涵盖 预约体检、体检前沟通、跟检护士对话 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "🏥",
+        "tags": [
+          "level",
+          "level-category-8",
+          "8.5"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-8",
+        "sortOrder": 5,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-8-5-体检-task-1",
+            "scenarioId": "level-8-5-体检",
+            "taskKey": "8.5.1",
+            "title": "预约体检",
+            "description": "预约体检",
+            "promptHint": "当前目标是完成“预约体检”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-8-5-体检-task-2",
+            "scenarioId": "level-8-5-体检",
+            "taskKey": "8.5.2",
+            "title": "体检前沟通",
+            "description": "体检前沟通",
+            "promptHint": "当前目标是完成“体检前沟通”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-8-5-体检-task-3",
+            "scenarioId": "level-8-5-体检",
+            "taskKey": "8.5.3",
+            "title": "跟检护士对话",
+            "description": "跟检护士对话",
+            "promptHint": "当前目标是完成“跟检护士对话”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-8-5-体检-task-4",
+            "scenarioId": "level-8-5-体检",
+            "taskKey": "8.5.4",
+            "title": "拿报告/咨询",
+            "description": "拿报告/咨询",
+            "promptHint": "当前目标是完成“拿报告/咨询”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-8-6-医保-保险",
+        "sceneCode": "8.6",
+        "title": "医保/保险",
+        "titleEn": "",
+        "description": "医保/保险场景下的闯关练习，涵盖 咨询保险覆盖、提交理赔、问报销进度 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "🏥",
+        "tags": [
+          "level",
+          "level-category-8",
+          "8.6"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-8",
+        "sortOrder": 6,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-8-6-医保-保险-task-1",
+            "scenarioId": "level-8-6-医保-保险",
+            "taskKey": "8.6.1",
+            "title": "咨询保险覆盖",
+            "description": "咨询保险覆盖",
+            "promptHint": "当前目标是完成“咨询保险覆盖”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-8-6-医保-保险-task-2",
+            "scenarioId": "level-8-6-医保-保险",
+            "taskKey": "8.6.2",
+            "title": "提交理赔",
+            "description": "提交理赔",
+            "promptHint": "当前目标是完成“提交理赔”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-8-6-医保-保险-task-3",
+            "scenarioId": "level-8-6-医保-保险",
+            "taskKey": "8.6.3",
+            "title": "问报销进度",
+            "description": "问报销进度",
+            "promptHint": "当前目标是完成“问报销进度”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-8-6-医保-保险-task-4",
+            "scenarioId": "level-8-6-医保-保险",
+            "taskKey": "8.6.4",
+            "title": "解释医疗账单",
+            "description": "解释医疗账单",
+            "promptHint": "当前目标是完成“解释医疗账单”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "level-category-9",
+    "title": "金融服务",
+    "titleEn": "",
+    "icon": "💰",
+    "description": "金融服务类场景，包含 银行开户、日常银行、信用卡 等分阶段口语练习。",
+    "descriptionEn": "",
+    "sortOrder": 9,
+    "scenes": [
+      {
+        "id": "level-9-1-银行开户",
+        "sceneCode": "9.1",
+        "title": "银行开户",
+        "titleEn": "",
+        "description": "银行开户场景下的闯关练习，涵盖 选择账户类型、提交资料、设置密码/网银 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "💰",
+        "tags": [
+          "level",
+          "level-category-9",
+          "9.1"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-9",
+        "sortOrder": 1,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-9-1-银行开户-task-1",
+            "scenarioId": "level-9-1-银行开户",
+            "taskKey": "9.1.1",
+            "title": "选择账户类型",
+            "description": "选择账户类型",
+            "promptHint": "当前目标是完成“选择账户类型”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-9-1-银行开户-task-2",
+            "scenarioId": "level-9-1-银行开户",
+            "taskKey": "9.1.2",
+            "title": "提交资料",
+            "description": "提交资料",
+            "promptHint": "当前目标是完成“提交资料”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-9-1-银行开户-task-3",
+            "scenarioId": "level-9-1-银行开户",
+            "taskKey": "9.1.3",
+            "title": "设置密码/网银",
+            "description": "设置密码/网银",
+            "promptHint": "当前目标是完成“设置密码/网银”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-9-1-银行开户-task-4",
+            "scenarioId": "level-9-1-银行开户",
+            "taskKey": "9.1.4",
+            "title": "存入第一笔钱",
+            "description": "存入第一笔钱",
+            "promptHint": "当前目标是完成“存入第一笔钱”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-9-2-日常银行",
+        "sceneCode": "9.2",
+        "title": "日常银行",
+        "titleEn": "",
+        "description": "日常银行场景下的闯关练习，涵盖 存取款、转账汇款、换汇/外币 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "💰",
+        "tags": [
+          "level",
+          "level-category-9",
+          "9.2"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-9",
+        "sortOrder": 2,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-9-2-日常银行-task-1",
+            "scenarioId": "level-9-2-日常银行",
+            "taskKey": "9.2.1",
+            "title": "存取款",
+            "description": "存取款",
+            "promptHint": "当前目标是完成“存取款”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-9-2-日常银行-task-2",
+            "scenarioId": "level-9-2-日常银行",
+            "taskKey": "9.2.2",
+            "title": "转账汇款",
+            "description": "转账汇款",
+            "promptHint": "当前目标是完成“转账汇款”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-9-2-日常银行-task-3",
+            "scenarioId": "level-9-2-日常银行",
+            "taskKey": "9.2.3",
+            "title": "换汇/外币",
+            "description": "换汇/外币",
+            "promptHint": "当前目标是完成“换汇/外币”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-9-2-日常银行-task-4",
+            "scenarioId": "level-9-2-日常银行",
+            "taskKey": "9.2.4",
+            "title": "挂失银行卡",
+            "description": "挂失银行卡",
+            "promptHint": "当前目标是完成“挂失银行卡”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-9-3-信用卡",
+        "sceneCode": "9.3",
+        "title": "信用卡",
+        "titleEn": "",
+        "description": "信用卡场景下的闯关练习，涵盖 申请信用卡、提额度、查账单 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "💰",
+        "tags": [
+          "level",
+          "level-category-9",
+          "9.3"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-9",
+        "sortOrder": 3,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-9-3-信用卡-task-1",
+            "scenarioId": "level-9-3-信用卡",
+            "taskKey": "9.3.1",
+            "title": "申请信用卡",
+            "description": "申请信用卡",
+            "promptHint": "当前目标是完成“申请信用卡”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-9-3-信用卡-task-2",
+            "scenarioId": "level-9-3-信用卡",
+            "taskKey": "9.3.2",
+            "title": "提额度",
+            "description": "提额度",
+            "promptHint": "当前目标是完成“提额度”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-9-3-信用卡-task-3",
+            "scenarioId": "level-9-3-信用卡",
+            "taskKey": "9.3.3",
+            "title": "查账单",
+            "description": "查账单",
+            "promptHint": "当前目标是完成“查账单”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-9-3-信用卡-task-4",
+            "scenarioId": "level-9-3-信用卡",
+            "taskKey": "9.3.4",
+            "title": "争议交易",
+            "description": "争议交易",
+            "promptHint": "当前目标是完成“争议交易”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-9-4-理财投资",
+        "sceneCode": "9.4",
+        "title": "理财投资",
+        "titleEn": "",
+        "description": "理财投资场景下的闯关练习，涵盖 咨询理财产品、开户股票/基金、风险评估 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "💰",
+        "tags": [
+          "level",
+          "level-category-9",
+          "9.4"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-9",
+        "sortOrder": 4,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-9-4-理财投资-task-1",
+            "scenarioId": "level-9-4-理财投资",
+            "taskKey": "9.4.1",
+            "title": "咨询理财产品",
+            "description": "咨询理财产品",
+            "promptHint": "当前目标是完成“咨询理财产品”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-9-4-理财投资-task-2",
+            "scenarioId": "level-9-4-理财投资",
+            "taskKey": "9.4.2",
+            "title": "开户股票/基金",
+            "description": "开户股票/基金",
+            "promptHint": "当前目标是完成“开户股票/基金”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-9-4-理财投资-task-3",
+            "scenarioId": "level-9-4-理财投资",
+            "taskKey": "9.4.3",
+            "title": "风险评估",
+            "description": "风险评估",
+            "promptHint": "当前目标是完成“风险评估”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-9-4-理财投资-task-4",
+            "scenarioId": "level-9-4-理财投资",
+            "taskKey": "9.4.4",
+            "title": "赎回/转换",
+            "description": "赎回/转换",
+            "promptHint": "当前目标是完成“赎回/转换”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "level-category-10",
+    "title": "教育校园",
+    "titleEn": "",
+    "icon": "🎓",
+    "description": "教育校园类场景，包含 课堂互动、与教授沟通、留学申请 等分阶段口语练习。",
+    "descriptionEn": "",
+    "sortOrder": 10,
+    "scenes": [
+      {
+        "id": "level-10-1-课堂互动",
+        "sceneCode": "10.1",
+        "title": "课堂互动",
+        "titleEn": "",
+        "description": "课堂互动场景下的闯关练习，涵盖 自我介绍（学生版）、课堂上提问、回答问题 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "🎓",
+        "tags": [
+          "level",
+          "level-category-10",
+          "10.1"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-10",
+        "sortOrder": 1,
+        "maxTurns": 7,
+        "subTasks": [
+          {
+            "id": "level-10-1-课堂互动-task-1",
+            "scenarioId": "level-10-1-课堂互动",
+            "taskKey": "10.1.1",
+            "title": "自我介绍（学生版）",
+            "description": "自我介绍（学生版）",
+            "promptHint": "当前目标是完成“自我介绍（学生版）”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-10-1-课堂互动-task-2",
+            "scenarioId": "level-10-1-课堂互动",
+            "taskKey": "10.1.2",
+            "title": "课堂上提问",
+            "description": "课堂上提问",
+            "promptHint": "当前目标是完成“课堂上提问”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-10-1-课堂互动-task-3",
+            "scenarioId": "level-10-1-课堂互动",
+            "taskKey": "10.1.3",
+            "title": "回答问题",
+            "description": "回答问题",
+            "promptHint": "当前目标是完成“回答问题”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-10-1-课堂互动-task-4",
+            "scenarioId": "level-10-1-课堂互动",
+            "taskKey": "10.1.4",
+            "title": "小组讨论",
+            "description": "小组讨论",
+            "promptHint": "当前目标是完成“小组讨论”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "level-10-1-课堂互动-task-5",
+            "scenarioId": "level-10-1-课堂互动",
+            "taskKey": "10.1.5",
+            "title": "课堂演讲",
+            "description": "课堂演讲",
+            "promptHint": "当前目标是完成“课堂演讲”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          }
+        ]
+      },
+      {
+        "id": "level-10-2-与教授沟通",
+        "sceneCode": "10.2",
+        "title": "与教授沟通",
+        "titleEn": "",
+        "description": "与教授沟通场景下的闯关练习，涵盖 课后问问题、约 office hour、请教授写推荐信 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "🎓",
+        "tags": [
+          "level",
+          "level-category-10",
+          "10.2"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-10",
+        "sortOrder": 2,
+        "maxTurns": 7,
+        "subTasks": [
+          {
+            "id": "level-10-2-与教授沟通-task-1",
+            "scenarioId": "level-10-2-与教授沟通",
+            "taskKey": "10.2.1",
+            "title": "课后问问题",
+            "description": "课后问问题",
+            "promptHint": "当前目标是完成“课后问问题”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-10-2-与教授沟通-task-2",
+            "scenarioId": "level-10-2-与教授沟通",
+            "taskKey": "10.2.2",
+            "title": "约 office hour",
+            "description": "约 office hour",
+            "promptHint": "当前目标是完成“约 office hour”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-10-2-与教授沟通-task-3",
+            "scenarioId": "level-10-2-与教授沟通",
+            "taskKey": "10.2.3",
+            "title": "请教授写推荐信",
+            "description": "请教授写推荐信",
+            "promptHint": "当前目标是完成“请教授写推荐信”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-10-2-与教授沟通-task-4",
+            "scenarioId": "level-10-2-与教授沟通",
+            "taskKey": "10.2.4",
+            "title": "讨论成绩",
+            "description": "讨论成绩",
+            "promptHint": "当前目标是完成“讨论成绩”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "level-10-2-与教授沟通-task-5",
+            "scenarioId": "level-10-2-与教授沟通",
+            "taskKey": "10.2.5",
+            "title": "申请延期",
+            "description": "申请延期",
+            "promptHint": "当前目标是完成“申请延期”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          }
+        ]
+      },
+      {
+        "id": "level-10-3-留学申请",
+        "sceneCode": "10.3",
+        "title": "留学申请",
+        "titleEn": "",
+        "description": "留学申请场景下的闯关练习，涵盖 咨询学校、写/问推荐信、面试 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "🎓",
+        "tags": [
+          "level",
+          "level-category-10",
+          "10.3"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-10",
+        "sortOrder": 3,
+        "maxTurns": 7,
+        "subTasks": [
+          {
+            "id": "level-10-3-留学申请-task-1",
+            "scenarioId": "level-10-3-留学申请",
+            "taskKey": "10.3.1",
+            "title": "咨询学校",
+            "description": "咨询学校",
+            "promptHint": "当前目标是完成“咨询学校”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-10-3-留学申请-task-2",
+            "scenarioId": "level-10-3-留学申请",
+            "taskKey": "10.3.2",
+            "title": "写/问推荐信",
+            "description": "写/问推荐信",
+            "promptHint": "当前目标是完成“写/问推荐信”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-10-3-留学申请-task-3",
+            "scenarioId": "level-10-3-留学申请",
+            "taskKey": "10.3.3",
+            "title": "面试",
+            "description": "面试",
+            "promptHint": "当前目标是完成“面试”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-10-3-留学申请-task-4",
+            "scenarioId": "level-10-3-留学申请",
+            "taskKey": "10.3.4",
+            "title": "确认 offer",
+            "description": "确认 offer",
+            "promptHint": "当前目标是完成“确认 offer”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "level-10-3-留学申请-task-5",
+            "scenarioId": "level-10-3-留学申请",
+            "taskKey": "10.3.5",
+            "title": "办签证",
+            "description": "办签证",
+            "promptHint": "当前目标是完成“办签证”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          }
+        ]
+      },
+      {
+        "id": "level-10-4-图书馆",
+        "sceneCode": "10.4",
+        "title": "图书馆",
+        "titleEn": "",
+        "description": "图书馆场景下的闯关练习，涵盖 办借书证、借书/还书、问资源位置 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "🎓",
+        "tags": [
+          "level",
+          "level-category-10",
+          "10.4"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-10",
+        "sortOrder": 4,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-10-4-图书馆-task-1",
+            "scenarioId": "level-10-4-图书馆",
+            "taskKey": "10.4.1",
+            "title": "办借书证",
+            "description": "办借书证",
+            "promptHint": "当前目标是完成“办借书证”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-10-4-图书馆-task-2",
+            "scenarioId": "level-10-4-图书馆",
+            "taskKey": "10.4.2",
+            "title": "借书/还书",
+            "description": "借书/还书",
+            "promptHint": "当前目标是完成“借书/还书”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-10-4-图书馆-task-3",
+            "scenarioId": "level-10-4-图书馆",
+            "taskKey": "10.4.3",
+            "title": "问资源位置",
+            "description": "问资源位置",
+            "promptHint": "当前目标是完成“问资源位置”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-10-4-图书馆-task-4",
+            "scenarioId": "level-10-4-图书馆",
+            "taskKey": "10.4.4",
+            "title": "预约自习室",
+            "description": "预约自习室",
+            "promptHint": "当前目标是完成“预约自习室”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-10-5-学生宿舍",
+        "sceneCode": "10.5",
+        "title": "学生宿舍",
+        "titleEn": "",
+        "description": "学生宿舍场景下的闯关练习，涵盖 搬入/登记、与室友沟通、报修 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "🎓",
+        "tags": [
+          "level",
+          "level-category-10",
+          "10.5"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-10",
+        "sortOrder": 5,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-10-5-学生宿舍-task-1",
+            "scenarioId": "level-10-5-学生宿舍",
+            "taskKey": "10.5.1",
+            "title": "搬入/登记",
+            "description": "搬入/登记",
+            "promptHint": "当前目标是完成“搬入/登记”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-10-5-学生宿舍-task-2",
+            "scenarioId": "level-10-5-学生宿舍",
+            "taskKey": "10.5.2",
+            "title": "与室友沟通",
+            "description": "与室友沟通",
+            "promptHint": "当前目标是完成“与室友沟通”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-10-5-学生宿舍-task-3",
+            "scenarioId": "level-10-5-学生宿舍",
+            "taskKey": "10.5.3",
+            "title": "报修",
+            "description": "报修",
+            "promptHint": "当前目标是完成“报修”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-10-5-学生宿舍-task-4",
+            "scenarioId": "level-10-5-学生宿舍",
+            "taskKey": "10.5.4",
+            "title": "换宿舍",
+            "description": "换宿舍",
+            "promptHint": "当前目标是完成“换宿舍”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-10-6-考试与论文",
+        "sceneCode": "10.6",
+        "title": "考试与论文",
+        "titleEn": "",
+        "description": "考试与论文场景下的闯关练习，涵盖 讨论考试范围、找学习伙伴、论文选题讨论 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "intermediate",
+        "icon": "🎓",
+        "tags": [
+          "level",
+          "level-category-10",
+          "10.6"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-10",
+        "sortOrder": 6,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-10-6-考试与论文-task-1",
+            "scenarioId": "level-10-6-考试与论文",
+            "taskKey": "10.6.1",
+            "title": "讨论考试范围",
+            "description": "讨论考试范围",
+            "promptHint": "当前目标是完成“讨论考试范围”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-10-6-考试与论文-task-2",
+            "scenarioId": "level-10-6-考试与论文",
+            "taskKey": "10.6.2",
+            "title": "找学习伙伴",
+            "description": "找学习伙伴",
+            "promptHint": "当前目标是完成“找学习伙伴”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-10-6-考试与论文-task-3",
+            "scenarioId": "level-10-6-考试与论文",
+            "taskKey": "10.6.3",
+            "title": "论文选题讨论",
+            "description": "论文选题讨论",
+            "promptHint": "当前目标是完成“论文选题讨论”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-10-6-考试与论文-task-4",
+            "scenarioId": "level-10-6-考试与论文",
+            "taskKey": "10.6.4",
+            "title": "答辩/发表",
+            "description": "答辩/发表",
+            "promptHint": "当前目标是完成“答辩/发表”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "level-category-11",
+    "title": "娱乐休闲",
+    "titleEn": "",
+    "icon": "🎬",
+    "description": "娱乐休闲类场景，包含 看电影/剧院、运动/比赛、游乐园 等分阶段口语练习。",
+    "descriptionEn": "",
+    "sortOrder": 11,
+    "scenes": [
+      {
+        "id": "level-11-1-看电影-剧院",
+        "sceneCode": "11.1",
+        "title": "看电影/剧院",
+        "titleEn": "",
+        "description": "看电影/剧院场景下的闯关练习，涵盖 买票选座、买零食/饮料、讨论电影 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "advanced",
+        "icon": "🎬",
+        "tags": [
+          "level",
+          "level-category-11",
+          "11.1"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-11",
+        "sortOrder": 1,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-11-1-看电影-剧院-task-1",
+            "scenarioId": "level-11-1-看电影-剧院",
+            "taskKey": "11.1.1",
+            "title": "买票选座",
+            "description": "买票选座",
+            "promptHint": "当前目标是完成“买票选座”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-11-1-看电影-剧院-task-2",
+            "scenarioId": "level-11-1-看电影-剧院",
+            "taskKey": "11.1.2",
+            "title": "买零食/饮料",
+            "description": "买零食/饮料",
+            "promptHint": "当前目标是完成“买零食/饮料”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-11-1-看电影-剧院-task-3",
+            "scenarioId": "level-11-1-看电影-剧院",
+            "taskKey": "11.1.3",
+            "title": "讨论电影",
+            "description": "讨论电影",
+            "promptHint": "当前目标是完成“讨论电影”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-11-1-看电影-剧院-task-4",
+            "scenarioId": "level-11-1-看电影-剧院",
+            "taskKey": "11.1.4",
+            "title": "评价观影体验",
+            "description": "评价观影体验",
+            "promptHint": "当前目标是完成“评价观影体验”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-11-2-运动-比赛",
+        "sceneCode": "11.2",
+        "title": "运动/比赛",
+        "titleEn": "",
+        "description": "运动/比赛场景下的闯关练习，涵盖 约人打球、讨论比赛、加入俱乐部 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "advanced",
+        "icon": "🎬",
+        "tags": [
+          "level",
+          "level-category-11",
+          "11.2"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-11",
+        "sortOrder": 2,
+        "maxTurns": 7,
+        "subTasks": [
+          {
+            "id": "level-11-2-运动-比赛-task-1",
+            "scenarioId": "level-11-2-运动-比赛",
+            "taskKey": "11.2.1",
+            "title": "约人打球",
+            "description": "约人打球",
+            "promptHint": "当前目标是完成“约人打球”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-11-2-运动-比赛-task-2",
+            "scenarioId": "level-11-2-运动-比赛",
+            "taskKey": "11.2.2",
+            "title": "讨论比赛",
+            "description": "讨论比赛",
+            "promptHint": "当前目标是完成“讨论比赛”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-11-2-运动-比赛-task-3",
+            "scenarioId": "level-11-2-运动-比赛",
+            "taskKey": "11.2.3",
+            "title": "加入俱乐部",
+            "description": "加入俱乐部",
+            "promptHint": "当前目标是完成“加入俱乐部”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-11-2-运动-比赛-task-4",
+            "scenarioId": "level-11-2-运动-比赛",
+            "taskKey": "11.2.4",
+            "title": "租场地",
+            "description": "租场地",
+            "promptHint": "当前目标是完成“租场地”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "level-11-2-运动-比赛-task-5",
+            "scenarioId": "level-11-2-运动-比赛",
+            "taskKey": "11.2.5",
+            "title": "看比赛现场",
+            "description": "看比赛现场",
+            "promptHint": "当前目标是完成“看比赛现场”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          }
+        ]
+      },
+      {
+        "id": "level-11-3-游乐园",
+        "sceneCode": "11.3",
+        "title": "游乐园",
+        "titleEn": "",
+        "description": "游乐园场景下的闯关练习，涵盖 买门票、问项目/排队、买快速通道 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "advanced",
+        "icon": "🎬",
+        "tags": [
+          "level",
+          "level-category-11",
+          "11.3"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-11",
+        "sortOrder": 3,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-11-3-游乐园-task-1",
+            "scenarioId": "level-11-3-游乐园",
+            "taskKey": "11.3.1",
+            "title": "买门票",
+            "description": "买门票",
+            "promptHint": "当前目标是完成“买门票”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-11-3-游乐园-task-2",
+            "scenarioId": "level-11-3-游乐园",
+            "taskKey": "11.3.2",
+            "title": "问项目/排队",
+            "description": "问项目/排队",
+            "promptHint": "当前目标是完成“问项目/排队”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-11-3-游乐园-task-3",
+            "scenarioId": "level-11-3-游乐园",
+            "taskKey": "11.3.3",
+            "title": "买快速通道",
+            "description": "买快速通道",
+            "promptHint": "当前目标是完成“买快速通道”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-11-3-游乐园-task-4",
+            "scenarioId": "level-11-3-游乐园",
+            "taskKey": "11.3.4",
+            "title": "拍照",
+            "description": "拍照",
+            "promptHint": "当前目标是完成“拍照”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-11-4-音乐会-演唱会",
+        "sceneCode": "11.4",
+        "title": "音乐会/演唱会",
+        "titleEn": "",
+        "description": "音乐会/演唱会场景下的闯关练习，涵盖 抢票/买票、找座位、买周边 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "advanced",
+        "icon": "🎬",
+        "tags": [
+          "level",
+          "level-category-11",
+          "11.4"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-11",
+        "sortOrder": 4,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-11-4-音乐会-演唱会-task-1",
+            "scenarioId": "level-11-4-音乐会-演唱会",
+            "taskKey": "11.4.1",
+            "title": "抢票/买票",
+            "description": "抢票/买票",
+            "promptHint": "当前目标是完成“抢票/买票”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-11-4-音乐会-演唱会-task-2",
+            "scenarioId": "level-11-4-音乐会-演唱会",
+            "taskKey": "11.4.2",
+            "title": "找座位",
+            "description": "找座位",
+            "promptHint": "当前目标是完成“找座位”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-11-4-音乐会-演唱会-task-3",
+            "scenarioId": "level-11-4-音乐会-演唱会",
+            "taskKey": "11.4.3",
+            "title": "买周边",
+            "description": "买周边",
+            "promptHint": "当前目标是完成“买周边”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-11-4-音乐会-演唱会-task-4",
+            "scenarioId": "level-11-4-音乐会-演唱会",
+            "taskKey": "11.4.4",
+            "title": "现场互动",
+            "description": "现场互动",
+            "promptHint": "当前目标是完成“现场互动”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-11-5-博物馆-美术馆",
+        "sceneCode": "11.5",
+        "title": "博物馆/美术馆",
+        "titleEn": "",
+        "description": "博物馆/美术馆场景下的闯关练习，涵盖 买票/入场、租讲解器、问展览信息 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "advanced",
+        "icon": "🎬",
+        "tags": [
+          "level",
+          "level-category-11",
+          "11.5"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-11",
+        "sortOrder": 5,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-11-5-博物馆-美术馆-task-1",
+            "scenarioId": "level-11-5-博物馆-美术馆",
+            "taskKey": "11.5.1",
+            "title": "买票/入场",
+            "description": "买票/入场",
+            "promptHint": "当前目标是完成“买票/入场”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-11-5-博物馆-美术馆-task-2",
+            "scenarioId": "level-11-5-博物馆-美术馆",
+            "taskKey": "11.5.2",
+            "title": "租讲解器",
+            "description": "租讲解器",
+            "promptHint": "当前目标是完成“租讲解器”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-11-5-博物馆-美术馆-task-3",
+            "scenarioId": "level-11-5-博物馆-美术馆",
+            "taskKey": "11.5.3",
+            "title": "问展览信息",
+            "description": "问展览信息",
+            "promptHint": "当前目标是完成“问展览信息”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-11-5-博物馆-美术馆-task-4",
+            "scenarioId": "level-11-5-博物馆-美术馆",
+            "taskKey": "11.5.4",
+            "title": "与朋友讨论作品",
+            "description": "与朋友讨论作品",
+            "promptHint": "当前目标是完成“与朋友讨论作品”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "level-category-12",
+    "title": "紧急情况",
+    "titleEn": "",
+    "icon": "🆘",
+    "description": "紧急情况类场景，包含 丢了东西、迷路、交通事故 等分阶段口语练习。",
+    "descriptionEn": "",
+    "sortOrder": 12,
+    "scenes": [
+      {
+        "id": "level-12-1-丢了东西",
+        "sceneCode": "12.1",
+        "title": "丢了东西",
+        "titleEn": "",
+        "description": "丢了东西场景下的闯关练习，涵盖 在公共场所找失物、报警、去失物招领处 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "advanced",
+        "icon": "🆘",
+        "tags": [
+          "level",
+          "level-category-12",
+          "12.1"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-12",
+        "sortOrder": 1,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-12-1-丢了东西-task-1",
+            "scenarioId": "level-12-1-丢了东西",
+            "taskKey": "12.1.1",
+            "title": "在公共场所找失物",
+            "description": "在公共场所找失物",
+            "promptHint": "当前目标是完成“在公共场所找失物”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-12-1-丢了东西-task-2",
+            "scenarioId": "level-12-1-丢了东西",
+            "taskKey": "12.1.2",
+            "title": "报警",
+            "description": "报警",
+            "promptHint": "当前目标是完成“报警”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-12-1-丢了东西-task-3",
+            "scenarioId": "level-12-1-丢了东西",
+            "taskKey": "12.1.3",
+            "title": "去失物招领处",
+            "description": "去失物招领处",
+            "promptHint": "当前目标是完成“去失物招领处”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-12-1-丢了东西-task-4",
+            "scenarioId": "level-12-1-丢了东西",
+            "taskKey": "12.1.4",
+            "title": "挂失证件/卡片",
+            "description": "挂失证件/卡片",
+            "promptHint": "当前目标是完成“挂失证件/卡片”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-12-2-迷路",
+        "sceneCode": "12.2",
+        "title": "迷路",
+        "titleEn": "",
+        "description": "迷路场景下的闯关练习，涵盖 找人问路、打电话求助、描述当前位置 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "advanced",
+        "icon": "🆘",
+        "tags": [
+          "level",
+          "level-category-12",
+          "12.2"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-12",
+        "sortOrder": 2,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-12-2-迷路-task-1",
+            "scenarioId": "level-12-2-迷路",
+            "taskKey": "12.2.1",
+            "title": "找人问路",
+            "description": "找人问路",
+            "promptHint": "当前目标是完成“找人问路”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-12-2-迷路-task-2",
+            "scenarioId": "level-12-2-迷路",
+            "taskKey": "12.2.2",
+            "title": "打电话求助",
+            "description": "打电话求助",
+            "promptHint": "当前目标是完成“打电话求助”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-12-2-迷路-task-3",
+            "scenarioId": "level-12-2-迷路",
+            "taskKey": "12.2.3",
+            "title": "描述当前位置",
+            "description": "描述当前位置",
+            "promptHint": "当前目标是完成“描述当前位置”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-12-2-迷路-task-4",
+            "scenarioId": "level-12-2-迷路",
+            "taskKey": "12.2.4",
+            "title": "看懂地图指示",
+            "description": "看懂地图指示",
+            "promptHint": "当前目标是完成“看懂地图指示”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-12-3-交通事故",
+        "sceneCode": "12.3",
+        "title": "交通事故",
+        "titleEn": "",
+        "description": "交通事故场景下的闯关练习，涵盖 交换保险信息、描述事故经过、报警 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "advanced",
+        "icon": "🆘",
+        "tags": [
+          "level",
+          "level-category-12",
+          "12.3"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-12",
+        "sortOrder": 3,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-12-3-交通事故-task-1",
+            "scenarioId": "level-12-3-交通事故",
+            "taskKey": "12.3.1",
+            "title": "交换保险信息",
+            "description": "交换保险信息",
+            "promptHint": "当前目标是完成“交换保险信息”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-12-3-交通事故-task-2",
+            "scenarioId": "level-12-3-交通事故",
+            "taskKey": "12.3.2",
+            "title": "描述事故经过",
+            "description": "描述事故经过",
+            "promptHint": "当前目标是完成“描述事故经过”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-12-3-交通事故-task-3",
+            "scenarioId": "level-12-3-交通事故",
+            "taskKey": "12.3.3",
+            "title": "报警",
+            "description": "报警",
+            "promptHint": "当前目标是完成“报警”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-12-3-交通事故-task-4",
+            "scenarioId": "level-12-3-交通事故",
+            "taskKey": "12.3.4",
+            "title": "联系保险公司",
+            "description": "联系保险公司",
+            "promptHint": "当前目标是完成“联系保险公司”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-12-4-遭遇抢劫-偷窃",
+        "sceneCode": "12.4",
+        "title": "遭遇抢劫/偷窃",
+        "titleEn": "",
+        "description": "遭遇抢劫/偷窃场景下的闯关练习，涵盖 报警描述、去警局做笔录、联系大使馆 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "advanced",
+        "icon": "🆘",
+        "tags": [
+          "level",
+          "level-category-12",
+          "12.4"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-12",
+        "sortOrder": 4,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-12-4-遭遇抢劫-偷窃-task-1",
+            "scenarioId": "level-12-4-遭遇抢劫-偷窃",
+            "taskKey": "12.4.1",
+            "title": "报警描述",
+            "description": "报警描述",
+            "promptHint": "当前目标是完成“报警描述”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-12-4-遭遇抢劫-偷窃-task-2",
+            "scenarioId": "level-12-4-遭遇抢劫-偷窃",
+            "taskKey": "12.4.2",
+            "title": "去警局做笔录",
+            "description": "去警局做笔录",
+            "promptHint": "当前目标是完成“去警局做笔录”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-12-4-遭遇抢劫-偷窃-task-3",
+            "scenarioId": "level-12-4-遭遇抢劫-偷窃",
+            "taskKey": "12.4.3",
+            "title": "联系大使馆",
+            "description": "联系大使馆",
+            "promptHint": "当前目标是完成“联系大使馆”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-12-4-遭遇抢劫-偷窃-task-4",
+            "scenarioId": "level-12-4-遭遇抢劫-偷窃",
+            "taskKey": "12.4.4",
+            "title": "补办证件",
+            "description": "补办证件",
+            "promptHint": "当前目标是完成“补办证件”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-12-5-自然灾害",
+        "sceneCode": "12.5",
+        "title": "自然灾害",
+        "titleEn": "",
+        "description": "自然灾害场景下的闯关练习，涵盖 收到灾害预警、撤离/避难、联系家人报平安 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "advanced",
+        "icon": "🆘",
+        "tags": [
+          "level",
+          "level-category-12",
+          "12.5"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-12",
+        "sortOrder": 5,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-12-5-自然灾害-task-1",
+            "scenarioId": "level-12-5-自然灾害",
+            "taskKey": "12.5.1",
+            "title": "收到灾害预警",
+            "description": "收到灾害预警",
+            "promptHint": "当前目标是完成“收到灾害预警”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-12-5-自然灾害-task-2",
+            "scenarioId": "level-12-5-自然灾害",
+            "taskKey": "12.5.2",
+            "title": "撤离/避难",
+            "description": "撤离/避难",
+            "promptHint": "当前目标是完成“撤离/避难”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-12-5-自然灾害-task-3",
+            "scenarioId": "level-12-5-自然灾害",
+            "taskKey": "12.5.3",
+            "title": "联系家人报平安",
+            "description": "联系家人报平安",
+            "promptHint": "当前目标是完成“联系家人报平安”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-12-5-自然灾害-task-4",
+            "scenarioId": "level-12-5-自然灾害",
+            "taskKey": "12.5.4",
+            "title": "寻求救援",
+            "description": "寻求救援",
+            "promptHint": "当前目标是完成“寻求救援”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-12-6-身体不适-旅行中",
+        "sceneCode": "12.6",
+        "title": "身体不适（旅行中）",
+        "titleEn": "",
+        "description": "身体不适（旅行中）场景下的闯关练习，涵盖 向同伴求助、找药店/诊所、在异国看医生 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "advanced",
+        "icon": "🆘",
+        "tags": [
+          "level",
+          "level-category-12",
+          "12.6"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-12",
+        "sortOrder": 6,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-12-6-身体不适-旅行中-task-1",
+            "scenarioId": "level-12-6-身体不适-旅行中",
+            "taskKey": "12.6.1",
+            "title": "向同伴求助",
+            "description": "向同伴求助",
+            "promptHint": "当前目标是完成“向同伴求助”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-12-6-身体不适-旅行中-task-2",
+            "scenarioId": "level-12-6-身体不适-旅行中",
+            "taskKey": "12.6.2",
+            "title": "找药店/诊所",
+            "description": "找药店/诊所",
+            "promptHint": "当前目标是完成“找药店/诊所”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-12-6-身体不适-旅行中-task-3",
+            "scenarioId": "level-12-6-身体不适-旅行中",
+            "taskKey": "12.6.3",
+            "title": "在异国看医生",
+            "description": "在异国看医生",
+            "promptHint": "当前目标是完成“在异国看医生”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-12-6-身体不适-旅行中-task-4",
+            "scenarioId": "level-12-6-身体不适-旅行中",
+            "taskKey": "12.6.4",
+            "title": "联系保险公司",
+            "description": "联系保险公司",
+            "promptHint": "当前目标是完成“联系保险公司”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "level-category-13",
+    "title": "电话与在线沟通",
+    "titleEn": "",
+    "icon": "📞",
+    "description": "电话与在线沟通类场景，包含 客服电话、预约服务、视频通话 等分阶段口语练习。",
+    "descriptionEn": "",
+    "sortOrder": 13,
+    "scenes": [
+      {
+        "id": "level-13-1-客服电话",
+        "sceneCode": "13.1",
+        "title": "客服电话",
+        "titleEn": "",
+        "description": "客服电话场景下的闯关练习，涵盖 转接人工、描述问题、投诉 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "advanced",
+        "icon": "📞",
+        "tags": [
+          "level",
+          "level-category-13",
+          "13.1"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-13",
+        "sortOrder": 1,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-13-1-客服电话-task-1",
+            "scenarioId": "level-13-1-客服电话",
+            "taskKey": "13.1.1",
+            "title": "转接人工",
+            "description": "转接人工",
+            "promptHint": "当前目标是完成“转接人工”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-13-1-客服电话-task-2",
+            "scenarioId": "level-13-1-客服电话",
+            "taskKey": "13.1.2",
+            "title": "描述问题",
+            "description": "描述问题",
+            "promptHint": "当前目标是完成“描述问题”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-13-1-客服电话-task-3",
+            "scenarioId": "level-13-1-客服电话",
+            "taskKey": "13.1.3",
+            "title": "投诉",
+            "description": "投诉",
+            "promptHint": "当前目标是完成“投诉”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-13-1-客服电话-task-4",
+            "scenarioId": "level-13-1-客服电话",
+            "taskKey": "13.1.4",
+            "title": "确认解决方案",
+            "description": "确认解决方案",
+            "promptHint": "当前目标是完成“确认解决方案”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-13-2-预约服务",
+        "sceneCode": "13.2",
+        "title": "预约服务",
+        "titleEn": "",
+        "description": "预约服务场景下的闯关练习，涵盖 打电话预约（餐厅/理发/医生）、改时间、取消预约 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "advanced",
+        "icon": "📞",
+        "tags": [
+          "level",
+          "level-category-13",
+          "13.2"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-13",
+        "sortOrder": 2,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-13-2-预约服务-task-1",
+            "scenarioId": "level-13-2-预约服务",
+            "taskKey": "13.2.1",
+            "title": "打电话预约（餐厅/理发/医生）",
+            "description": "打电话预约（餐厅/理发/医生）",
+            "promptHint": "当前目标是完成“打电话预约（餐厅/理发/医生）”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-13-2-预约服务-task-2",
+            "scenarioId": "level-13-2-预约服务",
+            "taskKey": "13.2.2",
+            "title": "改时间",
+            "description": "改时间",
+            "promptHint": "当前目标是完成“改时间”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-13-2-预约服务-task-3",
+            "scenarioId": "level-13-2-预约服务",
+            "taskKey": "13.2.3",
+            "title": "取消预约",
+            "description": "取消预约",
+            "promptHint": "当前目标是完成“取消预约”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-13-2-预约服务-task-4",
+            "scenarioId": "level-13-2-预约服务",
+            "taskKey": "13.2.4",
+            "title": "确认预约",
+            "description": "确认预约",
+            "promptHint": "当前目标是完成“确认预约”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-13-3-视频通话",
+        "sceneCode": "13.3",
+        "title": "视频通话",
+        "titleEn": "",
+        "description": "视频通话场景下的闯关练习，涵盖 测试设备/信号、开始通话、处理卡顿/掉线 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "advanced",
+        "icon": "📞",
+        "tags": [
+          "level",
+          "level-category-13",
+          "13.3"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-13",
+        "sortOrder": 3,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-13-3-视频通话-task-1",
+            "scenarioId": "level-13-3-视频通话",
+            "taskKey": "13.3.1",
+            "title": "测试设备/信号",
+            "description": "测试设备/信号",
+            "promptHint": "当前目标是完成“测试设备/信号”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-13-3-视频通话-task-2",
+            "scenarioId": "level-13-3-视频通话",
+            "taskKey": "13.3.2",
+            "title": "开始通话",
+            "description": "开始通话",
+            "promptHint": "当前目标是完成“开始通话”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-13-3-视频通话-task-3",
+            "scenarioId": "level-13-3-视频通话",
+            "taskKey": "13.3.3",
+            "title": "处理卡顿/掉线",
+            "description": "处理卡顿/掉线",
+            "promptHint": "当前目标是完成“处理卡顿/掉线”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-13-3-视频通话-task-4",
+            "scenarioId": "level-13-3-视频通话",
+            "taskKey": "13.3.4",
+            "title": "结束通话",
+            "description": "结束通话",
+            "promptHint": "当前目标是完成“结束通话”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-13-4-在线聊天-社交软件",
+        "sceneCode": "13.4",
+        "title": "在线聊天/社交软件",
+        "titleEn": "",
+        "description": "在线聊天/社交软件场景下的闯关练习，涵盖 发第一条消息、回复/接话题、用表情和缩写 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "advanced",
+        "icon": "📞",
+        "tags": [
+          "level",
+          "level-category-13",
+          "13.4"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-13",
+        "sortOrder": 4,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-13-4-在线聊天-社交软件-task-1",
+            "scenarioId": "level-13-4-在线聊天-社交软件",
+            "taskKey": "13.4.1",
+            "title": "发第一条消息",
+            "description": "发第一条消息",
+            "promptHint": "当前目标是完成“发第一条消息”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-13-4-在线聊天-社交软件-task-2",
+            "scenarioId": "level-13-4-在线聊天-社交软件",
+            "taskKey": "13.4.2",
+            "title": "回复/接话题",
+            "description": "回复/接话题",
+            "promptHint": "当前目标是完成“回复/接话题”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-13-4-在线聊天-社交软件-task-3",
+            "scenarioId": "level-13-4-在线聊天-社交软件",
+            "taskKey": "13.4.3",
+            "title": "用表情和缩写",
+            "description": "用表情和缩写",
+            "promptHint": "当前目标是完成“用表情和缩写”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-13-4-在线聊天-社交软件-task-4",
+            "scenarioId": "level-13-4-在线聊天-社交软件",
+            "taskKey": "13.4.4",
+            "title": "约线下见面",
+            "description": "约线下见面",
+            "promptHint": "当前目标是完成“约线下见面”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "level-category-14",
+    "title": "房屋与维修",
+    "titleEn": "",
+    "icon": "🔧",
+    "description": "房屋与维修类场景，包含 请维修工、搬家、房屋清洁 等分阶段口语练习。",
+    "descriptionEn": "",
+    "sortOrder": 14,
+    "scenes": [
+      {
+        "id": "level-14-1-请维修工",
+        "sceneCode": "14.1",
+        "title": "请维修工",
+        "titleEn": "",
+        "description": "请维修工场景下的闯关练习，涵盖 预约上门、描述故障、确认报价 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "advanced",
+        "icon": "🔧",
+        "tags": [
+          "level",
+          "level-category-14",
+          "14.1"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-14",
+        "sortOrder": 1,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-14-1-请维修工-task-1",
+            "scenarioId": "level-14-1-请维修工",
+            "taskKey": "14.1.1",
+            "title": "预约上门",
+            "description": "预约上门",
+            "promptHint": "当前目标是完成“预约上门”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-14-1-请维修工-task-2",
+            "scenarioId": "level-14-1-请维修工",
+            "taskKey": "14.1.2",
+            "title": "描述故障",
+            "description": "描述故障",
+            "promptHint": "当前目标是完成“描述故障”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-14-1-请维修工-task-3",
+            "scenarioId": "level-14-1-请维修工",
+            "taskKey": "14.1.3",
+            "title": "确认报价",
+            "description": "确认报价",
+            "promptHint": "当前目标是完成“确认报价”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-14-1-请维修工-task-4",
+            "scenarioId": "level-14-1-请维修工",
+            "taskKey": "14.1.4",
+            "title": "验收与付款",
+            "description": "验收与付款",
+            "promptHint": "当前目标是完成“验收与付款”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-14-2-搬家",
+        "sceneCode": "14.2",
+        "title": "搬家",
+        "titleEn": "",
+        "description": "搬家场景下的闯关练习，涵盖 找搬家公司、谈价格、搬家中沟通 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "advanced",
+        "icon": "🔧",
+        "tags": [
+          "level",
+          "level-category-14",
+          "14.2"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-14",
+        "sortOrder": 2,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-14-2-搬家-task-1",
+            "scenarioId": "level-14-2-搬家",
+            "taskKey": "14.2.1",
+            "title": "找搬家公司",
+            "description": "找搬家公司",
+            "promptHint": "当前目标是完成“找搬家公司”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-14-2-搬家-task-2",
+            "scenarioId": "level-14-2-搬家",
+            "taskKey": "14.2.2",
+            "title": "谈价格",
+            "description": "谈价格",
+            "promptHint": "当前目标是完成“谈价格”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-14-2-搬家-task-3",
+            "scenarioId": "level-14-2-搬家",
+            "taskKey": "14.2.3",
+            "title": "搬家中沟通",
+            "description": "搬家中沟通",
+            "promptHint": "当前目标是完成“搬家中沟通”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-14-2-搬家-task-4",
+            "scenarioId": "level-14-2-搬家",
+            "taskKey": "14.2.4",
+            "title": "确认物品清单",
+            "description": "确认物品清单",
+            "promptHint": "当前目标是完成“确认物品清单”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-14-3-房屋清洁",
+        "sceneCode": "14.3",
+        "title": "房屋清洁",
+        "titleEn": "",
+        "description": "房屋清洁场景下的闯关练习，涵盖 预约清洁服务、说具体要求、检查清洁质量 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "advanced",
+        "icon": "🔧",
+        "tags": [
+          "level",
+          "level-category-14",
+          "14.3"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-14",
+        "sortOrder": 3,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-14-3-房屋清洁-task-1",
+            "scenarioId": "level-14-3-房屋清洁",
+            "taskKey": "14.3.1",
+            "title": "预约清洁服务",
+            "description": "预约清洁服务",
+            "promptHint": "当前目标是完成“预约清洁服务”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-14-3-房屋清洁-task-2",
+            "scenarioId": "level-14-3-房屋清洁",
+            "taskKey": "14.3.2",
+            "title": "说具体要求",
+            "description": "说具体要求",
+            "promptHint": "当前目标是完成“说具体要求”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-14-3-房屋清洁-task-3",
+            "scenarioId": "level-14-3-房屋清洁",
+            "taskKey": "14.3.3",
+            "title": "检查清洁质量",
+            "description": "检查清洁质量",
+            "promptHint": "当前目标是完成“检查清洁质量”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-14-3-房屋清洁-task-4",
+            "scenarioId": "level-14-3-房屋清洁",
+            "taskKey": "14.3.4",
+            "title": "给小费/评价",
+            "description": "给小费/评价",
+            "promptHint": "当前目标是完成“给小费/评价”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-14-4-园艺-庭院",
+        "sceneCode": "14.4",
+        "title": "园艺/庭院",
+        "titleEn": "",
+        "description": "园艺/庭院场景下的闯关练习，涵盖 买植物/工具、问养护方法、请人打理花园 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "advanced",
+        "icon": "🔧",
+        "tags": [
+          "level",
+          "level-category-14",
+          "14.4"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-14",
+        "sortOrder": 4,
+        "maxTurns": 5,
+        "subTasks": [
+          {
+            "id": "level-14-4-园艺-庭院-task-1",
+            "scenarioId": "level-14-4-园艺-庭院",
+            "taskKey": "14.4.1",
+            "title": "买植物/工具",
+            "description": "买植物/工具",
+            "promptHint": "当前目标是完成“买植物/工具”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-14-4-园艺-庭院-task-2",
+            "scenarioId": "level-14-4-园艺-庭院",
+            "taskKey": "14.4.2",
+            "title": "问养护方法",
+            "description": "问养护方法",
+            "promptHint": "当前目标是完成“问养护方法”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-14-4-园艺-庭院-task-3",
+            "scenarioId": "level-14-4-园艺-庭院",
+            "taskKey": "14.4.3",
+            "title": "请人打理花园",
+            "description": "请人打理花园",
+            "promptHint": "当前目标是完成“请人打理花园”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "level-category-15",
+    "title": "宠物与动物",
+    "titleEn": "",
+    "icon": "🐾",
+    "description": "宠物与动物类场景，包含 宠物店、宠物医院、遛狗社交 等分阶段口语练习。",
+    "descriptionEn": "",
+    "sortOrder": 15,
+    "scenes": [
+      {
+        "id": "level-15-1-宠物店",
+        "sceneCode": "15.1",
+        "title": "宠物店",
+        "titleEn": "",
+        "description": "宠物店场景下的闯关练习，涵盖 买宠物用品、咨询宠物健康、宠物美容预约 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "advanced",
+        "icon": "🐾",
+        "tags": [
+          "level",
+          "level-category-15",
+          "15.1"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-15",
+        "sortOrder": 1,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-15-1-宠物店-task-1",
+            "scenarioId": "level-15-1-宠物店",
+            "taskKey": "15.1.1",
+            "title": "买宠物用品",
+            "description": "买宠物用品",
+            "promptHint": "当前目标是完成“买宠物用品”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-15-1-宠物店-task-2",
+            "scenarioId": "level-15-1-宠物店",
+            "taskKey": "15.1.2",
+            "title": "咨询宠物健康",
+            "description": "咨询宠物健康",
+            "promptHint": "当前目标是完成“咨询宠物健康”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-15-1-宠物店-task-3",
+            "scenarioId": "level-15-1-宠物店",
+            "taskKey": "15.1.3",
+            "title": "宠物美容预约",
+            "description": "宠物美容预约",
+            "promptHint": "当前目标是完成“宠物美容预约”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-15-1-宠物店-task-4",
+            "scenarioId": "level-15-1-宠物店",
+            "taskKey": "15.1.4",
+            "title": "领养咨询",
+            "description": "领养咨询",
+            "promptHint": "当前目标是完成“领养咨询”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-15-2-宠物医院",
+        "sceneCode": "15.2",
+        "title": "宠物医院",
+        "titleEn": "",
+        "description": "宠物医院场景下的闯关练习，涵盖 预约看病、描述症状、打疫苗 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "advanced",
+        "icon": "🐾",
+        "tags": [
+          "level",
+          "level-category-15",
+          "15.2"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-15",
+        "sortOrder": 2,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-15-2-宠物医院-task-1",
+            "scenarioId": "level-15-2-宠物医院",
+            "taskKey": "15.2.1",
+            "title": "预约看病",
+            "description": "预约看病",
+            "promptHint": "当前目标是完成“预约看病”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-15-2-宠物医院-task-2",
+            "scenarioId": "level-15-2-宠物医院",
+            "taskKey": "15.2.2",
+            "title": "描述症状",
+            "description": "描述症状",
+            "promptHint": "当前目标是完成“描述症状”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-15-2-宠物医院-task-3",
+            "scenarioId": "level-15-2-宠物医院",
+            "taskKey": "15.2.3",
+            "title": "打疫苗",
+            "description": "打疫苗",
+            "promptHint": "当前目标是完成“打疫苗”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-15-2-宠物医院-task-4",
+            "scenarioId": "level-15-2-宠物医院",
+            "taskKey": "15.2.4",
+            "title": "手术沟通",
+            "description": "手术沟通",
+            "promptHint": "当前目标是完成“手术沟通”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-15-3-遛狗社交",
+        "sceneCode": "15.3",
+        "title": "遛狗社交",
+        "titleEn": "",
+        "description": "遛狗社交场景下的闯关练习，涵盖 与其他狗主人聊天、处理狗狗冲突、问遛狗路线 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "advanced",
+        "icon": "🐾",
+        "tags": [
+          "level",
+          "level-category-15",
+          "15.3"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-15",
+        "sortOrder": 3,
+        "maxTurns": 5,
+        "subTasks": [
+          {
+            "id": "level-15-3-遛狗社交-task-1",
+            "scenarioId": "level-15-3-遛狗社交",
+            "taskKey": "15.3.1",
+            "title": "与其他狗主人聊天",
+            "description": "与其他狗主人聊天",
+            "promptHint": "当前目标是完成“与其他狗主人聊天”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-15-3-遛狗社交-task-2",
+            "scenarioId": "level-15-3-遛狗社交",
+            "taskKey": "15.3.2",
+            "title": "处理狗狗冲突",
+            "description": "处理狗狗冲突",
+            "promptHint": "当前目标是完成“处理狗狗冲突”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-15-3-遛狗社交-task-3",
+            "scenarioId": "level-15-3-遛狗社交",
+            "taskKey": "15.3.3",
+            "title": "问遛狗路线",
+            "description": "问遛狗路线",
+            "promptHint": "当前目标是完成“问遛狗路线”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "level-category-16",
+    "title": "跨境与文化",
+    "titleEn": "",
+    "icon": "🌏",
+    "description": "跨境与文化类场景，包含 签证办理、大使馆/领事馆、文化差异 等分阶段口语练习。",
+    "descriptionEn": "",
+    "sortOrder": 16,
+    "scenes": [
+      {
+        "id": "level-16-1-签证办理",
+        "sceneCode": "16.1",
+        "title": "签证办理",
+        "titleEn": "",
+        "description": "签证办理场景下的闯关练习，涵盖 面签问答、补充材料、查询进度 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "advanced",
+        "icon": "🌏",
+        "tags": [
+          "level",
+          "level-category-16",
+          "16.1"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-16",
+        "sortOrder": 1,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-16-1-签证办理-task-1",
+            "scenarioId": "level-16-1-签证办理",
+            "taskKey": "16.1.1",
+            "title": "面签问答",
+            "description": "面签问答",
+            "promptHint": "当前目标是完成“面签问答”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-16-1-签证办理-task-2",
+            "scenarioId": "level-16-1-签证办理",
+            "taskKey": "16.1.2",
+            "title": "补充材料",
+            "description": "补充材料",
+            "promptHint": "当前目标是完成“补充材料”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-16-1-签证办理-task-3",
+            "scenarioId": "level-16-1-签证办理",
+            "taskKey": "16.1.3",
+            "title": "查询进度",
+            "description": "查询进度",
+            "promptHint": "当前目标是完成“查询进度”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-16-1-签证办理-task-4",
+            "scenarioId": "level-16-1-签证办理",
+            "taskKey": "16.1.4",
+            "title": "被拒后申诉",
+            "description": "被拒后申诉",
+            "promptHint": "当前目标是完成“被拒后申诉”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-16-2-大使馆-领事馆",
+        "sceneCode": "16.2",
+        "title": "大使馆/领事馆",
+        "titleEn": "",
+        "description": "大使馆/领事馆场景下的闯关练习，涵盖 护照换发、公证/认证、紧急求助 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "advanced",
+        "icon": "🌏",
+        "tags": [
+          "level",
+          "level-category-16",
+          "16.2"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-16",
+        "sortOrder": 2,
+        "maxTurns": 6,
+        "subTasks": [
+          {
+            "id": "level-16-2-大使馆-领事馆-task-1",
+            "scenarioId": "level-16-2-大使馆-领事馆",
+            "taskKey": "16.2.1",
+            "title": "护照换发",
+            "description": "护照换发",
+            "promptHint": "当前目标是完成“护照换发”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-16-2-大使馆-领事馆-task-2",
+            "scenarioId": "level-16-2-大使馆-领事馆",
+            "taskKey": "16.2.2",
+            "title": "公证/认证",
+            "description": "公证/认证",
+            "promptHint": "当前目标是完成“公证/认证”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-16-2-大使馆-领事馆-task-3",
+            "scenarioId": "level-16-2-大使馆-领事馆",
+            "taskKey": "16.2.3",
+            "title": "紧急求助",
+            "description": "紧急求助",
+            "promptHint": "当前目标是完成“紧急求助”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-16-2-大使馆-领事馆-task-4",
+            "scenarioId": "level-16-2-大使馆-领事馆",
+            "taskKey": "16.2.4",
+            "title": "公民服务咨询",
+            "description": "公民服务咨询",
+            "promptHint": "当前目标是完成“公民服务咨询”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          }
+        ]
+      },
+      {
+        "id": "level-16-3-文化差异",
+        "sceneCode": "16.3",
+        "title": "文化差异",
+        "titleEn": "",
+        "description": "文化差异场景下的闯关练习，涵盖 解释中国文化、问当地习俗、避免文化误解 等关键对话步骤。",
+        "descriptionEn": "",
+        "difficulty": "advanced",
+        "icon": "🌏",
+        "tags": [
+          "level",
+          "level-category-16",
+          "16.3"
+        ],
+        "sceneType": "level",
+        "categoryId": "level-category-16",
+        "sortOrder": 3,
+        "maxTurns": 12,
+        "subTasks": [
+          {
+            "id": "level-16-3-文化差异-task-1",
+            "scenarioId": "level-16-3-文化差异",
+            "taskKey": "16.3.1",
+            "title": "解释中国文化",
+            "description": "解释中国文化",
+            "promptHint": "当前目标是完成“解释中国文化”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-16-3-文化差异-task-2",
+            "scenarioId": "level-16-3-文化差异",
+            "taskKey": "16.3.2",
+            "title": "问当地习俗",
+            "description": "问当地习俗",
+            "promptHint": "当前目标是完成“问当地习俗”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-16-3-文化差异-task-3",
+            "scenarioId": "level-16-3-文化差异",
+            "taskKey": "16.3.3",
+            "title": "避免文化误解",
+            "description": "避免文化误解",
+            "promptHint": "当前目标是完成“避免文化误解”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-16-3-文化差异-task-4",
+            "scenarioId": "level-16-3-文化差异",
+            "taskKey": "16.3.4",
+            "title": "餐桌礼仪",
+            "description": "餐桌礼仪",
+            "promptHint": "当前目标是完成“餐桌礼仪”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "level-16-3-文化差异-task-1",
+            "scenarioId": "level-16-3-文化差异",
+            "taskKey": "16.3.1",
+            "title": "餐饮美食",
+            "description": "6",
+            "promptHint": "当前目标是完成“餐饮美食”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 1
+          },
+          {
+            "id": "level-16-3-文化差异-task-2",
+            "scenarioId": "level-16-3-文化差异",
+            "taskKey": "16.3.2",
+            "title": "旅行出行",
+            "description": "6",
+            "promptHint": "当前目标是完成“旅行出行”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 2
+          },
+          {
+            "id": "level-16-3-文化差异-task-3",
+            "scenarioId": "level-16-3-文化差异",
+            "taskKey": "16.3.3",
+            "title": "酒店住宿",
+            "description": "5",
+            "promptHint": "当前目标是完成“酒店住宿”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 3
+          },
+          {
+            "id": "level-16-3-文化差异-task-4",
+            "scenarioId": "level-16-3-文化差异",
+            "taskKey": "16.3.4",
+            "title": "购物消费",
+            "description": "5",
+            "promptHint": "当前目标是完成“购物消费”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 4
+          },
+          {
+            "id": "level-16-3-文化差异-task-5",
+            "scenarioId": "level-16-3-文化差异",
+            "taskKey": "16.3.5",
+            "title": "职场商务",
+            "description": "6",
+            "promptHint": "当前目标是完成“职场商务”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 5
+          },
+          {
+            "id": "level-16-3-文化差异-task-6",
+            "scenarioId": "level-16-3-文化差异",
+            "taskKey": "16.3.6",
+            "title": "社交人际",
+            "description": "6",
+            "promptHint": "当前目标是完成“社交人际”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 6
+          },
+          {
+            "id": "level-16-3-文化差异-task-7",
+            "scenarioId": "level-16-3-文化差异",
+            "taskKey": "16.3.7",
+            "title": "日常生活",
+            "description": "6",
+            "promptHint": "当前目标是完成“日常生活”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 7
+          },
+          {
+            "id": "level-16-3-文化差异-task-8",
+            "scenarioId": "level-16-3-文化差异",
+            "taskKey": "16.3.8",
+            "title": "医疗健康",
+            "description": "6",
+            "promptHint": "当前目标是完成“医疗健康”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 8
+          },
+          {
+            "id": "level-16-3-文化差异-task-9",
+            "scenarioId": "level-16-3-文化差异",
+            "taskKey": "16.3.9",
+            "title": "金融服务",
+            "description": "4",
+            "promptHint": "当前目标是完成“金融服务”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 9
+          },
+          {
+            "id": "level-16-3-文化差异-task-10",
+            "scenarioId": "level-16-3-文化差异",
+            "taskKey": "16.3.10",
+            "title": "教育校园",
+            "description": "6",
+            "promptHint": "当前目标是完成“教育校园”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 10
+          },
+          {
+            "id": "level-16-3-文化差异-task-11",
+            "scenarioId": "level-16-3-文化差异",
+            "taskKey": "16.3.11",
+            "title": "娱乐休闲",
+            "description": "5",
+            "promptHint": "当前目标是完成“娱乐休闲”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 11
+          },
+          {
+            "id": "level-16-3-文化差异-task-12",
+            "scenarioId": "level-16-3-文化差异",
+            "taskKey": "16.3.12",
+            "title": "紧急情况",
+            "description": "6",
+            "promptHint": "当前目标是完成“紧急情况”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 12
+          },
+          {
+            "id": "level-16-3-文化差异-task-13",
+            "scenarioId": "level-16-3-文化差异",
+            "taskKey": "16.3.13",
+            "title": "电话沟通",
+            "description": "4",
+            "promptHint": "当前目标是完成“电话沟通”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 13
+          },
+          {
+            "id": "level-16-3-文化差异-task-14",
+            "scenarioId": "level-16-3-文化差异",
+            "taskKey": "16.3.14",
+            "title": "房屋维修",
+            "description": "4",
+            "promptHint": "当前目标是完成“房屋维修”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 14
+          },
+          {
+            "id": "level-16-3-文化差异-task-15",
+            "scenarioId": "level-16-3-文化差异",
+            "taskKey": "16.3.15",
+            "title": "宠物动物",
+            "description": "3",
+            "promptHint": "当前目标是完成“宠物动物”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 15
+          },
+          {
+            "id": "level-16-3-文化差异-task-16",
+            "scenarioId": "level-16-3-文化差异",
+            "taskKey": "16.3.16",
+            "title": "跨境文化",
+            "description": "3",
+            "promptHint": "当前目标是完成“跨境文化”这一环节，围绕该环节推进真实自然的英文对话。",
+            "sortOrder": 16
+          }
+        ]
+      }
+    ]
+  }
+]
