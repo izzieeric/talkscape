@@ -1,0 +1,258 @@
+<%- include('../partials/layout-start', { title, pageKey, user, notice }) %>
+
+<section class="panel prompt-hero">
+  <div class="panel-head">
+    <div>
+      <h2>提示词工作台</h2>
+      <div class="table-sub"><%= data.selectedWorkbench ? data.selectedWorkbench.desc : '按层级管理系统、流程和场景提示词。' %></div>
+      <div class="table-sub">系统级、功能级、子功能级、流程级都属于系统托管层，只用于查看；后台只开放业务级、场景级、关卡级操作。</div>
+    </div>
+    <a class="secondary-btn" href="<%= adminBasePath %>/prompt-library">打开提示词库</a>
+  </div>
+  <form method="get" action="<%= adminBasePath %>/prompts" class="prompt-toolbar">
+    <label class="field">
+      <span>功能</span>
+      <select name="feature" onchange="this.form.submit()">
+        <% (data.workbenches || []).forEach(function(item) { %>
+          <option value="<%= item.code %>" <%= data.selectedFeature === item.code ? 'selected' : '' %>><%= item.label %></option>
+        <% }) %>
+      </select>
+    </label>
+    <% if (data.selectedWorkbench && data.selectedWorkbench.supportsScenario) { %>
+      <label class="field">
+        <span>场景</span>
+        <select name="scenarioId" onchange="this.form.submit()">
+          <% data.scenarios.forEach(function(item) { %>
+            <option value="<%= item.id %>" <%= data.selectedScenarioId === item.id ? 'selected' : '' %>><%= item.categoryLabel || '未分类' %> / <%= item.title %> / <%= item.sceneTypeLabel || item.sceneType %></option>
+          <% }) %>
+        </select>
+      </label>
+      <label class="field">
+        <span>关卡</span>
+        <select name="subTaskId" onchange="this.form.submit()">
+          <option value="">场景级提示词</option>
+          <% if (data.selectedScenario && data.selectedScenario.subTasks) { %>
+            <% data.selectedScenario.subTasks.forEach(function(item) { %>
+              <option value="<%= item.id %>" <%= data.selectedSubTaskId === item.id ? 'selected' : '' %>><%= item.title %></option>
+            <% }) %>
+          <% } %>
+        </select>
+      </label>
+    <% } %>
+    <% if (data.selectedSlot) { %>
+      <input type="hidden" name="slotKey" value="<%= data.selectedSlot.slotKey %>" />
+    <% } %>
+  </form>
+  <div class="prompt-summary-grid">
+    <% (data.selectionSummary || []).forEach(function(item) { %>
+      <article class="prompt-summary-card">
+        <span class="prompt-summary-label"><%= item.label %></span>
+        <strong><%= item.value %></strong>
+        <div class="table-sub"><%= item.desc %></div>
+      </article>
+    <% }) %>
+  </div>
+</section>
+
+<section class="prompt-layout">
+  <aside class="prompt-sidebar panel">
+    <div class="panel-head">
+      <h2>当前生效链路</h2>
+    </div>
+    <div class="prompt-sidebar-guide">
+      <div class="table-sub">左侧选中要配置的层级，中间决定绑定哪条提示词，右侧查看最终拼装结果。</div>
+    </div>
+    <div class="prompt-slot-list">
+      <% (data.slots || []).forEach(function(slot) { %>
+        <a
+          class="prompt-slot-card <%= slot.isActive ? 'active' : '' %>"
+          href="<%= adminBasePath %>/prompts?feature=<%= encodeURIComponent(data.selectedFeature) %><% if (data.selectedScenarioId) { %>&scenarioId=<%= encodeURIComponent(data.selectedScenarioId) %><% } %><% if (data.selectedSubTaskId) { %>&subTaskId=<%= encodeURIComponent(data.selectedSubTaskId) %><% } %>&slotKey=<%= encodeURIComponent(slot.slotKey) %>"
+        >
+          <div class="prompt-slot-head">
+            <strong><%= slot.slotLabel %></strong>
+            <span class="tag"><%= slot.layerCode %></span>
+          </div>
+          <div class="prompt-slot-meta">
+            <span class="tag"><%= slot.ownerLabel %></span>
+            <span class="tag <%= slot.isEditable ? 'tag-success' : 'tag-muted' %>"><%= slot.manageModeLabel %></span>
+          </div>
+          <div class="table-sub"><%= slot.slotDesc %></div>
+          <div class="prompt-slot-current">
+            <div class="prompt-slot-title"><%= slot.currentPrompt ? slot.currentPrompt.title : '未绑定提示词' %></div>
+            <div class="table-sub"><%= slot.currentPrompt ? slot.currentPrompt.promptCode : '点击后为该层选择提示词' %></div>
+          </div>
+        </a>
+      <% }) %>
+    </div>
+  </aside>
+
+  <div class="prompt-main-stack">
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>当前配置层</h2>
+          <% if (data.selectedSlot) { %>
+            <div class="table-sub"><%= data.selectedSlot.slotLabel %> · <%= data.selectedSlot.ownerLabel %></div>
+          <% } %>
+        </div>
+      </div>
+      <% if (data.selectedSlot) { %>
+        <div class="prompt-current-card">
+          <div class="prompt-current-main">
+            <div class="prompt-current-meta">
+              <span class="tag"><%= data.selectedSlot.layerCode %></span>
+              <span class="tag"><%= data.selectedSlot.ownerLabel %></span>
+              <% if (data.selectedScenario && data.selectedSlot.ownerType === 'scenario') { %>
+                <span class="tag"><%= data.selectedScenario.title %></span>
+                <span class="tag"><%= data.selectedScenario.categoryLabel || '未分类' %></span>
+              <% } %>
+              <% if (data.selectedScenario && data.selectedSlot.ownerType === 'sub_scenario') { %>
+                <span class="tag"><%= data.selectedSubTask ? data.selectedSubTask.title : (data.selectedSubTaskId || data.selectedSlot.ownerId) %></span>
+                <span class="tag"><%= data.selectedScenario.categoryLabel || '未分类' %></span>
+              <% } %>
+            </div>
+            <div class="table-title"><%= data.selectedSlot.currentPrompt ? data.selectedSlot.currentPrompt.title : '当前未绑定提示词' %></div>
+            <div class="table-sub"><%= data.selectedSlot.currentPrompt ? data.selectedSlot.currentPrompt.promptCode : (data.selectedSlot.isEditable ? '请从下方候选提示词中直接选择一个进行绑定' : '当前层级由系统托管，请在此查看默认链路') %></div>
+            <% if (data.selectedSlot.currentPrompt && data.selectedSlot.currentPrompt.description) { %>
+              <div class="prompt-inline-desc"><%= data.selectedSlot.currentPrompt.description %></div>
+            <% } %>
+          </div>
+          <div class="prompt-current-side">
+            <div class="prompt-info-block">
+              <span class="prompt-info-label">作用范围</span>
+              <strong><%= data.selectedSlot.ownerLabel %></strong>
+              <div class="table-sub"><%= data.selectedSlot.slotDesc %></div>
+            </div>
+            <div class="prompt-info-block">
+              <span class="prompt-info-label">当前绑定</span>
+              <strong><%= data.selectedSlot.currentPrompt ? data.selectedSlot.currentPrompt.title : '未绑定' %></strong>
+              <div class="table-sub"><%= data.selectedSlot.currentPrompt ? data.selectedSlot.currentPrompt.promptCode : (data.selectedSlot.isEditable ? '可以清空或重新绑定' : '系统托管层不支持后台改绑') %></div>
+            </div>
+          </div>
+        </div>
+        <% if (data.selectedSlot.isEditable) { %>
+          <div class="prompt-action-bar">
+            <form method="post" action="<%= adminBasePath %>/prompts">
+              <input type="hidden" name="targetType" value="<%= data.selectedSlot.ownerType === 'system' ? 'system' : 'scenario' %>" />
+              <input type="hidden" name="workbenchFeature" value="<%= data.selectedFeature %>" />
+              <input type="hidden" name="feature" value="<%= data.selectedSlot.feature || '' %>" />
+              <input type="hidden" name="slotKey" value="<%= data.selectedSlot.slotKey %>" />
+              <input type="hidden" name="layerCode" value="<%= data.selectedSlot.layerCode %>" />
+              <input type="hidden" name="subFeatureCode" value="<%= data.selectedSlot.subFeatureCode %>" />
+              <input type="hidden" name="flowCode" value="<%= data.selectedSlot.flowCode %>" />
+              <input type="hidden" name="promptId" value="" />
+              <% if (data.selectedScenarioId) { %>
+                <input type="hidden" name="scenarioId" value="<%= data.selectedScenarioId %>" />
+              <% } %>
+              <% if (data.selectedSlot.ownerType === 'sub_scenario' && data.selectedSubTaskId) { %>
+                <input type="hidden" name="subTaskId" value="<%= data.selectedSubTaskId %>" />
+              <% } %>
+              <button type="submit" class="secondary-btn">清空当前绑定</button>
+            </form>
+          </div>
+        <% } else { %>
+          <div class="empty-inline">当前层级属于系统托管，只用于查看编译链路和变量替换，不允许在后台修改绑定。</div>
+        <% } %>
+      <% } else { %>
+        <div class="empty-inline">当前没有可配置的提示词层。</div>
+      <% } %>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>候选提示词</h2>
+          <div class="table-sub">只展示当前所选层级可用的提示词；业务层可切换绑定，系统托管层仅供查看。</div>
+        </div>
+      </div>
+      <% if ((data.candidatePrompts || []).length) { %>
+        <div class="prompt-candidate-grid">
+          <% data.candidatePrompts.forEach(function(item) { %>
+            <article class="prompt-candidate-card <%= item.isCurrent ? 'active' : '' %>">
+              <div class="prompt-candidate-head">
+                <div>
+                  <div class="table-title"><%= item.title %></div>
+                  <div class="table-sub"><%= item.promptCode %></div>
+                </div>
+                <span class="tag"><%= item.isCurrent ? '当前生效' : '可切换' %></span>
+              </div>
+              <div class="prompt-candidate-meta">
+                <span class="tag"><%= item.layerCode %></span>
+                <span class="tag"><%= item.isActive ? '启用中' : '已停用' %></span>
+                <span class="tag <%= data.selectedSlot && data.selectedSlot.isEditable ? 'tag-success' : 'tag-muted' %>"><%= data.selectedSlot ? data.selectedSlot.manageModeLabel : '查看' %></span>
+              </div>
+              <% if (item.description) { %>
+                <div class="prompt-inline-desc"><%= item.description %></div>
+              <% } %>
+              <div class="table-sub"><%= item.usageText %></div>
+              <pre class="code-block prompt-code-preview"><%= item.preview %></pre>
+              <div class="prompt-candidate-footer">
+                <div class="table-sub">
+                  <% if (data.selectedSlot && data.selectedSlot.isEditable) { %>
+                    这里只操作业务层绑定；如需修改提示词内容，请前往独立的提示词库页面。
+                  <% } else { %>
+                    该层属于系统托管，只提供查看，不支持后台改绑。
+                  <% } %>
+                </div>
+                <% if (item.isCurrent) { %>
+                  <span class="secondary-btn candidate-bound-label">已绑定</span>
+                <% } else if (!(data.selectedSlot && data.selectedSlot.isEditable)) { %>
+                  <span class="secondary-btn candidate-bound-label">系统托管</span>
+                <% } else { %>
+                  <form method="post" action="<%= adminBasePath %>/prompts">
+                    <input type="hidden" name="targetType" value="<%= data.selectedSlot.ownerType === 'system' ? 'system' : 'scenario' %>" />
+                    <input type="hidden" name="workbenchFeature" value="<%= data.selectedFeature %>" />
+                    <input type="hidden" name="feature" value="<%= data.selectedSlot.feature || '' %>" />
+                    <input type="hidden" name="slotKey" value="<%= data.selectedSlot.slotKey %>" />
+                    <input type="hidden" name="layerCode" value="<%= data.selectedSlot.layerCode %>" />
+                    <input type="hidden" name="subFeatureCode" value="<%= data.selectedSlot.subFeatureCode %>" />
+                    <input type="hidden" name="flowCode" value="<%= data.selectedSlot.flowCode %>" />
+                    <input type="hidden" name="promptId" value="<%= item.id %>" />
+                    <% if (data.selectedScenarioId) { %>
+                      <input type="hidden" name="scenarioId" value="<%= data.selectedScenarioId %>" />
+                    <% } %>
+                    <% if (data.selectedSlot.ownerType === 'sub_scenario' && data.selectedSubTaskId) { %>
+                      <input type="hidden" name="subTaskId" value="<%= data.selectedSubTaskId %>" />
+                    <% } %>
+                    <button type="submit" class="primary-btn">绑定这条提示词</button>
+                  </form>
+                <% } %>
+              </div>
+            </article>
+          <% }) %>
+        </div>
+      <% } else { %>
+        <div class="empty-inline">当前这一层没有可选提示词。</div>
+      <% } %>
+    </section>
+
+  </div>
+
+  <aside class="prompt-preview panel">
+    <div class="panel-head">
+      <div>
+        <h2>最终编译链路</h2>
+        <div class="table-sub">展示当前功能下最终参与拼装的提示词顺序。</div>
+      </div>
+    </div>
+    <% if ((data.currentLayers || []).length) { %>
+      <div class="layer-list">
+        <% data.currentLayers.forEach(function(item) { %>
+          <article class="layer-card">
+            <div class="layer-head">
+              <strong><%= item.orderIndex %>. <%= item.layerLabel %></strong>
+              <span class="tag"><%= item.source %></span>
+              <span class="tag <%= item.isEditable ? 'tag-success' : 'tag-muted' %>"><%= item.manageModeLabel %></span>
+            </div>
+            <div class="table-sub"><%= item.promptCode %> · <%= item.sourceKey %></div>
+            <pre class="code-block"><%= item.content %></pre>
+          </article>
+        <% }) %>
+      </div>
+    <% } else { %>
+      <div class="empty-inline">当前没有可编译的提示词链路。</div>
+    <% } %>
+  </aside>
+</section>
+
+<%- include('../partials/layout-end') %>

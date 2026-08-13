@@ -1,0 +1,44 @@
+{
+  "name": "talkscape-server",
+  "version": "1.2.1",
+  "description": "TalkScape 后端服务",
+  "private": true,
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "db:migrate": "knex migrate:latest",
+    "db:rollback": "knex migrate:rollback",
+    "db:init-data": "node scripts/generate-init-sql.js",
+    "cleanup:invalid-sessions": "node scripts/cleanup-invalid-sessions.js",
+    "test": "jest --forceExit --detectOpenHandles",
+    "test:watch": "jest --watch --forceExit --detectOpenHandles",
+    "preload:wordcards": "node scripts/preload-word-cards.js"
+  },
+  "dependencies": {
+    "@koa/cors": "^5.0.0",
+    "@koa/multer": "^4.0.0",
+    "@koa/router": "^13.1.0",
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^9.4.3",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "jsonwebtoken": "^9.0.3",
+    "knex": "^3.2.10",
+    "koa": "^2.16.1",
+    "koa-bodyparser": "^4.4.1",
+    "koa-mount": "^4.2.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^8.1.0",
+    "mysql2": "^3.22.5",
+    "node-cache": "^5.1.2",
+    "openai": "^4.28.0",
+    "uuid": "^9.0.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "jest": "^30.4.2",
+    "nodemon": "^3.0.3",
+    "supertest": "^7.2.2"
+  }
+}

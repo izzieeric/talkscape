@@ -1,0 +1,542 @@
+<%- include('../partials/layout-start', { title, pageKey, user, notice }) %>
+
+<section class="panel prompt-hero">
+  <div class="panel-head">
+    <div>
+      <h2>模型配置</h2>
+      <div class="table-sub">每个能力单独编辑、单独保存。保存当前卡片时不会刷新整页，也不会把其他卡片的改动冲掉。</div>
+    </div>
+  </div>
+</section>
+
+<section class="model-config-grid">
+  <% (data.functionConfigs || []).forEach(function(item) { %>
+    <article
+      class="panel model-config-card"
+      data-function-code="<%= item.value %>"
+      data-capability="<%= item.capability %>"
+      data-initial-provider="<%= item.current.provider %>"
+      data-initial-base-url="<%= item.current.baseUrl || '' %>"
+      data-initial-model="<%= item.current.model %>"
+      data-initial-tts-model="<%= item.current.ttsModel || '' %>"
+      data-initial-tts-voice="<%= item.current.ttsVoice || '' %>"
+      data-last-saved="0"
+    >
+      <div class="panel-head">
+        <div>
+          <h2><%= item.label %></h2>
+          <div class="table-sub"><%= item.capability === 'voice' ? '语音能力配置' : '文本生成能力配置' %></div>
+        </div>
+        <div class="model-card-tags">
+          <span class="tag"><%= item.value %></span>
+        </div>
+      </div>
+
+      <div class="prompt-info-block">
+        <span class="prompt-info-label">当前编辑预览</span>
+        <strong data-edit-preview="<%= item.value %>">
+          <%= item.current.providerLabel %> / <%= item.current.model %><% if (item.capability === 'voice' && item.current.ttsModel) { %> / TTS <%= item.current.ttsModel %><% } %><% if (item.capability === 'voice' && item.current.ttsVoice) { %> / 音色 <%= item.current.ttsVoice %><% } %>
+        </strong>
+        <div class="table-sub" data-default-base-url="<%= item.value %>">
+          当前平台默认地址：<%= ((item.providerOptions || []).find(function(provider) { return provider.value === item.current.provider; }) || {}).baseUrl || '无' %>。如无特殊需求，保持默认即可。
+        </div>
+      </div>
+
+      <form method="post" action="<%= adminBasePath %>/model-configs" class="form-stack model-config-form">
+        <input type="hidden" name="functionCode" value="<%= item.value %>" />
+
+        <label class="field">
+          <span>API 平台</span>
+          <select
+            name="provider"
+            class="model-provider-select"
+            data-model-target="model-input-<%= item.value %>"
+            data-model-preset-target="model-preset-<%= item.value %>"
+            data-model-custom-wrap-target="model-custom-wrap-<%= item.value %>"
+            data-model-list-target="model-list-<%= item.value %>"
+            data-model-options='<%- JSON.stringify(item.modelOptionsByProvider || {}) %>'
+            data-voice-target="voice-input-<%= item.value %>"
+            data-voice-list-target="voice-list-<%= item.value %>"
+            data-voice-options='<%- JSON.stringify(item.voiceOptionsByProvider || {}) %>'
+            data-provider-options='<%- JSON.stringify(item.providerOptions || []) %>'
+          >
+            <% (item.providerOptions || []).forEach(function(provider) { %>
+              <option value="<%= provider.value %>" <%= item.current.provider === provider.value ? 'selected' : '' %>><%= provider.label %></option>
+            <% }) %>
+          </select>
+        </label>
+
+        <label class="field">
+          <span><%= item.capability === 'voice' ? '识别模型' : '模型' %></span>
+          <select
+            name="modelPreset"
+            id="model-preset-<%= item.value %>"
+            class="model-preset-select"
+          >
+            <option value="">请选择推荐模型</option>
+            <% ((item.modelOptionsByProvider && item.modelOptionsByProvider[item.current.provider]) || []).forEach(function(modelItem) { %>
+              <option value="<%= modelItem.value %>" <%= item.current.model === modelItem.value ? 'selected' : '' %>><%= modelItem.label %></option>
+            <% }) %>
+            <option value="__custom__" <%= ((item.modelOptionsByProvider && item.modelOptionsByProvider[item.current.provider]) || []).some(function(modelItem) { return modelItem.value === item.current.model }) ? '' : 'selected' %>>自定义模型</option>
+          </select>
+          <div
+            id="model-custom-wrap-<%= item.value %>"
+            <%= ((item.modelOptionsByProvider && item.modelOptionsByProvider[item.current.provider]) || []).some(function(modelItem) { return modelItem.value === item.current.model }) ? 'hidden' : '' %>
+          >
+            <input
+              type="text"
+              name="model"
+              id="model-input-<%= item.value %>"
+              class="model-select"
+              list="model-list-<%= item.value %>"
+              value="<%= item.current.model %>"
+              placeholder="请输入自定义模型 ID"
+            />
+          </div>
+          <datalist id="model-list-<%= item.value %>">
+            <% ((item.modelOptionsByProvider && item.modelOptionsByProvider[item.current.provider]) || []).forEach(function(modelItem) { %>
+              <option value="<%= modelItem.value %>"><%= modelItem.label %></option>
+            <% }) %>
+          </datalist>
+        </label>
+
+        <% if (item.capability === 'voice') { %>
+          <label class="field">
+            <span>TTS 模型</span>
+            <input
+              type="text"
+              name="ttsModel"
+              class="tts-model-input"
+              value="<%= item.current.ttsModel || '' %>"
+              placeholder="默认 tts-1，可按需修改"
+            />
+          </label>
+
+          <label class="field">
+            <span>AI 语音音色</span>
+            <input
+              type="text"
+              name="ttsVoice"
+              id="voice-input-<%= item.value %>"
+              class="voice-select"
+              list="voice-list-<%= item.value %>"
+              value="<%= item.current.ttsVoice || '' %>"
+              placeholder="请输入或选择音色 ID"
+            />
+            <datalist id="voice-list-<%= item.value %>">
+              <% ((item.voiceOptionsByProvider && item.voiceOptionsByProvider[item.current.provider]) || []).forEach(function(voiceItem) { %>
+                <option value="<%= voiceItem.value %>"><%= voiceItem.label %></option>
+              <% }) %>
+            </datalist>
+          </label>
+        <% } %>
+
+        <label class="field">
+          <span>接口地址</span>
+          <input
+            type="text"
+            name="baseUrl"
+            class="base-url-input"
+            value="<%= item.current.baseUrl || '' %>"
+            placeholder="留空则使用当前平台默认地址"
+          />
+          <div class="table-sub">只有接自定义兼容网关时才需要改这里；普通情况下使用平台默认地址即可。</div>
+        </label>
+
+        <div class="prompt-editor-actions">
+          <button type="button" class="secondary-btn reset-card-btn" hidden>撤销当前改动</button>
+          <button type="submit" class="primary-btn save-card-btn" disabled>保存配置</button>
+        </div>
+        <div class="table-sub save-status">未修改</div>
+      </form>
+    </article>
+  <% }) %>
+</section>
+
+<script>
+  (function () {
+    const cards = Array.from(document.querySelectorAll('.model-config-card'));
+
+    function getProviderMeta(select, provider) {
+      const providerOptions = JSON.parse(select.getAttribute('data-provider-options') || '[]');
+      return providerOptions.find(function (item) {
+        return item.value === provider;
+      }) || null;
+    }
+
+    function getCardState(card) {
+      const providerSelect = card.querySelector('.model-provider-select');
+      const modelInput = card.querySelector('.model-select');
+      const ttsModelInput = card.querySelector('.tts-model-input');
+      const voiceInput = card.querySelector('.voice-select');
+      const baseUrlInput = card.querySelector('.base-url-input');
+      return {
+        functionCode: card.getAttribute('data-function-code'),
+        provider: providerSelect ? String(providerSelect.value || '').trim() : '',
+        model: modelInput ? String(modelInput.value || '').trim() : '',
+        baseUrl: baseUrlInput ? String(baseUrlInput.value || '').trim() : '',
+        ttsModel: ttsModelInput ? String(ttsModelInput.value || '').trim() : '',
+        ttsVoice: voiceInput ? String(voiceInput.value || '').trim() : ''
+      };
+    }
+
+    function getInitialState(card) {
+      return {
+        functionCode: card.getAttribute('data-function-code'),
+        provider: card.getAttribute('data-initial-provider') || '',
+        model: card.getAttribute('data-initial-model') || '',
+        baseUrl: card.getAttribute('data-initial-base-url') || '',
+        ttsModel: card.getAttribute('data-initial-tts-model') || '',
+        ttsVoice: card.getAttribute('data-initial-tts-voice') || ''
+      };
+    }
+
+    function setInitialState(card, state) {
+      card.setAttribute('data-initial-provider', state.provider || '');
+      card.setAttribute('data-initial-model', state.model || '');
+      card.setAttribute('data-initial-base-url', state.baseUrl || '');
+      card.setAttribute('data-initial-tts-model', state.ttsModel || '');
+      card.setAttribute('data-initial-tts-voice', state.ttsVoice || '');
+      card.setAttribute('data-last-saved', '1');
+    }
+
+    function isSameState(left, right) {
+      return left.provider === right.provider
+        && left.model === right.model
+        && left.baseUrl === right.baseUrl
+        && left.ttsModel === right.ttsModel
+        && left.ttsVoice === right.ttsVoice;
+    }
+
+    function setStatus(card, text) {
+      const statusNode = card.querySelector('.save-status');
+      if (statusNode) statusNode.textContent = text;
+    }
+
+    function updatePreview(card) {
+      const state = getCardState(card);
+      const providerSelect = card.querySelector('.model-provider-select');
+      const previewNode = card.querySelector('[data-edit-preview]');
+      const baseUrlHintNode = card.querySelector('[data-default-base-url]');
+      const providerMeta = providerSelect ? getProviderMeta(providerSelect, state.provider) : null;
+      const providerLabel = providerMeta && providerMeta.label ? providerMeta.label : state.provider;
+      const ttsModelText = state.ttsModel ? ' / TTS ' + state.ttsModel : '';
+      const voiceText = state.ttsVoice ? ' / 音色 ' + state.ttsVoice : '';
+
+      if (previewNode) {
+        previewNode.textContent = providerLabel + ' / ' + (state.model || '未设置') + ttsModelText + voiceText;
+      }
+      if (baseUrlHintNode) {
+        baseUrlHintNode.textContent = '当前平台默认地址：' + ((providerMeta && providerMeta.baseUrl) || '无') + '。如无特殊需求，保持默认即可。';
+      }
+    }
+
+    function syncModels(card, preferredModel) {
+      const providerSelect = card.querySelector('.model-provider-select');
+      const provider = providerSelect.value;
+      const modelTargetId = providerSelect.getAttribute('data-model-target');
+      const modelPresetId = providerSelect.getAttribute('data-model-preset-target');
+      const modelCustomWrapId = providerSelect.getAttribute('data-model-custom-wrap-target');
+      const modelListId = providerSelect.getAttribute('data-model-list-target');
+      const modelInput = document.getElementById(modelTargetId);
+      const modelPreset = document.getElementById(modelPresetId);
+      const modelCustomWrap = document.getElementById(modelCustomWrapId);
+      const modelList = document.getElementById(modelListId);
+      const modelOptionsByProvider = JSON.parse(providerSelect.getAttribute('data-model-options') || '{}');
+      const nextOptions = modelOptionsByProvider[provider] || [];
+      const hasExplicitPreferred = preferredModel !== undefined && preferredModel !== null;
+      const currentValue = hasExplicitPreferred ? String(preferredModel || '').trim() : String(modelInput.value || '').trim();
+      const hasCurrentOption = nextOptions.some(function (item) {
+        return item.value === currentValue;
+      });
+
+      modelList.innerHTML = '';
+      nextOptions.forEach(function (item) {
+        const option = document.createElement('option');
+        option.value = item.value;
+        option.label = item.label;
+        modelList.appendChild(option);
+      });
+
+      modelPreset.innerHTML = '';
+      const placeholder = document.createElement('option');
+      placeholder.value = '';
+      placeholder.textContent = '请选择推荐模型';
+      modelPreset.appendChild(placeholder);
+
+      nextOptions.forEach(function (item) {
+        const option = document.createElement('option');
+        option.value = item.value;
+        option.textContent = item.label;
+        modelPreset.appendChild(option);
+      });
+
+      const customOption = document.createElement('option');
+      customOption.value = '__custom__';
+      customOption.textContent = '自定义模型';
+      modelPreset.appendChild(customOption);
+
+      if (hasExplicitPreferred) {
+        modelInput.value = currentValue;
+      } else if (hasCurrentOption) {
+        modelInput.value = currentValue;
+      } else if (nextOptions.length) {
+        modelInput.value = nextOptions[0].value;
+      } else {
+        modelInput.value = '';
+      }
+
+      const matchesPreset = nextOptions.some(function (item) {
+        return item.value === modelInput.value;
+      });
+      modelPreset.value = matchesPreset ? modelInput.value : '__custom__';
+      modelCustomWrap.hidden = modelPreset.value !== '__custom__';
+      return modelInput.value;
+    }
+
+    function syncVoices(card, preferredVoice) {
+      const providerSelect = card.querySelector('.model-provider-select');
+      const voiceTargetId = providerSelect.getAttribute('data-voice-target');
+      const voiceListId = providerSelect.getAttribute('data-voice-list-target');
+      if (!voiceTargetId) return '';
+
+      const voiceInput = document.getElementById(voiceTargetId);
+      const voiceList = document.getElementById(voiceListId);
+      if (!voiceInput || !voiceList) return '';
+
+      const provider = providerSelect.value;
+      const voiceOptionsByProvider = JSON.parse(providerSelect.getAttribute('data-voice-options') || '{}');
+      const nextOptions = voiceOptionsByProvider[provider] || [];
+      const hasExplicitPreferred = preferredVoice !== undefined && preferredVoice !== null;
+      const currentValue = hasExplicitPreferred ? String(preferredVoice || '').trim() : String(voiceInput.value || '').trim();
+      const hasCurrentOption = nextOptions.some(function (item) {
+        return item.value === currentValue;
+      });
+
+      voiceList.innerHTML = '';
+      nextOptions.forEach(function (item) {
+        const option = document.createElement('option');
+        option.value = item.value;
+        option.label = item.label;
+        voiceList.appendChild(option);
+      });
+
+      if (hasExplicitPreferred) {
+        voiceInput.value = currentValue;
+      } else if (hasCurrentOption) {
+        voiceInput.value = currentValue;
+      } else if (nextOptions.length) {
+        voiceInput.value = nextOptions[0].value;
+      } else {
+        voiceInput.value = '';
+      }
+
+      return voiceInput.value;
+    }
+
+    function syncBaseUrl(card) {
+      const providerSelect = card.querySelector('.model-provider-select');
+      const baseUrlInput = card.querySelector('.base-url-input');
+      if (!providerSelect || !baseUrlInput) return;
+
+      const provider = providerSelect.value;
+      const providerMeta = getProviderMeta(providerSelect, provider);
+      const previousProvider = providerSelect.getAttribute('data-last-provider') || card.getAttribute('data-initial-provider') || provider;
+      const previousProviderMeta = getProviderMeta(providerSelect, previousProvider);
+      const currentValue = String(baseUrlInput.value || '').trim();
+      const previousDefaultBaseUrl = previousProviderMeta && previousProviderMeta.baseUrl ? previousProviderMeta.baseUrl : '';
+
+      if (!currentValue || currentValue === previousDefaultBaseUrl) {
+        baseUrlInput.value = providerMeta && providerMeta.baseUrl ? providerMeta.baseUrl : '';
+      }
+
+      providerSelect.setAttribute('data-last-provider', provider);
+    }
+
+    function updateCardState(card) {
+      const currentState = getCardState(card);
+      const initialState = getInitialState(card);
+      const saveButton = card.querySelector('.save-card-btn');
+      const resetButton = card.querySelector('.reset-card-btn');
+      const isDirty = !isSameState(currentState, initialState);
+      const isSaving = card.getAttribute('data-saving') === '1';
+
+      updatePreview(card);
+
+      if (saveButton) {
+        saveButton.disabled = !isDirty || isSaving;
+        saveButton.textContent = isSaving ? '保存中...' : '保存配置';
+      }
+      if (resetButton) {
+        resetButton.hidden = !isDirty;
+        resetButton.disabled = isSaving;
+      }
+
+      if (isSaving) {
+        setStatus(card, '保存中...');
+      } else if (isDirty) {
+        setStatus(card, '当前卡片有未保存修改');
+      } else if (card.getAttribute('data-last-saved') === '1') {
+        setStatus(card, '已保存');
+      } else {
+        setStatus(card, '未修改');
+      }
+    }
+
+    function restoreCard(card) {
+      const initialState = getInitialState(card);
+      const providerSelect = card.querySelector('.model-provider-select');
+      const ttsModelInput = card.querySelector('.tts-model-input');
+      const baseUrlInput = card.querySelector('.base-url-input');
+
+      if (providerSelect) providerSelect.value = initialState.provider;
+      syncModels(card, initialState.model);
+      if (ttsModelInput) ttsModelInput.value = initialState.ttsModel;
+      if (baseUrlInput) baseUrlInput.value = initialState.baseUrl;
+      syncVoices(card, initialState.ttsVoice);
+      card.setAttribute('data-last-saved', '0');
+      updateCardState(card);
+    }
+
+    async function saveCard(card) {
+      const form = card.querySelector('.model-config-form');
+      const saveButton = card.querySelector('.save-card-btn');
+      if (!form || !saveButton || saveButton.disabled) return;
+
+      card.setAttribute('data-saving', '1');
+      updateCardState(card);
+
+      try {
+        const formData = new FormData(form);
+        const body = new URLSearchParams();
+        formData.forEach(function (value, key) {
+          body.append(key, value);
+        });
+
+        const response = await fetch(form.action, {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+            'X-Requested-With': 'XMLHttpRequest'
+          },
+          body: body.toString(),
+          credentials: 'same-origin'
+        });
+
+        const payload = await response.json().catch(function () {
+          return null;
+        });
+
+        if (!response.ok || !payload || payload.success !== true || !payload.data) {
+          throw new Error((payload && payload.error) || '保存失败');
+        }
+
+        const saved = payload.data;
+        const providerSelect = card.querySelector('.model-provider-select');
+        const ttsModelInput = card.querySelector('.tts-model-input');
+        const baseUrlInput = card.querySelector('.base-url-input');
+
+        if (providerSelect) providerSelect.value = saved.provider || '';
+        syncModels(card, saved.model || '');
+        if (ttsModelInput) ttsModelInput.value = saved.ttsModel || '';
+        if (baseUrlInput) baseUrlInput.value = saved.baseUrl || '';
+        syncVoices(card, saved.ttsVoice || '');
+        setInitialState(card, {
+          provider: saved.provider || '',
+          model: saved.model || '',
+          baseUrl: saved.baseUrl || '',
+          ttsModel: saved.ttsModel || '',
+          ttsVoice: saved.ttsVoice || ''
+        });
+      } catch (error) {
+        card.setAttribute('data-saving', '0');
+        setStatus(card, '保存失败：' + error.message);
+        return;
+      }
+
+      card.setAttribute('data-saving', '0');
+      updateCardState(card);
+    }
+
+    cards.forEach(function (card) {
+      const providerSelect = card.querySelector('.model-provider-select');
+      const modelPreset = card.querySelector('.model-preset-select');
+      const modelInput = card.querySelector('.model-select');
+      const ttsModelInput = card.querySelector('.tts-model-input');
+      const voiceInput = card.querySelector('.voice-select');
+      const baseUrlInput = card.querySelector('.base-url-input');
+      const resetButton = card.querySelector('.reset-card-btn');
+      const form = card.querySelector('.model-config-form');
+
+      syncModels(card, card.getAttribute('data-initial-model') || '');
+      syncVoices(card, card.getAttribute('data-initial-tts-voice') || '');
+      updateCardState(card);
+
+      providerSelect.addEventListener('change', function () {
+        syncModels(card);
+        syncVoices(card);
+        syncBaseUrl(card);
+        card.setAttribute('data-last-saved', '0');
+        updateCardState(card);
+      });
+
+      modelPreset.addEventListener('change', function () {
+        if (modelPreset.value && modelPreset.value !== '__custom__') {
+          modelInput.value = modelPreset.value;
+        }
+        syncModels(card, modelPreset.value === '__custom__' ? modelInput.value : modelPreset.value);
+        card.setAttribute('data-last-saved', '0');
+        updateCardState(card);
+      });
+
+      modelInput.addEventListener('input', function () {
+        syncModels(card, modelInput.value);
+        card.setAttribute('data-last-saved', '0');
+        updateCardState(card);
+      });
+
+      modelInput.addEventListener('change', function () {
+        syncModels(card, modelInput.value);
+        card.setAttribute('data-last-saved', '0');
+        updateCardState(card);
+      });
+
+      if (baseUrlInput) {
+        baseUrlInput.addEventListener('input', function () {
+          card.setAttribute('data-last-saved', '0');
+          updateCardState(card);
+        });
+      }
+
+      if (ttsModelInput) {
+        ttsModelInput.addEventListener('input', function () {
+          card.setAttribute('data-last-saved', '0');
+          updateCardState(card);
+        });
+      }
+
+      if (voiceInput) {
+        voiceInput.addEventListener('input', function () {
+          card.setAttribute('data-last-saved', '0');
+          updateCardState(card);
+        });
+        voiceInput.addEventListener('change', function () {
+          card.setAttribute('data-last-saved', '0');
+          updateCardState(card);
+        });
+      }
+
+      resetButton.addEventListener('click', function () {
+        restoreCard(card);
+      });
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        saveCard(card);
+      });
+    });
+  })();
+</script>
+
+<%- include('../partials/layout-end') %>

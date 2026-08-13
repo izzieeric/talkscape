@@ -1,0 +1,12 @@
+<%- include('head', { title, adminAssetsPath }) %>
+<div class="admin-shell">
+  <%- include('sidebar', { pageKey, user, adminBasePath }) %>
+  <main class="admin-main">
+    <header class="page-header">
+      <div>
+        <h1><%= title %></h1>
+        <% if (notice) { %>
+          <p class="page-notice"><%= notice %></p>
+        <% } %>
+      </div>
+    </header>

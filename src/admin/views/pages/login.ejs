@@ -1,0 +1,29 @@
+<%- include('../partials/head', { title, adminAssetsPath }) %>
+<div class="login-shell">
+  <div class="login-card">
+    <div class="login-brand">tsadmin</div>
+    <h1 class="login-title">进入 TalkScape 管理端</h1>
+    <p class="login-desc">复用现有服务，管理场景、关卡提示词、会话与词本数据。</p>
+
+    <% if (errorMessage) { %>
+      <div class="alert error"><%= errorMessage %></div>
+    <% } %>
+
+    <form method="post" action="<%= adminBasePath %>/login" class="form-stack">
+      <input type="hidden" name="redirect" value="<%= query.redirect || adminBasePath %>" />
+      <label class="field">
+        <span>用户名</span>
+        <input type="text" name="username" placeholder="请输入用户名" required />
+      </label>
+      <label class="field">
+        <span>密码</span>
+        <input type="password" name="password" placeholder="请输入密码" required />
+      </label>
+      <button type="submit" class="primary-btn">登录后台</button>
+    </form>
+
+    <div class="login-hint">登录后会写入后台专用 Cookie，并统一进入 <code><%= adminBasePath %></code>。</div>
+  </div>
+</div>
+</body>
+</html>

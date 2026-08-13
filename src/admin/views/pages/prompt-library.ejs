@@ -1,0 +1,470 @@
+<%
+  const filters = data.promptLibraryFilters || {};
+  const filterParts = [];
+  if (filters.feature) filterParts.push('libraryFeature=' + encodeURIComponent(filters.feature));
+  if (filters.layerCode) filterParts.push('libraryLayerCode=' + encodeURIComponent(filters.layerCode));
+  if (filters.keyword) filterParts.push('libraryKeyword=' + encodeURIComponent(filters.keyword));
+  const filterQuery = filterParts.join('&');
+  const filterQueryPrefix = filterQuery ? filterQuery + '&' : '';
+  const closeLibraryHref = adminBasePath + '/prompt-library' + (filterQuery ? ('?' + filterQuery) : '');
+  const openNewPromptHref = adminBasePath + '/prompt-library?' + filterQueryPrefix + 'libraryPromptId=__new__';
+  const editingPrompt = data.selectedLibraryPrompt || null;
+  const readonlyPrompt = editingPrompt && !editingPrompt.isEditable;
+%>
+
+<%- include('../partials/layout-start', { title, pageKey, user, notice }) %>
+
+<section class="panel prompt-hero">
+  <div class="panel-head">
+    <div>
+      <h2>提示词库</h2>
+      <div class="table-sub">这里专门管理提示词实体本身，支持表格筛选、弹窗编辑、创建和删除。</div>
+    </div>
+    <div class="prompt-library-head-actions">
+      <a class="secondary-btn" href="<%= adminBasePath %>/prompts">返回提示词工作台</a>
+      <a class="primary-btn" href="<%= openNewPromptHref %>">新建提示词</a>
+    </div>
+  </div>
+</section>
+
+<section class="panel">
+  <div class="panel-head">
+    <div>
+      <h2>提示词列表</h2>
+      <div class="table-sub">用表格快速查看层级、归属、绑定数和状态；点击“编辑”后再弹窗修改。</div>
+    </div>
+  </div>
+
+  <form method="get" action="<%= adminBasePath %>/prompt-library" class="prompt-library-toolbar">
+    <label class="field">
+      <span>查看功能</span>
+      <select name="libraryFeature">
+        <% (data.promptLibraryFeatureOptions || []).forEach(function(item) { %>
+          <option value="<%= item.value %>" <%= filters.feature === item.value ? 'selected' : '' %>><%= item.label %></option>
+        <% }) %>
+      </select>
+    </label>
+    <label class="field">
+      <span>查看层级</span>
+      <select name="libraryLayerCode">
+        <% (data.promptLibraryLayerOptions || []).forEach(function(item) { %>
+          <option value="<%= item.value %>" <%= filters.layerCode === item.value ? 'selected' : '' %>><%= item.label %></option>
+        <% }) %>
+      </select>
+    </label>
+    <label class="field">
+      <span>关键词</span>
+      <input type="text" name="libraryKeyword" value="<%= filters.keyword || '' %>" placeholder="搜索标题、编码、功能、对象" />
+    </label>
+    <button type="submit" class="primary-btn">筛选</button>
+  </form>
+  <div class="table-sub prompt-filter-note">这里仅展示真正入库的业务层提示词；系统托管层不进入提示词库，只会在工作台编译链路中展示。</div>
+
+  <% if ((data.promptLibrary || []).length) { %>
+    <div class="prompt-library-table-wrap">
+      <table class="data-table prompt-library-table">
+        <thead>
+          <tr>
+            <th>提示词</th>
+            <th>层级</th>
+            <th>功能链路</th>
+            <th>作用对象</th>
+            <th>绑定数</th>
+            <th>状态</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% data.promptLibrary.forEach(function(item) { %>
+            <tr class="<%= editingPrompt && editingPrompt.id === item.id ? 'active' : '' %>">
+              <td>
+                <div class="table-title"><%= item.title %></div>
+                <div class="table-sub"><%= item.promptCode %></div>
+                <% if (item.description) { %>
+                  <div class="table-sub"><%= item.description %></div>
+                <% } %>
+              </td>
+              <td>
+                <span class="tag"><%= item.layerCode %></span>
+                <span class="tag <%= item.isEditable ? 'tag-success' : 'tag-muted' %>"><%= item.manageModeLabel %></span>
+              </td>
+              <td>
+                <div class="prompt-table-stack">
+                  <span class="tag"><%= item.feature || '系统公共' %></span>
+                  <% if (item.subFeatureCode) { %><span class="tag"><%= item.subFeatureCode %></span><% } %>
+                  <% if (item.flowCode) { %><span class="tag"><%= item.flowCode %></span><% } %>
+                </div>
+              </td>
+              <td>
+                <div class="table-title"><%= item.targetId || '无特定对象' %></div>
+                <div class="table-sub"><%= item.categoryKey || '系统自动分类' %></div>
+              </td>
+              <td><span class="tag"><%= item.bindingCount %> 处绑定</span></td>
+              <td><span class="tag <%= item.isActive ? 'tag-success' : 'tag-muted' %>"><%= item.isActive ? '启用中' : '已停用' %></span></td>
+              <td>
+                <a class="secondary-btn small-btn" href="<%= adminBasePath %>/prompt-library?<%= filterQueryPrefix %>libraryPromptId=<%= encodeURIComponent(item.id) %>"><%= item.isEditable ? '编辑' : '查看' %></a>
+              </td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  <% } else { %>
+    <div class="empty-inline">当前筛选下没有提示词。</div>
+  <% } %>
+</section>
+
+<section class="panel">
+  <div class="prompt-sidebar-guide">
+    <div class="table-title">这页已经改成业务化录入</div>
+    <div class="table-sub">后台只开放业务级、场景级、关卡级提示词编辑。</div>
+    <div class="table-sub">系统级、功能级、子功能级、流程级，以及母语/风格/变量替换/输出结构相关内容都属于系统托管，只允许查看。</div>
+    <div class="table-sub">像“提示词编码 / 分类键 / 来源标识”这类系统字段会自动生成，不再要求你人工判断和录入。</div>
+  </div>
+</section>
+
+<% if (data.isLibraryModalOpen) { %>
+  <div class="prompt-modal-overlay" data-modal-close>
+    <div class="prompt-modal" role="dialog" aria-modal="true" aria-label="<%= editingPrompt ? '编辑提示词' : '新建提示词' %>">
+      <div class="panel-head">
+        <div>
+          <h2><%= editingPrompt ? (readonlyPrompt ? '查看提示词' : '编辑提示词') : '新建提示词' %></h2>
+          <div class="table-sub"><%= editingPrompt ? editingPrompt.promptCode : '创建新的提示词实体，系统会自动生成内部编码' %></div>
+        </div>
+        <a class="secondary-btn" href="<%= closeLibraryHref %>">关闭</a>
+      </div>
+      <% if (readonlyPrompt) { %>
+        <div class="prompt-sidebar-guide" style="margin-bottom:16px;">
+          <div class="table-title">系统托管提示词</div>
+          <div class="table-sub">这一层主要承载系统变量、语言风格注入、数据替换和输出结构，后台只提供查看，不允许编辑。</div>
+        </div>
+        <div class="form-stack">
+          <div class="prompt-form-grid">
+            <div class="prompt-info-block">
+              <span class="prompt-info-label">标题</span>
+              <strong><%= editingPrompt.title %></strong>
+              <div class="table-sub"><%= editingPrompt.description || '无用途说明' %></div>
+            </div>
+            <div class="prompt-info-block">
+              <span class="prompt-info-label">管理方式</span>
+              <strong><%= editingPrompt.manageModeLabel %></strong>
+              <div class="table-sub">母语、风格、变量替换、输出结构等由系统统一托管。</div>
+            </div>
+          </div>
+          <div class="prompt-form-grid prompt-form-grid-4">
+            <div class="prompt-info-block">
+              <span class="prompt-info-label">层级</span>
+              <strong><%= editingPrompt.layerCode %></strong>
+            </div>
+            <div class="prompt-info-block">
+              <span class="prompt-info-label">功能</span>
+              <strong><%= editingPrompt.feature || '系统公共' %></strong>
+            </div>
+            <div class="prompt-info-block">
+              <span class="prompt-info-label">子能力</span>
+              <strong><%= editingPrompt.subFeatureCode || '无' %></strong>
+            </div>
+            <div class="prompt-info-block">
+              <span class="prompt-info-label">流程</span>
+              <strong><%= editingPrompt.flowCode || '无' %></strong>
+            </div>
+          </div>
+          <div class="prompt-form-grid">
+            <div class="prompt-info-block">
+              <span class="prompt-info-label">作用对象</span>
+              <strong><%= editingPrompt.targetId || '无特定对象' %></strong>
+              <div class="table-sub"><%= editingPrompt.categoryKey || '系统自动分类' %></div>
+            </div>
+            <div class="prompt-info-block">
+              <span class="prompt-info-label">来源标识</span>
+              <strong><%= editingPrompt.sourceRef || 'system' %></strong>
+              <div class="table-sub">当前提示词为系统链路的一部分。</div>
+            </div>
+          </div>
+          <div class="prompt-info-block">
+            <span class="prompt-info-label">提示词内容</span>
+            <pre class="code-block prompt-code-preview"><%= editingPrompt.content %></pre>
+          </div>
+          <div class="prompt-editor-actions">
+            <a class="secondary-btn" href="<%= closeLibraryHref %>">关闭</a>
+          </div>
+        </div>
+      <% } else { %>
+      <form method="post" action="<%= adminBasePath %>/prompts/library" class="form-stack">
+        <input type="hidden" name="libraryFeature" value="<%= filters.feature || '' %>" />
+        <input type="hidden" name="libraryLayerCode" value="<%= filters.layerCode || '' %>" />
+        <input type="hidden" name="libraryKeyword" value="<%= filters.keyword || '' %>" />
+        <input type="hidden" name="editingPromptId" value="<%= editingPrompt ? editingPrompt.id : '' %>" />
+        <input type="hidden" name="promptCode" value="<%= editingPrompt ? editingPrompt.promptCode : '' %>" />
+        <input type="hidden" name="categoryKey" value="<%= editingPrompt ? editingPrompt.categoryKey : '' %>" />
+        <input type="hidden" name="sourceRef" value="<%= editingPrompt ? editingPrompt.sourceRef : '' %>" />
+        <input type="hidden" name="sortOrder" value="<%= editingPrompt ? editingPrompt.sortOrder : 0 %>" />
+
+        <div class="prompt-form-grid">
+          <label class="field">
+            <span>标题</span>
+            <input type="text" name="title" value="<%= editingPrompt ? editingPrompt.title : '' %>" placeholder="如 对话回复流-客服版" />
+          </label>
+          <label class="field">
+            <span>用途说明</span>
+            <input type="text" name="description" value="<%= editingPrompt ? editingPrompt.description : '' %>" placeholder="一句话说明这条提示词是做什么的" />
+          </label>
+        </div>
+
+        <div class="prompt-form-grid prompt-form-grid-4" id="prompt-basic-config">
+          <label class="field">
+            <span>层级</span>
+            <select name="layerCode" id="prompt-layer-select">
+              <% (data.promptFormOptions && data.promptFormOptions.defaultLayerOptions || []).forEach(function(item) { %>
+                <option value="<%= item.value %>" <%= ((editingPrompt && editingPrompt.layerCode) || '') === item.value ? 'selected' : '' %>><%= item.label %></option>
+              <% }) %>
+            </select>
+          </label>
+          <label class="field">
+            <span>功能</span>
+            <select name="promptFeature" id="prompt-feature-select">
+              <option value="">无</option>
+              <% (data.promptFormOptions && data.promptFormOptions.featureOptions || []).forEach(function(item) { %>
+                <option value="<%= item.value %>" <%= ((editingPrompt && editingPrompt.feature) || '') === item.value ? 'selected' : '' %>><%= item.label %></option>
+              <% }) %>
+            </select>
+          </label>
+          <label class="field" id="prompt-subfeature-field">
+            <span>子能力</span>
+            <select name="promptSubFeatureCode" id="prompt-subfeature-select" data-current="<%= editingPrompt ? editingPrompt.subFeatureCode : '' %>">
+              <option value="">请选择</option>
+            </select>
+          </label>
+          <label class="field" id="prompt-flow-field">
+            <span>流程</span>
+            <select name="promptFlowCode" id="prompt-flow-select" data-current="<%= editingPrompt ? editingPrompt.flowCode : '' %>">
+              <option value="">请选择</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="prompt-form-grid">
+          <label class="field" id="prompt-target-field">
+            <span id="prompt-target-label">作用对象</span>
+            <select name="promptTargetId" id="prompt-target-select" data-current="<%= editingPrompt ? editingPrompt.targetId : '' %>">
+              <option value="">无特定对象</option>
+            </select>
+          </label>
+          <div class="prompt-info-block">
+            <span class="prompt-info-label">系统自动处理</span>
+            <strong>内部编码与分类</strong>
+            <div class="table-sub">保存时自动生成或沿用现有值，不需要人工理解和编辑。</div>
+          </div>
+        </div>
+
+        <div class="prompt-auto-grid">
+          <div class="prompt-info-block">
+            <span class="prompt-info-label">提示词编码</span>
+            <strong><%= editingPrompt ? editingPrompt.promptCode : '保存后自动生成' %></strong>
+          </div>
+          <div class="prompt-info-block">
+            <span class="prompt-info-label">分类键</span>
+            <strong><%= editingPrompt ? editingPrompt.categoryKey : '保存后自动生成' %></strong>
+          </div>
+          <div class="prompt-info-block">
+            <span class="prompt-info-label">来源标识</span>
+            <strong><%= editingPrompt ? editingPrompt.sourceRef : 'admin/manual' %></strong>
+          </div>
+        </div>
+
+        <label class="field">
+          <span>提示词内容</span>
+          <textarea name="content" rows="14" placeholder="输入完整提示词内容"><%= editingPrompt ? editingPrompt.content : '' %></textarea>
+        </label>
+
+        <label class="checkbox-row">
+          <input type="checkbox" name="isActive" value="1" <%= !editingPrompt || editingPrompt.isActive ? 'checked' : '' %> />
+          <span>启用这条提示词</span>
+        </label>
+
+        <div class="prompt-editor-actions">
+          <button type="submit" class="primary-btn"><%= editingPrompt ? '保存提示词' : '创建提示词' %></button>
+          <a class="secondary-btn" href="<%= closeLibraryHref %>">取消</a>
+        </div>
+      </form>
+
+      <% if (editingPrompt && editingPrompt.canDelete) { %>
+        <form method="post" action="<%= adminBasePath %>/prompts/library/delete" class="prompt-delete-form" onsubmit="return confirm('确认删除这条提示词吗？删除后相关绑定也会被清空。');">
+          <input type="hidden" name="promptId" value="<%= editingPrompt.id %>" />
+          <input type="hidden" name="libraryFeature" value="<%= filters.feature || '' %>" />
+          <input type="hidden" name="libraryLayerCode" value="<%= filters.layerCode || '' %>" />
+          <input type="hidden" name="libraryKeyword" value="<%= filters.keyword || '' %>" />
+          <button type="submit" class="secondary-btn">删除提示词</button>
+        </form>
+      <% } %>
+      <% } %>
+    </div>
+  </div>
+<% } %>
+
+<script>
+  (function () {
+    const formOptions = <%- JSON.stringify(data.promptFormOptions || {}) %>;
+    const layerSelect = document.getElementById('prompt-layer-select');
+    const featureSelect = document.getElementById('prompt-feature-select');
+    const subFeatureField = document.getElementById('prompt-subfeature-field');
+    const subFeatureSelect = document.getElementById('prompt-subfeature-select');
+    const flowField = document.getElementById('prompt-flow-field');
+    const flowSelect = document.getElementById('prompt-flow-select');
+    const targetField = document.getElementById('prompt-target-field');
+    const targetLabel = document.getElementById('prompt-target-label');
+    const targetSelect = document.getElementById('prompt-target-select');
+
+    if (!layerSelect || !featureSelect || !subFeatureSelect || !flowSelect || !targetSelect) {
+      return;
+    }
+
+    function findFeatureMeta(featureValue) {
+      return (formOptions.featureOptions || []).find((item) => item.value === featureValue) || null;
+    }
+
+    function getLayerOptions(featureValue) {
+      if (featureValue && formOptions.layerOptionsByFeature && formOptions.layerOptionsByFeature[featureValue]) {
+        return formOptions.layerOptionsByFeature[featureValue];
+      }
+      return formOptions.defaultLayerOptions || [];
+    }
+
+    function fillSelect(select, options, currentValue, emptyLabel) {
+      select.innerHTML = '';
+      const emptyOption = document.createElement('option');
+      emptyOption.value = '';
+      emptyOption.textContent = emptyLabel;
+      select.appendChild(emptyOption);
+
+      options.forEach((item) => {
+        const option = document.createElement('option');
+        option.value = item.value;
+        option.textContent = item.label;
+        if (currentValue && currentValue === item.value) {
+          option.selected = true;
+        }
+        select.appendChild(option);
+      });
+    }
+
+    function syncLayerOptions() {
+      const currentLayer = layerSelect.value;
+      const featureValue = featureSelect.value;
+      const options = getLayerOptions(featureValue);
+      const hasCurrent = options.some((item) => item.value === currentLayer);
+      fillSelect(layerSelect, options, hasCurrent ? currentLayer : '', '请选择层级');
+      if (!hasCurrent && options[0]) {
+        layerSelect.value = options[0].value;
+      }
+    }
+
+    function toggleField(field, visible) {
+      if (!field) return;
+      field.style.display = visible ? '' : 'none';
+    }
+
+    function syncFormOptions() {
+      syncLayerOptions();
+      const layer = layerSelect.value;
+      const feature = featureSelect.value;
+      const featureMeta = findFeatureMeta(feature);
+      const currentSubFeature = subFeatureSelect.getAttribute('data-current') || subFeatureSelect.value;
+      const currentFlow = flowSelect.getAttribute('data-current') || flowSelect.value;
+      const currentTarget = targetSelect.getAttribute('data-current') || targetSelect.value;
+
+      const subFeatureOptions = featureMeta ? (featureMeta.subFeatures || []) : [];
+      const flowOptions = featureMeta ? (featureMeta.flows || []) : [];
+
+      fillSelect(subFeatureSelect, subFeatureOptions, currentSubFeature, '请选择');
+      fillSelect(flowSelect, flowOptions, currentFlow, '请选择');
+
+      const needsFeature = ['feature', 'sub_feature', 'business', 'flow', 'scenario', 'sub_scenario', 'template'].includes(layer);
+      const needsSubFeature = ['sub_feature', 'business', 'flow', 'scenario', 'sub_scenario'].includes(layer);
+      const needsFlow = ['business', 'flow', 'scenario', 'sub_scenario'].includes(layer);
+      const needsScenario = layer === 'scenario';
+      const needsSubScenario = layer === 'sub_scenario';
+
+      toggleField(subFeatureField, needsSubFeature);
+      toggleField(flowField, needsFlow);
+      toggleField(targetField, needsScenario || needsSubScenario);
+
+      if (!needsFeature) {
+        featureSelect.value = '';
+      }
+      if (!needsSubFeature) {
+        subFeatureSelect.value = '';
+      }
+      if (!needsFlow) {
+        flowSelect.value = '';
+      }
+
+      if (needsScenario) {
+        targetLabel.textContent = '作用场景';
+        fillSelect(targetSelect, formOptions.scenarioOptions || [], currentTarget, '请选择场景');
+      } else if (needsSubScenario) {
+        targetLabel.textContent = '作用关卡';
+        fillSelect(targetSelect, formOptions.subScenarioOptions || [], currentTarget, '请选择关卡');
+      } else {
+        targetLabel.textContent = '作用对象';
+        fillSelect(targetSelect, [], '', '无特定对象');
+      }
+
+      if (!needsScenario && !needsSubScenario) {
+        targetSelect.value = '';
+      }
+
+      featureSelect.disabled = !needsFeature;
+    }
+
+    layerSelect.addEventListener('change', function () {
+      subFeatureSelect.setAttribute('data-current', '');
+      flowSelect.setAttribute('data-current', '');
+      targetSelect.setAttribute('data-current', '');
+      syncFormOptions();
+    });
+
+    featureSelect.addEventListener('change', function () {
+      layerSelect.setAttribute('data-current', '');
+      subFeatureSelect.setAttribute('data-current', '');
+      flowSelect.setAttribute('data-current', '');
+      targetSelect.setAttribute('data-current', '');
+      syncFormOptions();
+    });
+
+    syncFormOptions();
+  })();
+
+  (function () {
+    const overlay = document.querySelector('.prompt-modal-overlay');
+    if (!overlay) return;
+
+    overlay.addEventListener('click', function (event) {
+      if (event.target && event.target.hasAttribute('data-modal-close')) {
+        window.location.href = '<%- closeLibraryHref %>';
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        window.location.href = '<%- closeLibraryHref %>';
+      }
+    });
+  })();
+
+  (function () {
+    const tableWrap = document.querySelector('.prompt-library-table-wrap');
+    const mainScroller = document.querySelector('.admin-main');
+    if (!tableWrap || !mainScroller) return;
+
+    tableWrap.addEventListener('wheel', function (event) {
+      const mostlyVertical = Math.abs(event.deltaY) > Math.abs(event.deltaX);
+      if (!mostlyVertical) return;
+
+      event.preventDefault();
+      mainScroller.scrollTop += event.deltaY;
+    }, { passive: false });
+  })();
+</script>
+
+<%- include('../partials/layout-end') %>

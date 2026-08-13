@@ -1,0 +1,31 @@
+{
+  "server": {
+    "port": 3100,
+    "host": "0.0.0.0"
+  },
+  "conversation": {
+    "maxTurns": 50
+  },
+  "auth": {
+    "allowRegister": true
+  },
+  "ai": {
+    "chat": {
+      "provider": "deepseek",
+      "apiKey": "${DEEPSEEK_API_KEY}",
+      "baseUrl": "https://api.deepseek.com",
+      "model": "deepseek-v4-flash"
+    },
+    "voice": {
+      "provider": "volcengine",
+      "apiKey": "${VOLCENGINE_SPEECH_API_KEY}",
+      "baseUrl": "https://openspeech.bytedance.com",
+      "ttsModel": "seed-tts-2.0",
+      "ttsVoice": "zh_female_vv_uranus_bigtts",
+      "sttModel": "bigmodel"
+    }
+  },
+  "cache": {
+    "ttl": 3600
+  }
+}

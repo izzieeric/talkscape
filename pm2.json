@@ -1,0 +1,23 @@
+{
+  "apps": [
+    {
+      "name": "talk-scape",
+      "cwd": ".",
+      "script": "src/server.js",
+      "interpreter": "node",
+      "exec_mode": "fork",
+      "instances": 1,
+      "autorestart": true,
+      "watch": false,
+      "max_memory_restart": "800M",
+      "merge_logs": true,
+      "time": true,
+      "log_date_format": "YYYY-MM-DD HH:mm:ss Z",
+      "error_file": "./logs/pm2-error.log",
+      "out_file": "./logs/pm2-out.log",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}

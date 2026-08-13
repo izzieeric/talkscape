@@ -1,0 +1,53 @@
+<%- include('../partials/layout-start', { title, pageKey, user, notice }) %>
+
+<section class="stats-grid">
+  <article class="stat-card">
+    <span class="stat-label">场景总数</span>
+    <strong><%= data.stats.scenarioCount %></strong>
+  </article>
+  <article class="stat-card">
+    <span class="stat-label">关卡场景</span>
+    <strong><%= data.stats.levelCount %></strong>
+  </article>
+  <article class="stat-card">
+    <span class="stat-label">提示词覆盖</span>
+    <strong><%= data.stats.promptConfigCount %></strong>
+  </article>
+  <article class="stat-card">
+    <span class="stat-label">收藏词数</span>
+    <strong><%= data.stats.bookmarkCount %></strong>
+  </article>
+</section>
+
+<section class="panel">
+  <div class="panel-head">
+    <h2>最近会话</h2>
+    <a href="<%= adminBasePath %>/conversations" class="text-link">查看全部</a>
+  </div>
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>场景</th>
+        <th>关卡</th>
+        <th>用户</th>
+        <th>轮次</th>
+        <th>状态</th>
+        <th>开始时间</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% data.recentSessions.forEach(function(item) { %>
+        <tr>
+          <td><%= item.scenario_title || item.scenario_id %></td>
+          <td><%= item.subtask_title || '-' %></td>
+          <td><%= item.username || item.user_id %></td>
+          <td><%= item.current_turn %> / <%= item.max_turns %></td>
+          <td><span class="tag"><%= item.status %></span></td>
+          <td><%= item.started_at %></td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</section>
+
+<%- include('../partials/layout-end') %>

@@ -1,0 +1,48 @@
+<%- include('../partials/layout-start', { title, pageKey, user, notice }) %>
+
+<section class="panel">
+  <div class="panel-head">
+    <h2>会话筛选</h2>
+  </div>
+  <form method="get" action="<%= adminBasePath %>/conversations" class="toolbar-form">
+    <select name="scenarioId">
+      <option value="">全部场景</option>
+      <% data.scenarios.forEach(function(item) { %>
+        <option value="<%= item.id %>" <%= data.selectedScenarioId === item.id ? 'selected' : '' %>><%= item.title %></option>
+      <% }) %>
+    </select>
+    <button type="submit" class="primary-btn small">筛选</button>
+  </form>
+</section>
+
+<section class="panel">
+  <div class="panel-head">
+    <h2>最近会话</h2>
+  </div>
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>场景</th>
+        <th>关卡</th>
+        <th>用户</th>
+        <th>轮次</th>
+        <th>状态</th>
+        <th>开始时间</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% data.sessions.forEach(function(item) { %>
+        <tr>
+          <td><%= item.scenario_title || item.scenario_id %></td>
+          <td><%= item.subtask_title || (item.sub_task_id || '-') %></td>
+          <td><%= item.username || item.user_id %></td>
+          <td><%= item.current_turn %> / <%= item.max_turns %></td>
+          <td><span class="tag"><%= item.status %></span></td>
+          <td><%= item.started_at %></td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</section>
+
+<%- include('../partials/layout-end') %>

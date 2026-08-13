@@ -1,0 +1,305 @@
+<%
+  const selectedScenario = data.selectedScenario || null;
+  const createMode = data.createMode === true;
+  const editingScenario = createMode ? null : selectedScenario;
+  const subtasks = editingScenario ? (editingScenario.subTasks || []) : [];
+  const initialTags = editingScenario ? (Array.isArray(editingScenario.tags) ? editingScenario.tags.join(', ') : '') : '';
+  const editingId = editingScenario ? editingScenario.id : '';
+  const showModal = createMode || Boolean(editingScenario);
+%>
+
+<%- include('../partials/layout-start', { title, pageKey, user, notice }) %>
+
+<section class="stats-grid compact">
+  <article class="stat-card"><span class="stat-label">全部</span><strong><%= data.totals.all %></strong></article>
+  <article class="stat-card"><span class="stat-label">关卡</span><strong><%= data.totals.level %></strong></article>
+  <article class="stat-card"><span class="stat-label">自由</span><strong><%= data.totals.free %></strong></article>
+  <article class="stat-card"><span class="stat-label">特色</span><strong><%= data.totals.featured %></strong></article>
+</section>
+
+<section class="panel">
+  <div class="panel-head">
+    <div>
+      <h2>场景管理</h2>
+      <div class="table-sub">列表页只展示概览；新建和编辑都通过弹窗完成，避免长表单一直占页面空间。</div>
+    </div>
+    <div class="prompt-library-head-actions">
+      <a href="<%= adminBasePath %>/prompts" class="secondary-btn">去配置提示词</a>
+      <a href="<%= adminBasePath %>/scenarios?create=1" class="primary-btn">新建场景</a>
+    </div>
+  </div>
+</section>
+
+<section class="panel">
+  <div class="panel-head">
+    <div>
+      <h2>场景列表</h2>
+      <div class="table-sub">点击“编辑”打开弹窗；删除操作会在弹窗内进行。</div>
+    </div>
+  </div>
+
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>标题</th>
+        <th>类型</th>
+        <th>分类</th>
+        <th>关卡数</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% data.scenarios.forEach(function(item) { %>
+        <tr class="<%= editingId === item.id ? 'scenario-row-active' : '' %>">
+          <td>
+            <div class="table-title"><%= item.icon || '💬' %> <%= item.title %></div>
+            <div class="table-sub"><%= item.description || item.title_en || '' %></div>
+            <div class="table-sub mono-sub">ID: <%= item.id %></div>
+          </td>
+          <td>
+            <span class="tag"><%= item.sceneType %></span>
+            <% if (item.isFeatured) { %>
+              <span class="tag tag-success">推荐</span>
+            <% } %>
+          </td>
+          <td><%= item.categoryTitle || '-' %></td>
+          <td><%= item.subTaskCount || 0 %></td>
+          <td class="scenario-actions-cell">
+            <a class="mini-link" href="<%= adminBasePath %>/scenarios?scenarioId=<%= encodeURIComponent(item.id) %>">编辑</a>
+            <a class="mini-link" href="<%= adminBasePath %>/prompts?scenarioId=<%= encodeURIComponent(item.id) %>">提示词</a>
+          </td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</section>
+
+<% if (showModal) { %>
+  <section class="prompt-modal-overlay">
+    <div class="prompt-modal">
+      <div class="panel-head">
+        <div>
+          <h2><%= editingScenario ? '编辑场景' : '新建场景' %></h2>
+          <div class="table-sub"><%= editingScenario ? '修改后会立即更新该场景的前后台展示信息。' : '先填写场景基础信息，再按需补充关卡。' %></div>
+        </div>
+        <a href="<%= adminBasePath %>/scenarios" class="secondary-btn small-btn">关闭</a>
+      </div>
+
+      <form method="post" action="<%= adminBasePath %>/scenarios" class="form-stack" id="scenario-form">
+        <% if (editingScenario) { %>
+          <input type="hidden" name="scenarioId" value="<%= editingScenario.id %>" />
+        <% } %>
+        <input type="hidden" name="subtasksJson" id="subtasksJson" value='<%- JSON.stringify(subtasks).replace(/'/g, '&#39;') %>' />
+
+        <div class="scenario-form-grid">
+          <label class="field">
+            <span>场景 ID</span>
+            <input type="text" name="id" value="<%= editingScenario ? editingScenario.id : '' %>" placeholder="例如 restaurant-ordering" <%= editingScenario ? 'readonly' : '' %> />
+          </label>
+          <label class="field">
+            <span>中文标题</span>
+            <input type="text" name="title" value="<%= editingScenario ? editingScenario.title : '' %>" placeholder="例如 餐厅点餐" required />
+          </label>
+          <label class="field">
+            <span>英文标题</span>
+            <input type="text" name="titleEn" value="<%= editingScenario ? (editingScenario.title_en || editingScenario.titleEn || '') : '' %>" placeholder="Restaurant Ordering" />
+          </label>
+          <label class="field">
+            <span>图标</span>
+            <input type="text" name="icon" value="<%= editingScenario ? (editingScenario.icon || '') : '💬' %>" placeholder="💬" />
+          </label>
+        </div>
+
+        <div class="scenario-form-grid">
+          <label class="field">
+            <span>场景类型</span>
+            <select name="sceneType">
+              <% ['level', 'free', 'featured'].forEach(function(type) { %>
+                <option value="<%= type %>" <%= (editingScenario ? editingScenario.sceneType : 'level') === type ? 'selected' : '' %>><%= type %></option>
+              <% }) %>
+            </select>
+          </label>
+          <label class="field">
+            <span>难度</span>
+            <select name="difficulty">
+              <% ['beginner', 'intermediate', 'advanced'].forEach(function(level) { %>
+                <option value="<%= level %>" <%= (editingScenario ? editingScenario.difficulty : 'beginner') === level ? 'selected' : '' %>><%= level %></option>
+              <% }) %>
+            </select>
+          </label>
+          <label class="field">
+            <span>所属分类</span>
+            <select name="categoryId">
+              <option value="">未分类</option>
+              <% (data.categories || []).forEach(function(category) { %>
+                <option value="<%= category.id %>" <%= (editingScenario ? editingScenario.categoryId : '') === category.id ? 'selected' : '' %>><%= category.title %></option>
+              <% }) %>
+            </select>
+          </label>
+          <label class="field">
+            <span>标签</span>
+            <input type="text" name="tagsText" value="<%= initialTags %>" placeholder="餐厅, 点餐, 入门" />
+          </label>
+        </div>
+
+        <div class="scenario-form-grid">
+          <label class="field">
+            <span>排序</span>
+            <input type="number" name="sortOrder" value="<%= editingScenario ? (editingScenario.sort_order || editingScenario.sortOrder || 0) : 0 %>" />
+          </label>
+          <label class="field">
+            <span>最大轮次</span>
+            <input type="number" name="maxTurns" value="<%= editingScenario ? (editingScenario.max_turns || editingScenario.maxTurns || 10) : 10 %>" min="1" />
+          </label>
+          <label class="field field-checkbox">
+            <span>额外标记</span>
+            <label class="checkbox-line">
+              <input type="checkbox" name="isFeatured" value="1" <%= editingScenario && editingScenario.isFeatured ? 'checked' : '' %> />
+              <span>推荐场景</span>
+            </label>
+          </label>
+        </div>
+
+        <label class="field">
+          <span>中文简介</span>
+          <textarea name="description" rows="4" placeholder="用于首页、场景页和后台表格展示"><%= editingScenario ? (editingScenario.description || '') : '' %></textarea>
+        </label>
+
+        <label class="field">
+          <span>英文简介</span>
+          <textarea name="descriptionEn" rows="3" placeholder="English description"><%= editingScenario ? (editingScenario.description_en || editingScenario.descriptionEn || '') : '' %></textarea>
+        </label>
+
+        <div class="panel-head">
+          <div>
+            <h2>关卡列表</h2>
+            <div class="table-sub">适用于关卡型场景。自由场景可以不填。</div>
+          </div>
+          <button type="button" class="secondary-btn small-btn" id="add-subtask-btn">新增关卡</button>
+        </div>
+
+        <div id="subtask-list" class="scenario-subtask-list"></div>
+
+        <div class="scenario-form-actions">
+          <button type="submit" class="primary-btn">保存场景</button>
+          <% if (editingScenario) { %>
+            <button type="submit" class="secondary-btn danger-btn" form="scenario-delete-form">删除场景</button>
+          <% } %>
+        </div>
+      </form>
+
+      <% if (editingScenario) { %>
+        <form id="scenario-delete-form" method="post" action="<%= adminBasePath %>/scenarios/delete" onsubmit="return confirm('确认删除这个场景吗？删除后会停用该场景及其关卡。');">
+          <input type="hidden" name="scenarioId" value="<%= editingScenario.id %>" />
+        </form>
+      <% } %>
+    </div>
+  </section>
+<% } %>
+
+<% if (showModal) { %>
+  <script>
+    (function () {
+      const subtaskList = document.getElementById('subtask-list');
+      const subtasksInput = document.getElementById('subtasksJson');
+      const addButton = document.getElementById('add-subtask-btn');
+      let subtasks = [];
+
+      try {
+        subtasks = JSON.parse(subtasksInput.value || '[]');
+      } catch (error) {
+        subtasks = [];
+      }
+
+      function syncValue() {
+        subtasksInput.value = JSON.stringify(subtasks);
+      }
+
+      function escapeHtml(value) {
+        return String(value || '')
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;');
+      }
+
+      function renderSubtasks() {
+        if (!subtasks.length) {
+          subtaskList.innerHTML = '<div class="empty-inline">当前没有关卡，点击“新增关卡”添加。</div>';
+          syncValue();
+          return;
+        }
+
+        subtaskList.innerHTML = subtasks.map(function (item, index) {
+          return `
+            <div class="scenario-subtask-card" data-index="${index}">
+              <div class="scenario-subtask-grid">
+                <label class="field">
+                  <span>关卡标题</span>
+                  <input type="text" data-key="title" value="${escapeHtml(item.title || '')}" placeholder="例如 迎宾确认人数" />
+                </label>
+                <label class="field">
+                  <span>taskKey</span>
+                  <input type="text" data-key="taskKey" value="${escapeHtml(item.taskKey || item.task_key || '')}" placeholder="例如 greet-party" />
+                </label>
+                <label class="field">
+                  <span>排序</span>
+                  <input type="number" data-key="sortOrder" value="${Number(item.sortOrder || item.sort_order || ((index + 1) * 10))}" />
+                </label>
+              </div>
+              <label class="field">
+                <span>关卡简介</span>
+                <textarea rows="2" data-key="description" placeholder="这一关主要练什么">${escapeHtml(item.description || '')}</textarea>
+              </label>
+              <label class="field">
+                <span>提示词备注</span>
+                <textarea rows="2" data-key="promptHint" placeholder="可选，给后台配置提示词时提示使用">${escapeHtml(item.promptHint || item.prompt_hint || '')}</textarea>
+              </label>
+              <div class="scenario-subtask-actions">
+                <button type="button" class="secondary-btn small-btn" data-action="remove">删除关卡</button>
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        syncValue();
+      }
+
+      addButton.addEventListener('click', function () {
+        subtasks.push({
+          id: '',
+          title: '',
+          taskKey: '',
+          description: '',
+          promptHint: '',
+          sortOrder: (subtasks.length + 1) * 10
+        });
+        renderSubtasks();
+      });
+
+      subtaskList.addEventListener('input', function (event) {
+        const card = event.target.closest('.scenario-subtask-card');
+        if (!card) return;
+        const index = Number(card.dataset.index);
+        const key = event.target.getAttribute('data-key');
+        if (!subtasks[index] || !key) return;
+        subtasks[index][key] = event.target.value;
+        syncValue();
+      });
+
+      subtaskList.addEventListener('click', function (event) {
+        const button = event.target.closest('[data-action="remove"]');
+        if (!button) return;
+        const card = button.closest('.scenario-subtask-card');
+        if (!card) return;
+        const index = Number(card.dataset.index);
+        subtasks.splice(index, 1);
+        renderSubtasks();
+      });
+
+      renderSubtasks();
+    })();
+  </script>
+<% } %>
+
+<%- include('../partials/layout-end') %>

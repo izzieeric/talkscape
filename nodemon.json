@@ -1,0 +1,15 @@
+{
+  "watch": [
+    "src",
+    "package.json",
+    ".env"
+  ],
+  "ext": "js,json",
+  "ignore": [
+    "data/**",
+    "logs/**",
+    ".dbg/**",
+    "talkscape-client/**",
+    "debug-*.md"
+  ]
+}

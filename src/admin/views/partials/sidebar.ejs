@@ -1,0 +1,31 @@
+<aside class="admin-sidebar">
+  <div class="brand">
+    <div class="brand-mark">TS</div>
+    <div>
+      <div class="brand-title">tsadmin</div>
+      <div class="brand-sub">TalkScape 管理端</div>
+    </div>
+  </div>
+
+  <nav class="nav-list">
+    <a class="nav-item <%= pageKey === 'dashboard' ? 'active' : '' %>" href="<%= adminBasePath %>">后台首页</a>
+    <a class="nav-item <%= pageKey === 'scenarios' ? 'active' : '' %>" href="<%= adminBasePath %>/scenarios">场景管理</a>
+    <a class="nav-item <%= pageKey === 'prompts' ? 'active' : '' %>" href="<%= adminBasePath %>/prompts">提示词工作台</a>
+    <a class="nav-item <%= pageKey === 'prompt-library' ? 'active' : '' %>" href="<%= adminBasePath %>/prompt-library">提示词库</a>
+    <a class="nav-item <%= pageKey === 'model-configs' ? 'active' : '' %>" href="<%= adminBasePath %>/model-configs">模型配置</a>
+    <a class="nav-item <%= pageKey === 'conversations' ? 'active' : '' %>" href="<%= adminBasePath %>/conversations">会话巡检</a>
+    <a class="nav-item <%= pageKey === 'bookmarks' ? 'active' : '' %>" href="<%= adminBasePath %>/bookmarks">收藏词巡检</a>
+  </nav>
+
+  <div class="sidebar-user">
+    <div class="avatar"><%= (user && user.avatarText) || 'TS' %></div>
+    <div class="sidebar-user-meta">
+      <div class="sidebar-user-name"><%= (user && user.displayName) || '管理员' %></div>
+      <div class="sidebar-user-sub">@<%= (user && user.username) || 'guest' %></div>
+    </div>
+  </div>
+
+  <form method="post" action="<%= adminBasePath %>/logout">
+    <button type="submit" class="ghost-btn full-width">退出后台</button>
+  </form>
+</aside>

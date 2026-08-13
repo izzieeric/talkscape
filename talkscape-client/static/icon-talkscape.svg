@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F97316" />
+      <stop offset="100%" stop-color="#EA580C" />
+    </linearGradient>
+  </defs>
+
+  <rect x="32" y="32" width="448" height="448" rx="96" fill="url(#bgGradient)" />
+
+  <path d="M 256 80
+           C 160 80  104 136  104 232
+           L 104 200
+           C 104 112  176 56  256 56
+           C 336 56  408 112  408 200
+           L 408 232
+           C 408 136  352 80  256 80"
+        fill="none" stroke="#F97316" stroke-width="20" stroke-linecap="round" />
+
+  <ellipse cx="136" cy="312" rx="64" ry="80" fill="url(#accentGradient)" />
+  <ellipse cx="376" cy="312" rx="64" ry="80" fill="url(#accentGradient)" />
+
+  <g transform="translate(100, 264)">
+    <path d="M 0 24 L 72 24 M 0 48 L 72 48 M 0 72 L 72 72" stroke="rgba(255,255,255,0.25)" stroke-width="2" stroke-linecap="round" />
+    <path d="M 24 0 L 24 96 M 48 0 L 48 96" stroke="rgba(255,255,255,0.25)" stroke-width="2" stroke-linecap="round" />
+    <circle cx="12" cy="12" r="7" fill="#EF4444" />
+    <circle cx="60" cy="42" r="7" fill="#EF4444" />
+    <circle cx="36" cy="76" r="7" fill="#EF4444" />
+  </g>
+
+  <g transform="translate(340, 264)">
+    <path d="M 0 24 L 72 24 M 0 48 L 72 48 M 0 72 L 72 72" stroke="rgba(255,255,255,0.25)" stroke-width="2" stroke-linecap="round" />
+    <path d="M 24 0 L 24 96 M 48 0 L 48 96" stroke="rgba(255,255,255,0.25)" stroke-width="2" stroke-linecap="round" />
+    <circle cx="12" cy="12" r="7" fill="#EF4444" />
+    <circle cx="60" cy="42" r="7" fill="#EF4444" />
+    <circle cx="36" cy="76" r="7" fill="#EF4444" />
+  </g>
+
+  <rect x="236" y="352" width="40" height="56" rx="10" fill="#F97316" />
+
+  <text x="256" y="452" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+        font-size="24" font-weight="600" fill="#FFFFFF" text-anchor="middle" opacity="0.9">
+    Talk-Scape
+  </text>
+</svg>

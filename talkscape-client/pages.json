@@ -1,0 +1,62 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+    }
+  },
+  "pages": [
+    { "path": "pages/index/index", "style": { "navigationStyle": "custom", "app-plus": { "bounce": "none" } } },
+    { "path": "pages/scenes/index", "style": { "navigationStyle": "custom", "app-plus": { "bounce": "none" } } },
+    { "path": "pages/scenario/detail", "style": { "navigationStyle": "custom", "app-plus": { "bounce": "none" } } },
+    { "path": "pages/scenario/conversation", "style": { "navigationStyle": "custom", "app-plus": { "bounce": "none" } } },
+    { "path": "pages/scenario/result", "style": { "navigationStyle": "custom", "app-plus": { "bounce": "none" } } },
+    { "path": "pages/word/bookmark", "style": { "navigationStyle": "custom", "app-plus": { "bounce": "none" } } },
+    { "path": "pages/profile/index", "style": { "navigationStyle": "custom", "app-plus": { "bounce": "none" } } },
+    { "path": "pages/profile/settings", "style": { "navigationStyle": "custom", "app-plus": { "bounce": "none" } } },
+    { "path": "pages/profile/account", "style": { "navigationStyle": "custom", "app-plus": { "bounce": "none" } } },
+    { "path": "pages/auth/login", "style": { "navigationStyle": "custom", "app-plus": { "bounce": "none" } } }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "TalkScape",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#FFFFFF",
+    "app-plus": {
+      "bounce": "none"
+    }
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#000000",
+    "borderStyle": "white",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/scenes/index",
+        "iconPath": "static/tabbar/scenes-grid.png",
+        "selectedIconPath": "static/tabbar/scenes-grid-active.png",
+        "text": "场景"
+      },
+      {
+        "pagePath": "pages/word/bookmark",
+        "iconPath": "static/tabbar/bookmark.png",
+        "selectedIconPath": "static/tabbar/bookmark-active.png",
+        "text": "单词"
+      },
+      {
+        "pagePath": "pages/profile/index",
+        "iconPath": "static/tabbar/profile.png",
+        "selectedIconPath": "static/tabbar/profile-active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "uniIdRouter": {}
+}

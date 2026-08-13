@@ -1,0 +1,41 @@
+<%- include('../partials/layout-start', { title, pageKey, user, notice }) %>
+
+<section class="panel">
+  <div class="panel-head">
+    <h2>词本筛选</h2>
+  </div>
+  <form method="get" action="<%= adminBasePath %>/bookmarks" class="toolbar-form">
+    <input type="text" name="keyword" value="<%= query.keyword || '' %>" placeholder="搜索单词、释义或来源场景" />
+    <button type="submit" class="primary-btn small">搜索</button>
+  </form>
+</section>
+
+<section class="panel">
+  <div class="panel-head">
+    <h2>收藏词列表</h2>
+  </div>
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>单词</th>
+        <th>中文释义</th>
+        <th>来源场景</th>
+        <th>状态</th>
+        <th>创建时间</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% data.bookmarks.forEach(function(item) { %>
+        <tr>
+          <td><%= item.word %></td>
+          <td><%= item.definition_cn || '-' %></td>
+          <td><%= item.source_scenario_id || '-' %></td>
+          <td><span class="tag"><%= item.status || 'active' %></span></td>
+          <td><%= item.created_at %></td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</section>
+
+<%- include('../partials/layout-end') %>
