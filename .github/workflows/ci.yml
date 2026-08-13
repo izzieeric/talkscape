@@ -17,10 +17,10 @@ jobs:
 
     steps:
       - name: 检出代码
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: 配置 Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 20
           cache: npm
@@ -44,4 +44,3 @@ jobs:
       - name: 构建 H5 客户端
         working-directory: talkscape-client
         run: npm run build:h5
-
