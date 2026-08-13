@@ -1,0 +1,33 @@
+name: 功能建议
+description: 提议新的学习功能或体验改进
+title: "[建议] "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 你想解决什么问题？
+      description: 请描述具体的学习场景或使用困难。
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: 你的建议
+      description: 请说明理想的交互方式或预期效果。
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 其他方案
+      description: 如果尝试过替代办法，也可以在这里说明。
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已搜索现有 Issue 和 Discussions，确认没有重复内容。
+          required: true
+

@@ -1,0 +1,60 @@
+name: Bug 反馈
+description: 报告可稳定复现的程序问题
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: 感谢反馈。请先确认问题不是由私有密钥、网络代理或第三方服务异常引起，并注意删除日志中的敏感信息。
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 请说明实际发生了什么，以及你原本期望的结果。
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 启动……
+        2. 进入……
+        3. 点击……
+        4. 出现……
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 运行平台
+      options:
+        - H5 / 浏览器
+        - 微信小程序
+        - Android App
+        - iOS App
+        - 服务端 / 管理后台
+        - 其他
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 环境信息
+      description: 例如 macOS 15、Node.js 20、Chrome 版本或手机型号。
+  - type: textarea
+    id: logs
+    attributes:
+      label: 日志或截图
+      description: 请勿提交 API Key、Token、密码、手机号等敏感信息。
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已搜索现有 Issue，确认没有重复问题。
+          required: true
+        - label: 我已删除日志和截图中的密钥及个人敏感信息。
+          required: true
+

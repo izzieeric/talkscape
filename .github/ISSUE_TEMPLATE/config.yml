@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 使用交流与功能讨论
+    url: https://github.com/izzieeric/talkscape/discussions
+    about: 使用问题、学习交流和新想法请优先发到 Discussions。
+  - name: 商业授权咨询
+    url: https://github.com/izzieeric/talkscape/blob/main/COMMERCIAL_LICENSE.md
+    about: 商业使用前请先阅读商业授权说明，并通过 GitHub 联系作者。
+
