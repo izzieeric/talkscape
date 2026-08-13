@@ -32,14 +32,13 @@ src/db/migrations/  数据库迁移
 src/data/            公开场景基础数据
 database/           可导入的初始化 SQL
 scripts/            数据维护和生成脚本
-__tests__/           自动化测试
 ```
 
 ## 快速开始
 
 ### 环境要求
 
-- Node.js 18 或更高版本
+- Node.js 20 LTS 或更高版本
 - MySQL 8 或兼容版本
 - npm
 

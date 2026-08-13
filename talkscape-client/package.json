@@ -1,5 +1,9 @@
 {
   "name": "talkscape-client",
+  "version": "1.2.1",
+  "description": "TalkScape uni-app 客户端",
+  "license": "SEE LICENSE IN ../LICENSE.md",
+  "private": true,
   "main": "main.js",
   "scripts": {
     "dev:h5": "cross-env UNI_INPUT_DIR=. uni",

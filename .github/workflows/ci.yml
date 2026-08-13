@@ -1,0 +1,47 @@
+name: 持续集成
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: 安装、检查与构建
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 配置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            talkscape-client/package-lock.json
+
+      - name: 安装服务端依赖
+        run: npm ci --ignore-scripts
+
+      - name: 检查服务端 JavaScript 语法
+        run: find src scripts -name '*.js' -print0 | xargs -0 -n1 node --check
+
+      - name: 验证初始化 SQL 可重复生成
+        run: npm run db:init-data && git diff --exit-code -- database/init-data.sql
+
+      - name: 安装客户端依赖
+        working-directory: talkscape-client
+        run: npm ci --ignore-scripts
+
+      - name: 构建 H5 客户端
+        working-directory: talkscape-client
+        run: npm run build:h5
+

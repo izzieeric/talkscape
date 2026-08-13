@@ -4,6 +4,13 @@
   "description": "TalkScape 后端服务",
   "license": "SEE LICENSE IN LICENSE.md",
   "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/izzieeric/talkscape.git"
+  },
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
@@ -12,8 +19,6 @@
     "db:rollback": "knex migrate:rollback",
     "db:init-data": "node scripts/generate-init-sql.js",
     "cleanup:invalid-sessions": "node scripts/cleanup-invalid-sessions.js",
-    "test": "jest --forceExit --detectOpenHandles",
-    "test:watch": "jest --watch --forceExit --detectOpenHandles",
     "preload:wordcards": "node scripts/preload-word-cards.js"
   },
   "dependencies": {
@@ -38,8 +43,6 @@
     "winston": "^3.11.0"
   },
   "devDependencies": {
-    "jest": "^30.4.2",
-    "nodemon": "^3.0.3",
-    "supertest": "^7.2.2"
+    "nodemon": "^3.0.3"
   }
 }
