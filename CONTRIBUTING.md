@@ -30,4 +30,4 @@ fix: prevent duplicate conversation messages
 docs: improve local setup guide
 ```
 
-提交贡献即表示你有权提供相关内容，并同意该贡献在项目最终采用的许可证下发布。
+提交贡献即表示你有权提供相关内容，并同意该贡献在 PolyForm Noncommercial License 1.0.0 下发布，同时允许项目维护者在商业授权版本中使用该贡献。若你不同意，请不要提交贡献。

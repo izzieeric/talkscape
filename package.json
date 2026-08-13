@@ -2,6 +2,7 @@
   "name": "talkscape-server",
   "version": "1.2.1",
   "description": "TalkScape 后端服务",
+  "license": "SEE LICENSE IN LICENSE.md",
   "private": true,
   "main": "src/server.js",
   "scripts": {
