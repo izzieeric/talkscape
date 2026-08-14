@@ -141,6 +141,14 @@ TalkScape 本身不提供模型额度。运行完整功能可能需要自行申�
 - 作者主页：[@izzieeric](https://github.com/izzieeric)
 - 安全漏洞：请按照 [SECURITY.md](SECURITY.md) 私下报告，不要公开披露
 
+## 支持项目
+
+如果 TalkScape 对你有帮助，欢迎通过微信赞赏支持项目的持续维护。赞赏完全自愿，不构成购买行为，也不附带额外服务、功能承诺或商业授权。
+
+<p align="center">
+  <img src="assets/donate/wechat-reward.png" alt="TalkScape 微信赞赏码" width="360">
+</p>
+
 ## 免责声明
 
 AI 输出可能不准确、不完整或不适合作为专业语言教学依据。本项目不替代专业教师、正式课程或语言能力认证。自部署实例的数据处理和合规责任由实例运营者承担。完整说明见 [DISCLAIMER.md](DISCLAIMER.md)。
