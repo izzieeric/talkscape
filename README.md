@@ -4,6 +4,14 @@ TalkScape 是一个源码开放的 AI 英语口语练习应用，通过餐饮、
 
 > 项目目前处于早期开发阶段，接口和数据库结构仍可能发生变化，建议先用于学习、测试和二次开发。
 
+## 界面预览
+
+| 场景学习 | 关卡介绍 |
+| --- | --- |
+| <img src="assets/screenshots/scenario-library.jpg" alt="TalkScape 场景学习页面" width="300"> | <img src="assets/screenshots/challenge-intro.jpg" alt="TalkScape 关卡介绍页面" width="300"> |
+| **智能讲解** | **对话反馈** |
+| <img src="assets/screenshots/smart-coaching.jpg" alt="TalkScape 智能讲解页面" width="300"> | <img src="assets/screenshots/conversation-feedback.jpg" alt="TalkScape 对话反馈页面" width="300"> |
+
 ## 功能
 
 - 场景化 AI 口语对话与分级任务
